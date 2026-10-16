@@ -1,5 +1,9 @@
 # velune.
 
+Live site: https://velune-theta.vercel.app/
+
+Source: https://github.com/Slepyyy047/velune
+
 A fictional premium specialty coffee shop concept based in Osaka, built with Next.js App Router, React, TypeScript, Three.js, React Three Fiber, Drei and GSAP. Six primary pages, five complete articles, a 20-drink menu and an original interactive cup study. No real café, payments, reservations, address or backend is represented.
 
 ## Run
@@ -79,4 +83,4 @@ Creates CRC-verified source, static-export and QA-evidence ZIP files. Run `npm r
 
 ## Vercel deployment from GitHub
 
-Import the GitHub repository into the existing Vercel project. `vercel.json` selects a static deployment: `npm ci`, `npm run build`, and output directory `out`. No database or application secrets are required. Social metadata uses `NEXT_PUBLIC_SITE_URL` when set, otherwise Vercel's production-domain environment variable. Local Vercel project linkage and environment files are excluded from Git.
+The GitHub repository is connected to the existing Vercel project `velune`; pushes to `main` trigger deployment. `vercel.json` selects a static deployment: `npm ci`, `npm run build`, and output directory `out`. No database or application secrets are required. Social metadata uses `NEXT_PUBLIC_SITE_URL` when set, otherwise Vercel's production-domain environment variable. Local Vercel project linkage and environment files are excluded from Git.

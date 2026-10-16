@@ -7,7 +7,7 @@
 5. Audit 3D inputs: none supplied. Author a detailed parametric GLB cup, original deterministic bean study and studio lights. Provide image fallback. Do not present missing professional grinder/extraction assets as implemented; preserve an explicit production specification.
 6. Optimize: local WebP/fonts, responsive hero, lazy images and dynamic 3D, request-based rendering, mobile DPR ceiling, 36 instanced beans, static page generation, clean unmount behavior.
 7. QA: strict TypeScript, production build, Chromium functional tests at desktop/mobile, screenshots at 1440/768/390, axe checks, Lighthouse production measurements, WebGL unavailable/blocked storage/reduced motion tests.
-8. Package source and static export, record evidence and limitations, and provide run instructions. Hosted publication depends on the supported Sites source/packaging helpers; those helpers were absent from this executor when inspected. No Site registration or deployment is claimed.
+8. Package source and static export, record evidence and limitations, and provide run instructions. Hosted publication completed through the user-authorized GitHub repository and Vercel CLI. Live site: https://velune-theta.vercel.app/. The initial Sites helper workflow was unavailable; Vercel was explicitly selected by the user.
 
 ## Deliberate implementation choices
 

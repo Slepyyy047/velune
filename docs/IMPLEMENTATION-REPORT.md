@@ -75,7 +75,7 @@ Real-user INP, physical-phone GPU behavior, sustained rendered FPS and productio
 - All photographs are generated concept imagery. See `ASSETS.md` for provenance and font licenses in `public/fonts/`.
 - Browser QA uses Chromium desktop and emulated mobile/tablet dimensions, not physical Safari/iOS devices.
 - Favorites/sound are browser-local. There is no account, checkout, booking, contact backend or pretend submission.
-- The static build is prepared locally. Hosted publication is not verified: the Sites plugin's required source/packaging helpers are absent from this executor, including after environment recovery. No Site ID, hosted URL or successful deployment is claimed.
+- Published on Vercel at https://velune-theta.vercel.app/ from https://github.com/Slepyyy047/velune. The initial production deployment `dpl_47GwN7uovCyvaaZqSmS5VjLLjBQP` reached READY from commit `01f8b212ae93fe950c9140bcc0abf927b4485b61`; build duration was 1 minute 1 second. GitHub is connected for subsequent pushes. All eleven live page routes returned HTTP 200, the live menu HTML contains twenty drinks, and the hero image, WOFF2 font and GLB file returned HTTP 200 with correct content types. Social-image metadata uses the live production origin. These are HTTP delivery checks; the earlier functional/browser results were measured against the local production export.
 - Set `NEXT_PUBLIC_SITE_URL` before deployment to give social metadata the correct origin; the local default is `http://localhost:3000`.
 
 ## 8. Run and deploy
