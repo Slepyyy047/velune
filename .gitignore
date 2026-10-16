@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.vercel/
+.env*
+!.env.example
+docs/screenshots/
+docs/lighthouse/
+docs/vercel-files.json
+docs/vercel-deployment.json
+*.log

@@ -1,0 +1,110 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "violations": [],
+    "passes": 22,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/menu/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/story/",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 0
+  },
+  {
+    "width": 1440,
+    "route": "/experience/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": 2
+  },
+  {
+    "width": 1440,
+    "route": "/journal/",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "width": 1440,
+    "route": "/visit/",
+    "violations": [],
+    "passes": 22,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/journal/the-art-of-slow-coffee/",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "width": 1440,
+    "route": "menu dialog",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "violations": [],
+    "passes": 22,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/menu/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/story/",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 0
+  },
+  {
+    "width": 390,
+    "route": "/experience/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": 2
+  },
+  {
+    "width": 390,
+    "route": "/journal/",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "width": 390,
+    "route": "/visit/",
+    "violations": [],
+    "passes": 22,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/journal/the-art-of-slow-coffee/",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "width": 390,
+    "route": "menu dialog",
+    "violations": []
+  }
+]

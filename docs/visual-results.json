@@ -1,0 +1,140 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/menu/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/story/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/experience/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/journal/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/visit/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/journal/the-art-of-slow-coffee/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/menu/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/story/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/experience/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/journal/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/visit/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/journal/the-art-of-slow-coffee/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/menu/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/story/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/experience/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/journal/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/visit/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/journal/the-art-of-slow-coffee/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "errors": []
+  }
+]

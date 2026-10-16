@@ -1,0 +1,56 @@
+{
+  "description": "Original AI-generated concept photography for fictional VELUNE. Not photographs of an operating venue or actual menu items.",
+  "generatedOn": "2026-10-15",
+  "images": [
+    {
+      "name": "hero",
+      "original": "assets/originals/hero.png",
+      "generation": "exec-e6398eb9-f6e5-4820-a9ef-0fcec9a67223.png"
+    },
+    {
+      "name": "cup",
+      "original": "assets/originals/cup.png",
+      "generation": "exec-52b2eee3-5837-42b4-b393-29c435d40697.png"
+    },
+    {
+      "name": "latte",
+      "original": "assets/originals/latte.png",
+      "generation": "exec-92880490-4c2b-4dee-b7dd-7122023b5e8f.png"
+    },
+    {
+      "name": "espresso",
+      "original": "assets/originals/espresso.png",
+      "generation": "exec-d868033b-af59-418e-a69d-c443952a55e8.png"
+    },
+    {
+      "name": "iced",
+      "original": "assets/originals/iced.png",
+      "generation": "exec-3319ea64-77ee-48d2-a1af-7f7945a62c3b.png"
+    },
+    {
+      "name": "matcha",
+      "original": "assets/originals/matcha.png",
+      "generation": "exec-96da8bb6-03da-4613-b9f6-3c04de226b56.png"
+    },
+    {
+      "name": "filter",
+      "original": "assets/originals/filter.png",
+      "generation": "exec-149804d5-6fe2-4bf2-b919-69c07dc40aab.png"
+    },
+    {
+      "name": "beans",
+      "original": "assets/originals/beans.png",
+      "generation": "exec-c4973914-ed80-4afb-9d64-8438f496a15f.png"
+    },
+    {
+      "name": "ritual",
+      "original": "assets/originals/ritual.png",
+      "generation": "exec-db43e953-65f8-4219-b113-8738877603a3.png"
+    },
+    {
+      "name": "space",
+      "original": "assets/originals/space.png",
+      "generation": "exec-fc176b40-f720-4689-a6fe-2e9f18019c08.png"
+    }
+  ]
+}

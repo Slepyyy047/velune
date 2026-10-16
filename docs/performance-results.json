@@ -1,0 +1,230 @@
+[
+  {
+    "route": "/",
+    "formFactor": "desktop",
+    "fetchTime": "2026-10-16T11:22:26.171Z",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 1088.1875,
+        "display": "1.1 s"
+      },
+      "first-contentful-paint": {
+        "value": 239.09375,
+        "display": "0.2 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 674.0918602930868,
+        "display": "0.7 s"
+      },
+      "total-byte-weight": {
+        "value": 1039382,
+        "display": "Total size was 1,015 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/menu/",
+    "formFactor": "desktop",
+    "fetchTime": "2026-10-16T11:22:36.342Z",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 602.787875,
+        "display": "0.6 s"
+      },
+      "first-contentful-paint": {
+        "value": 211.08225,
+        "display": "0.2 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 323.65794742742264,
+        "display": "0.3 s"
+      },
+      "total-byte-weight": {
+        "value": 713283,
+        "display": "Total size was 697 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/experience/",
+    "formFactor": "desktop",
+    "fetchTime": "2026-10-16T11:22:45.239Z",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 836.2412499999999,
+        "display": "0.8 s"
+      },
+      "first-contentful-paint": {
+        "value": 210.8275,
+        "display": "0.2 s"
+      },
+      "total-blocking-time": {
+        "value": 159.99999999999994,
+        "display": "160 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 361.241492296961,
+        "display": "0.4 s"
+      },
+      "total-byte-weight": {
+        "value": 286369,
+        "display": "Total size was 280 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/",
+    "formFactor": "mobile",
+    "fetchTime": "2026-10-16T11:22:53.794Z",
+    "scores": {
+      "performance": 89,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 3419.2139500000003,
+        "display": "3.4 s"
+      },
+      "first-contentful-paint": {
+        "value": 756.9793999999999,
+        "display": "0.8 s"
+      },
+      "total-blocking-time": {
+        "value": 175.5,
+        "display": "180 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1356.0866894750034,
+        "display": "1.4 s"
+      },
+      "total-byte-weight": {
+        "value": 793566,
+        "display": "Total size was 775 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/menu/",
+    "formFactor": "mobile",
+    "fetchTime": "2026-10-16T11:23:02.644Z",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 3011.89995,
+        "display": "3.0 s"
+      },
+      "first-contentful-paint": {
+        "value": 865.9666499999998,
+        "display": "0.9 s"
+      },
+      "total-blocking-time": {
+        "value": 65.50000000000011,
+        "display": "70 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 999.4173240895434,
+        "display": "1.0 s"
+      },
+      "total-byte-weight": {
+        "value": 713283,
+        "display": "Total size was 697 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/experience/",
+    "formFactor": "mobile",
+    "fetchTime": "2026-10-16T11:23:12.168Z",
+    "scores": {
+      "performance": 81,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 3218.7709499999996,
+        "display": "3.2 s"
+      },
+      "first-contentful-paint": {
+        "value": 757.8472999999999,
+        "display": "0.8 s"
+      },
+      "total-blocking-time": {
+        "value": 464.9999999999998,
+        "display": "460 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 833.8989680001112,
+        "display": "0.8 s"
+      },
+      "total-byte-weight": {
+        "value": 286369,
+        "display": "Total size was 280 KiB"
+      }
+    },
+    "warnings": []
+  }
+]
