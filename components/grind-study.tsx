@@ -1,4 +1,5 @@
 "use client";
+import { Localized } from "@/components/language";
 import { useState } from "react";
 const guides = [
   {
@@ -29,8 +30,8 @@ const guides = [
 export function GrindStudy() {
   const [grind, setGrind] = useState(2);
   const guide = guides[grind];
-  return (
-    <section className="grind-study">
+  return (<Localized>
+    <section className="grind-study" id="grind">
       <div className="container grind-layout">
         <div>
           <p className="eyebrow">A hands-on coffee note</p>
@@ -42,11 +43,11 @@ export function GrindStudy() {
             Move through four starting points to see how grind size relates to
             the way you brew.
           </p>
-          <label htmlFor="grind">
+          <label htmlFor="grind-size">
             Explore the grind <span>{guide.label}</span>
           </label>
           <input
-            id="grind"
+            id="grind-size"
             type="range"
             min="0"
             max="3"
@@ -93,5 +94,5 @@ export function GrindStudy() {
         </div>
       </div>
     </section>
-  );
+  </Localized>);
 }

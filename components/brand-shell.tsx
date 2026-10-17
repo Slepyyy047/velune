@@ -1,4 +1,5 @@
 "use client";
+import { Localized, LanguageSwitch } from "@/components/language";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -13,7 +14,7 @@ const links = [
   ["/", "Home"],
   ["/menu", "Menu"],
   ["/story", "Our story"],
-  ["/experience", "Experience"],
+  ["/experience", "The ritual"],
   ["/journal", "Journal"],
   ["/visit", "Visit us"],
 ];
@@ -54,7 +55,7 @@ export function Header() {
       document.removeEventListener("keydown", close);
     };
   }, [open]);
-  return (
+  return (<Localized>
     <header className={`site-header ${open ? "is-open" : ""}`} ref={ref}>
       <Link prefetch={false} href="/" className="wordmark" aria-label="Velune home">
         velune.
@@ -71,6 +72,7 @@ export function Header() {
           </Link>
         ))}
       </nav>
+      <LanguageSwitch />
       <span className="header-location">
         OSAKA, JAPAN <span className="tiny-dot" />
       </span>
@@ -109,7 +111,7 @@ export function Header() {
         </nav>
       )}
     </header>
-  );
+  </Localized>);
 }
 export function Footer() {
   const [sound, setSound] = useState(false);
@@ -157,7 +159,7 @@ export function Footer() {
       return !v;
     });
   }
-  return (
+  return (<Localized>
     <footer className="site-footer">
       <div className="footer-top">
         <div>
@@ -201,5 +203,5 @@ export function Footer() {
         </button>
       </div>
     </footer>
-  );
+  </Localized>);
 }

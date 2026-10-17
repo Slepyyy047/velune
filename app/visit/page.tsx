@@ -1,3 +1,4 @@
+import { Localized } from "@/components/language";
 import type { Metadata } from "next";
 import { PageIntro, Eyebrow, TextLink } from "@/components/ui";
 import { SpaceGallery } from "@/components/space-gallery";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 };
 export default function Visit() {
   return (
-    <main id="main">
+    <Localized><main id="main">
       <PageIntro
         label="An imagined corner of Osaka"
         title={
@@ -81,6 +82,6 @@ export default function Visit() {
           A note on slow coffee
         </TextLink>
       </section>
-    </main>
+    </main></Localized>
   );
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "photos": 3,
+    "square": true,
+    "loaded": true
+  },
+  {
+    "route": "/menu/",
+    "width": 1440,
+    "photos": 20,
+    "square": true,
+    "loaded": true
+  },
+  {
+    "route": "/menu/lavender-cloud/",
+    "width": 1440,
+    "photos": 4,
+    "square": true,
+    "loaded": true
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "photos": 3,
+    "square": true,
+    "loaded": true
+  },
+  {
+    "route": "/menu/",
+    "width": 390,
+    "photos": 20,
+    "square": true,
+    "loaded": true
+  },
+  {
+    "route": "/menu/lavender-cloud/",
+    "width": 390,
+    "photos": 4,
+    "square": true,
+    "loaded": true
+  }
+]

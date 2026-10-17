@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Header, Footer } from "@/components/brand-shell";
 import { BrandMotion } from "@/components/motion";
+import { LanguageProvider, Localized } from "@/components/language";
+import { CoffeeBackground } from "@/components/coffee-background";
 import "./globals.css";
 const serif = localFont({
   src: [
@@ -59,15 +61,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
-      <body>
-        <a className="skip-link" href="#main">
+      <body><LanguageProvider><CoffeeBackground />
+        <Localized><a className="skip-link" href="#main">
           Skip to content
-        </a>
+        </a></Localized>
         <Header />
         {children}
         <Footer />
         <BrandMotion />
-      </body>
+      </LanguageProvider></body>
     </html>
   );
 }

@@ -43,6 +43,30 @@
   },
   {
     "width": 1440,
+    "route": "/menu/lavender-cloud/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/menu/espresso/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
+    "route": "/menu/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1440,
     "errors": []
   },
   {
@@ -89,6 +113,30 @@
   },
   {
     "width": 768,
+    "route": "/menu/lavender-cloud/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/menu/espresso/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "route": "/menu/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
     "errors": []
   },
   {
@@ -130,6 +178,30 @@
   {
     "width": 390,
     "route": "/journal/the-art-of-slow-coffee/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/menu/lavender-cloud/",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/menu/espresso/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/?lang=ru",
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "route": "/menu/?lang=ru",
     "overflow": false,
     "brokenImages": []
   },

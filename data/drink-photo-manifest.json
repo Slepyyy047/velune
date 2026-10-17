@@ -1,0 +1,22 @@
+{
+  "espresso": { "sheet": "/images/drinks/sheet-1.webp", "column": 0, "row": 0, "description": "Double espresso with amber crema in a small ivory demitasse." },
+  "americano": { "sheet": "/images/drinks/sheet-1.webp", "column": 1, "row": 0, "description": "Black Americano in a tall sage ceramic mug." },
+  "macchiato": { "sheet": "/images/drinks/sheet-1.webp", "column": 0, "row": 1, "description": "Espresso marked with a small dollop of milk in a lavender demitasse." },
+  "cortado": { "sheet": "/images/drinks/sheet-1.webp", "column": 1, "row": 1, "description": "Warm caramel-colored cortado in a short clear faceted glass." },
+  "flat-white": { "sheet": "/images/drinks/sheet-2.webp", "column": 0, "row": 0, "description": "Flat white with heart latte art in a low cream cup." },
+  "cappuccino": { "sheet": "/images/drinks/sheet-2.webp", "column": 1, "row": 0, "description": "Foamy cappuccino with a caramel coffee ring in a lavender cup." },
+  "latte": { "sheet": "/images/drinks/sheet-2.webp", "column": 0, "row": 1, "description": "Velune Latte with white rosetta art in a tall sage mug." },
+  "oat-latte": { "sheet": "/images/drinks/sheet-2.webp", "column": 1, "row": 1, "description": "Oat latte in an ivory ceramic beaker with oats alongside." },
+  "pour-over": { "sheet": "/images/drinks/sheet-3.webp", "column": 0, "row": 0, "description": "Amber hand-poured coffee in a glass server beside a ceramic dripper." },
+  "batch-brew": { "sheet": "/images/drinks/sheet-3.webp", "column": 1, "row": 0, "description": "Black daily filter coffee in a pale lavender mug." },
+  "aeropress": { "sheet": "/images/drinks/sheet-3.webp", "column": 0, "row": 1, "description": "Dark AeroPress coffee in a double-walled glass beside a manual press." },
+  "cold-brew": { "sheet": "/images/drinks/sheet-3.webp", "column": 1, "row": 1, "description": "Dark cold brew over clear ice in a straight tumbler." },
+  "iced-latte": { "sheet": "/images/drinks/sheet-4.webp", "column": 0, "row": 0, "description": "Iced latte with espresso swirling into milk in a clear highball." },
+  "espresso-tonic": { "sheet": "/images/drinks/sheet-4.webp", "column": 1, "row": 0, "description": "Espresso layered over sparkling tonic, ice, and orange peel." },
+  "matcha": { "sheet": "/images/drinks/sheet-4.webp", "column": 0, "row": 1, "description": "Hot green matcha latte in a lavender mug with pale milk art." },
+  "hojicha": { "sheet": "/images/drinks/sheet-4.webp", "column": 1, "row": 1, "description": "Hot roasted hojicha latte in a sage ceramic cup." },
+  "chocolate": { "sheet": "/images/drinks/sheet-5.webp", "column": 0, "row": 0, "description": "Rich hot dark chocolate in an ivory mug with a chocolate square." },
+  "lavender-cloud": { "sheet": "/images/drinks/sheet-5.webp", "column": 1, "row": 0, "description": "Lavender vanilla espresso latte with milk art in a lavender cup." },
+  "sesame-latte": { "sheet": "/images/drinks/sheet-5.webp", "column": 0, "row": 1, "description": "Grey black-sesame latte with sesame specks in a sage cup." },
+  "yuzu-cold-brew": { "sheet": "/images/drinks/sheet-5.webp", "column": 1, "row": 1, "description": "Amber sparkling yuzu cold brew over ice beside fresh yuzu." }
+}

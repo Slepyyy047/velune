@@ -1,3 +1,4 @@
+import { Localized } from "@/components/language";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -25,7 +26,7 @@ export default async function Article({
   const article = articles.find((a) => a.slug === slug);
   if (!article) notFound();
   return (
-    <main id="main">
+    <Localized><main id="main">
       <article className="article-page">
         <header className="article-header container">
           <Link prefetch={false} className="back-link" href="/journal">
@@ -103,6 +104,6 @@ export default async function Article({
             ))}
         </div>
       </section>
-    </main>
+    </main></Localized>
   );
 }

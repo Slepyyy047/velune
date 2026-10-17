@@ -1,3 +1,5 @@
+> Historical specification — superseded on 17 October 2026. The owner requested complete removal of the interactive 3D cup. No 3D assets or scenes are used in the current application; this document is retained only as project history.
+
 # VELUNE — 3D asset audit and production specification
 
 ## Delivered vs. final visual standard

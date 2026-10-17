@@ -1,3 +1,5 @@
+> Initial-build plan, superseded by the 17 October 2026 owner revision. The current scope removes 3D, adds dedicated drink pages, English/Russian content, more lavender and lightweight motion. See IMPLEMENTATION-REPORT.md for current delivery status.
+
 # Implementation plan and decisions
 
 1. Inspect workspace: no existing repository/app/assets were supplied. Initialize a new isolated Next.js project in `/workspace/sites/velune`.

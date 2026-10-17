@@ -1,3 +1,4 @@
+import { Localized } from "@/components/language";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 export default function Journal() {
   const first = articles[0];
   return (
-    <main id="main">
+    <Localized><main id="main">
       <PageIntro
         label="The VELUNE journal"
         title={
@@ -74,6 +75,6 @@ export default function Journal() {
           ))}
         </div>
       </section>
-    </main>
+    </main></Localized>
   );
 }

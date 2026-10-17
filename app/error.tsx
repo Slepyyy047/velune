@@ -1,7 +1,8 @@
 "use client";
+import { Localized } from "@/components/language";
 export default function ErrorPage({ reset }: { reset: () => void }) {
   return (
-    <main id="main" className="not-found container">
+    <Localized><main id="main" className="not-found container">
       <p className="eyebrow">A brief interruption</p>
       <h1>
         Let’s try that
@@ -18,6 +19,6 @@ export default function ErrorPage({ reset }: { reset: () => void }) {
       <a className="text-link" href="/">
         Return home ↗
       </a>
-    </main>
+    </main></Localized>
   );
 }

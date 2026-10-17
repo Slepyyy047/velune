@@ -27,6 +27,10 @@ for (const width of [1440, 768, 390]) {
     "/journal/",
     "/visit/",
     "/journal/the-art-of-slow-coffee/",
+    "/menu/lavender-cloud/",
+    "/menu/espresso/?lang=ru",
+    "/?lang=ru",
+    "/menu/?lang=ru",
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
     await page.evaluate(async () => {
@@ -38,7 +42,7 @@ for (const width of [1440, 768, 390]) {
     });
     await page.waitForTimeout(1300);
     const name =
-      route === "/" ? "home" : route.split("/").filter(Boolean).join("-");
+      route === "/" ? "home" : route.replaceAll("?", "-").replaceAll("=", "-").split("/").filter(Boolean).join("-");
     await page.screenshot({
       path: `docs/screenshots/${name}-${width}.png`,
       fullPage: true,
@@ -52,17 +56,6 @@ for (const width of [1440, 768, 390]) {
     results.push({ width, route, ...metrics });
     console.log(width, route, metrics);
   }
-  await page.goto(base + "/experience/", { waitUntil: "networkidle" });
-  await page.getByRole("button", { name: "Explore in 3D" }).click();
-  await page.waitForTimeout(2000);
-  await page
-    .locator(".experience-stage")
-    .screenshot({ path: `docs/screenshots/cup-${width}.png` });
-  await page.getByRole("button", { name: "Lid details" }).click();
-  await page.waitForTimeout(1200);
-  await page
-    .locator(".experience-stage")
-    .screenshot({ path: `docs/screenshots/lid-${width}.png` });
   results.push({ width, errors });
   await page.close();
 }

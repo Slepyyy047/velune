@@ -21,7 +21,7 @@ The original generated PNGs are retained, unchanged, in `assets/originals/`. `pu
 | `ritual.webp` | Craftsmanship and journal | Generated pour-over preparation photograph; not footage or a supplier claim |
 | `space.webp` | Interior gallery and architecture journal | Another view of an imaginary cafe space |
 
-Menu imagery is intentionally shared by category. Drink descriptions, ingredients, volumes and allergens remain the authoritative concept recipe information. The user interface should disclose that menu images are illustrative.
+As of 17 October 2026, menu and signature cards use twenty distinct generated drink portraits from five equal-quadrant image sheets. CSS crops each portrait without modifying its content. See `DRINK-IMAGE-SOURCES.md` and `data/drink-photo-manifest.json` for mapping, provenance and resolutions. The older category images above remain editorial imagery or unused historical assets. The interactive cup and its GLB were removed at the owner’s request. Drink pages identify a secondary closeup as a crop of the same portrait. Recipes remain illustrative.
 
 ## Processing
 
@@ -29,7 +29,7 @@ Run `node scripts/prepare-images.mjs` from the application directory after insta
 
 Originals are retained outside `public` for reproducibility. Only optimized runtime assets are included in the static export.
 
-## Asset limitations
+## Historical asset limitations (initial 3D brief; superseded)
 
 These still images do not fulfill the requirement for a professional grinder GLB, a photorealistic takeaway-cup GLB, motion-captured coffee beans, environmental HDR illumination, or physically credible espresso-extraction footage. No generated still is presented as interactive fluid simulation. The production 3D specification must describe missing models, physically based textures, animation, optimization, licensing review and export requirements separately. The initial functional 3D experience should be labeled a material study if production visual fidelity has not been met.
 

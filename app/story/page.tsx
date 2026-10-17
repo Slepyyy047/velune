@@ -1,3 +1,4 @@
+import { Localized } from "@/components/language";
 import type { Metadata } from "next";
 import { Eyebrow, TextLink, ButtonLink, PageIntro } from "@/components/ui";
 import { GrindStudy } from "@/components/grind-study";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 };
 export default function Story() {
   return (
-    <main id="main">
+    <Localized><main id="main">
       <PageIntro
         label="Our story"
         title={
@@ -128,8 +129,8 @@ export default function Story() {
       </section>
       <section className="story-experience container">
         <img
-          src="/images/cup.webp"
-          alt="VELUNE Sage Edition cup"
+          src="/images/filter.webp"
+          alt="Coffee prepared by hand in a ceramic filter"
           width="1200"
           height="800"
           loading="lazy"
@@ -137,17 +138,14 @@ export default function Story() {
         <div>
           <Eyebrow>Look a little closer</Eyebrow>
           <h2>
-            Meet the
-            <br />
-            <em>Sage Edition.</em>
+            <em>Follow the coffee.</em>
           </h2>
           <p>
-            A tactile expression of the VELUNE world. Explore our interactive
-            cup study and the craft behind a daily ritual.
+            The small decisions behind a good cup, told through photographs and a quiet moving illustration.
           </p>
-          <ButtonLink href="/experience">Enter the experience</ButtonLink>
+          <ButtonLink href="/experience">Discover the ritual</ButtonLink>
         </div>
       </section>
-    </main>
+    </main></Localized>
   );
 }

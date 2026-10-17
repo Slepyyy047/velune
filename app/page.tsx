@@ -1,5 +1,6 @@
+import { Localized } from "@/components/language";
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight, Plus } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import {
   Eyebrow,
   TextLink,
@@ -8,10 +9,10 @@ import {
   VisitInvitation,
 } from "@/components/ui";
 import { articles, readingTime } from "@/data/journal";
-import { HomeCupAccent } from "@/components/home-cup";
+import { DrinkPhoto } from "@/components/drink-photo";
 export default function Home() {
   return (
-    <main id="main">
+    <Localized><main id="main">
       <section className="hero">
         <picture>
           <source media="(max-width:600px)" srcSet="/images/hero-mobile.webp" />
@@ -49,7 +50,6 @@ export default function Home() {
             <ArrowDown size={16} />
           </a>
         </div>
-        <HomeCupAccent />
       </section>
       <section id="introduction" className="intro container" data-reveal>
         <Eyebrow>Good coffee. A little more presence.</Eyebrow>
@@ -116,24 +116,14 @@ export default function Home() {
           ].map((d, i) => (
             <Link prefetch={false}
               className="signature-card"
-              href={`/menu?drink=${d.id}`}
+              href={`/menu/${d.id}/`} target="_blank" rel="noopener"
               key={d.id}
             >
               <div className={`signature-image image-tone-${i}`}>
-                <img
-                  src={`/images/${d.image}.webp`}
-                  alt={
-                    d.name === "Lavender Cloud"
-                      ? "VELUNE Sage Edition takeaway cup"
-                      : d.name
-                  }
-                  width="1100"
-                  height="733"
-                  loading="lazy"
-                />
+                <DrinkPhoto id={d.id} />
                 <span className="product-label">{d.label}</span>
                 <span className="round-arrow">
-                  <Plus size={19} />
+                  <ArrowUpRight size={19} />
                 </span>
               </div>
               <div className="product-title">
@@ -141,6 +131,7 @@ export default function Home() {
                 <span>${d.price}</span>
               </div>
               <p>{d.note}</p>
+              <span className="sr-only">Opens in a new tab</span>
             </Link>
           ))}
         </div>
@@ -243,6 +234,6 @@ export default function Home() {
         </div>
       </section>
       <VisitInvitation />
-    </main>
+    </main></Localized>
   );
 }

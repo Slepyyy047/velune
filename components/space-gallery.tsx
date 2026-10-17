@@ -1,4 +1,5 @@
 "use client";
+import { Localized } from "@/components/language";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, X, Expand } from "lucide-react";
 const items = [
@@ -31,7 +32,7 @@ export function SpaceGallery() {
     dialog.current?.close();
     trigger.current?.focus();
   }
-  return (
+  return (<Localized>
     <section className="space-gallery container">
       <p className="eyebrow">A walk through the concept</p>
       <div className="gallery-grid">
@@ -105,5 +106,5 @@ export function SpaceGallery() {
         </div>
       </dialog>
     </section>
-  );
+  </Localized>);
 }

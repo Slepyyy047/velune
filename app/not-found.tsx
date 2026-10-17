@@ -1,7 +1,8 @@
+import { Localized } from "@/components/language";
 import { ButtonLink } from "@/components/ui";
 export default function NotFound() {
   return (
-    <main id="main" className="not-found container">
+    <Localized><main id="main" className="not-found container">
       <p className="eyebrow">404 · A little detour</p>
       <h1>
         This corner is
@@ -13,6 +14,6 @@ export default function NotFound() {
         to begin again.
       </p>
       <ButtonLink href="/">Back to VELUNE</ButtonLink>
-    </main>
+    </main></Localized>
   );
 }

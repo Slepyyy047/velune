@@ -183,7 +183,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "all six routes load without page errors or horizontal overflow",
+          "title": "all six pages load with visible content and no errors or overflow",
           "ok": true,
           "tags": [],
           "tests": [
@@ -198,12 +198,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6658,
+                  "duration": 10599,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:18:29.440Z",
+                  "startTime": "2026-10-17T02:27:28.024Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -211,577 +211,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-ff4cf4f7a82ead6b6047",
+          "id": "037b2995da0c90b014e5-6f2531e5e0281df36978",
           "file": "velune.spec.ts",
-          "line": 10,
+          "line": 5,
           "column": 5
         },
         {
-          "title": "menu has exactly 20 drinks and accurate category filters",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3331,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:36.588Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-2249c6d81fad08d06bb3",
-          "file": "velune.spec.ts",
-          "line": 29,
-          "column": 5
-        },
-        {
-          "title": "search, empty states, and clear filters work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1838,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:39.965Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-a96d931fd647c2c704f9",
-          "file": "velune.spec.ts",
-          "line": 49,
-          "column": 5
-        },
-        {
-          "title": "favorites persist through reload and can be removed",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3155,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:41.829Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-8bed8070f757f12cd9f5",
-          "file": "velune.spec.ts",
-          "line": 64,
-          "column": 5
-        },
-        {
-          "title": "drink dialog shows ingredients, allergens, and returns focus",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3400,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:45.027Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-f8829775695f8c70cbb3",
-          "file": "velune.spec.ts",
-          "line": 94,
-          "column": 5
-        },
-        {
-          "title": "home signature deep links open correct drink",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3037,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:48.524Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-c42a4aa73924b0d22be7",
-          "file": "velune.spec.ts",
-          "line": 111,
-          "column": 5
-        },
-        {
-          "title": "five complete journal articles and related links work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3608,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:51.592Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-5d54ca6253a8ff1c1047",
-          "file": "velune.spec.ts",
-          "line": 123,
-          "column": 5
-        },
-        {
-          "title": "mobile navigation opens, closes, navigates, and supports escape",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [
-                {
-                  "type": "skip",
-                  "description": "Mobile navigation only",
-                  "location": {
-                    "file": "/workspace/sites/velune/tests/velune.spec.ts",
-                    "line": 149,
-                    "column": 8
-                  }
-                }
-              ],
-              "expectedStatus": "skipped",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "skipped",
-                  "duration": 640,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:55.221Z",
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "description": "Mobile navigation only",
-                      "location": {
-                        "file": "/workspace/sites/velune/tests/velune.spec.ts",
-                        "line": 149,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-6e7620afaeda202be19b",
-          "file": "velune.spec.ts",
-          "line": 145,
-          "column": 5
-        },
-        {
-          "title": "desktop navigation routes correctly",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5393,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:18:55.882Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-02b3e444a8f8f0e09a58",
-          "file": "velune.spec.ts",
-          "line": 171,
-          "column": 5
-        },
-        {
-          "title": "grind range updates the brewing guidance",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2836,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:01.285Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-16dcb28e4f49f40a8386",
-          "file": "velune.spec.ts",
-          "line": 193,
-          "column": 5
-        },
-        {
-          "title": "gallery supports previous, next, and close",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2956,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:04.186Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-a5fd0dc605e691665331",
-          "file": "velune.spec.ts",
-          "line": 201,
-          "column": 5
-        },
-        {
-          "title": "sound is opt-in and preference persists",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3462,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:07.178Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-5e91220778b857832c08",
-          "file": "velune.spec.ts",
-          "line": 213,
-          "column": 5
-        },
-        {
-          "title": "cup loads, rotates, zooms within limits, and resets",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 26248,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:10.693Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-e39814330f13f6a2e35e",
-          "file": "velune.spec.ts",
-          "line": 227,
-          "column": 5
-        },
-        {
-          "title": "journey chapters and deterministic bean scrubbing work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4156,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:36.974Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-982813a7211943f935f2",
-          "file": "velune.spec.ts",
-          "line": 262,
-          "column": 5
-        },
-        {
-          "title": "WebGL unavailable preserves core functionality and image alternative",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1753,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:41.161Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-85ebb46c94f010339c3f",
-          "file": "velune.spec.ts",
-          "line": 286,
-          "column": 5
-        },
-        {
-          "title": "blocked storage degrades to session favorites with explanation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2076,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:42.930Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-a6b826d741e45ad6d571",
-          "file": "velune.spec.ts",
-          "line": 318,
-          "column": 5
-        },
-        {
-          "title": "reduced motion leaves readable content and navigation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1968,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:19:45.029Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-b6c13a4cd8b5e1492430",
-          "file": "velune.spec.ts",
-          "line": 345,
-          "column": 5
-        },
-        {
-          "title": "pointer or touch drag changes the rendered cup",
+          "title": "all twenty drinks have a separate working page and different photograph crop",
           "ok": true,
           "tags": [],
           "tests": [
@@ -796,12 +232,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 35857,
+                  "duration": 22201,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:19:47.009Z",
+                  "startTime": "2026-10-17T02:27:39.580Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -809,13 +245,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-6d8a48d6999487531166",
+          "id": "037b2995da0c90b014e5-057fc011df065c4df9bd",
           "file": "velune.spec.ts",
-          "line": 361,
+          "line": 19,
           "column": 5
         },
         {
-          "title": "WebGL context loss switches to the static alternative",
+          "title": "category filters, search and empty states work",
           "ok": true,
           "tags": [],
           "tests": [
@@ -830,12 +266,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2508,
+                  "duration": 11137,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:20:22.893Z",
+                  "startTime": "2026-10-17T02:28:01.828Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -843,13 +279,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-13c97bac7d307455a474",
+          "id": "037b2995da0c90b014e5-dbbf2b060883fbb9189e",
           "file": "velune.spec.ts",
-          "line": 402,
+          "line": 35,
           "column": 5
         },
         {
-          "title": "menu is present in initial HTML and scroll content stays readable",
+          "title": "cards open a new tab with full drink details and favorites synchronize",
           "ok": true,
           "tags": [],
           "tests": [
@@ -864,12 +300,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3003,
+                  "duration": 9242,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:20:25.438Z",
+                  "startTime": "2026-10-17T02:28:13.084Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -877,13 +313,319 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-3d2abe40a78bae99a798",
+          "id": "037b2995da0c90b014e5-6d5aaa6eacf0151ef764",
           "file": "velune.spec.ts",
-          "line": 419,
+          "line": 54,
           "column": 5
         },
         {
-          "title": "all six routes load without page errors or horizontal overflow",
+          "title": "home signature opens the actual lavender drink in a new tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3064,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:22.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-ce0d5e6953379571ec70",
+          "file": "velune.spec.ts",
+          "line": 74,
+          "column": 5
+        },
+        {
+          "title": "Russian preference persists, translates content and supports Russian search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:25.505Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-e1d01e8bd311d1c6d1c5",
+          "file": "velune.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "all journal articles, related links and drink pagination work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:39.677Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-6ba0fda2312f9a1d39ba",
+          "file": "velune.spec.ts",
+          "line": 113,
+          "column": 5
+        },
+        {
+          "title": "navigation, language controls, gallery and grind remain usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3613,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:44.928Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-544de66ca46c247f2b6a",
+          "file": "velune.spec.ts",
+          "line": 127,
+          "column": 5
+        },
+        {
+          "title": "background story advances and reverses deterministically without scroll trapping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1826,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:48.568Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-458450bc8a20090c4353",
+          "file": "velune.spec.ts",
+          "line": 148,
+          "column": 5
+        },
+        {
+          "title": "reduced motion keeps all content visible and disables decorative motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:50.420Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-8bfe025513ff3db6eb09",
+          "file": "velune.spec.ts",
+          "line": 162,
+          "column": 5
+        },
+        {
+          "title": "sound preference is explicit and persists",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:54.593Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-9d7b5a2359b7b6a1878b",
+          "file": "velune.spec.ts",
+          "line": 172,
+          "column": 5
+        },
+        {
+          "title": "blocked storage leaves the menu usable with an honest notice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2964,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:28:59.086Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-49f43816ed1165edae68",
+          "file": "velune.spec.ts",
+          "line": 182,
+          "column": 5
+        },
+        {
+          "title": "critical content and links are available without JavaScript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1735,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:02.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-583aaff9da10b5ffb2f6",
+          "file": "velune.spec.ts",
+          "line": 191,
+          "column": 5
+        },
+        {
+          "title": "all six pages load with visible content and no errors or overflow",
           "ok": true,
           "tags": [],
           "tests": [
@@ -898,12 +640,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3759,
+                  "duration": 7794,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:20:29.112Z",
+                  "startTime": "2026-10-17T02:29:04.576Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -911,577 +653,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-20e584bfdd7103aeb071",
+          "id": "037b2995da0c90b014e5-897dd910ba90adcfecc5",
           "file": "velune.spec.ts",
-          "line": 10,
+          "line": 5,
           "column": 5
         },
         {
-          "title": "menu has exactly 20 drinks and accurate category filters",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2127,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:33.300Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-a5f32be3bb255a94c364",
-          "file": "velune.spec.ts",
-          "line": 29,
-          "column": 5
-        },
-        {
-          "title": "search, empty states, and clear filters work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2213,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:35.453Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-babc4066dc55c1ac799c",
-          "file": "velune.spec.ts",
-          "line": 49,
-          "column": 5
-        },
-        {
-          "title": "favorites persist through reload and can be removed",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2399,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:37.691Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-1449ed5571649a1c8627",
-          "file": "velune.spec.ts",
-          "line": 64,
-          "column": 5
-        },
-        {
-          "title": "drink dialog shows ingredients, allergens, and returns focus",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1479,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:40.124Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-ed3b296c4db08b5ec7a7",
-          "file": "velune.spec.ts",
-          "line": 94,
-          "column": 5
-        },
-        {
-          "title": "home signature deep links open correct drink",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2318,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:41.633Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-c1437c18069f725b0392",
-          "file": "velune.spec.ts",
-          "line": 111,
-          "column": 5
-        },
-        {
-          "title": "five complete journal articles and related links work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3904,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:43.985Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-cd55e89990b0a45ea8cc",
-          "file": "velune.spec.ts",
-          "line": 123,
-          "column": 5
-        },
-        {
-          "title": "mobile navigation opens, closes, navigates, and supports escape",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2383,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:47.908Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-a192e755983195f7d0dd",
-          "file": "velune.spec.ts",
-          "line": 145,
-          "column": 5
-        },
-        {
-          "title": "desktop navigation routes correctly",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [
-                {
-                  "type": "skip",
-                  "description": "Desktop navigation only",
-                  "location": {
-                    "file": "/workspace/sites/velune/tests/velune.spec.ts",
-                    "line": 172,
-                    "column": 8
-                  }
-                }
-              ],
-              "expectedStatus": "skipped",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "skipped",
-                  "duration": 560,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:50.317Z",
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "description": "Desktop navigation only",
-                      "location": {
-                        "file": "/workspace/sites/velune/tests/velune.spec.ts",
-                        "line": 172,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-7607e5ce1f212f817cd5",
-          "file": "velune.spec.ts",
-          "line": 171,
-          "column": 5
-        },
-        {
-          "title": "grind range updates the brewing guidance",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1210,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:50.904Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-bf058fcb9e98cec953df",
-          "file": "velune.spec.ts",
-          "line": 193,
-          "column": 5
-        },
-        {
-          "title": "gallery supports previous, next, and close",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1738,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:52.153Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-9b70d6af57ef4bef48a3",
-          "file": "velune.spec.ts",
-          "line": 201,
-          "column": 5
-        },
-        {
-          "title": "sound is opt-in and preference persists",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2263,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:53.931Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-970b1259617ec7dc2cb5",
-          "file": "velune.spec.ts",
-          "line": 213,
-          "column": 5
-        },
-        {
-          "title": "cup loads, rotates, zooms within limits, and resets",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 18484,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:20:56.226Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-e23ffe6b37d070a420d2",
-          "file": "velune.spec.ts",
-          "line": 227,
-          "column": 5
-        },
-        {
-          "title": "journey chapters and deterministic bean scrubbing work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3944,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:21:14.736Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-5f2597c3d503ed6d03d2",
-          "file": "velune.spec.ts",
-          "line": 262,
-          "column": 5
-        },
-        {
-          "title": "WebGL unavailable preserves core functionality and image alternative",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2310,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:21:18.731Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-8dc294e035f009d3cb64",
-          "file": "velune.spec.ts",
-          "line": 286,
-          "column": 5
-        },
-        {
-          "title": "blocked storage degrades to session favorites with explanation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2907,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:21:21.092Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-7bec4c9c494a0a582105",
-          "file": "velune.spec.ts",
-          "line": 318,
-          "column": 5
-        },
-        {
-          "title": "reduced motion leaves readable content and navigation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "mobile",
-              "projectName": "mobile",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1889,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T11:21:24.055Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "037b2995da0c90b014e5-c78bd3140a7cb9dca1b7",
-          "file": "velune.spec.ts",
-          "line": 345,
-          "column": 5
-        },
-        {
-          "title": "pointer or touch drag changes the rendered cup",
+          "title": "all twenty drinks have a separate working page and different photograph crop",
           "ok": true,
           "tags": [],
           "tests": [
@@ -1496,12 +674,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 31328,
+                  "duration": 7093,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:21:25.982Z",
+                  "startTime": "2026-10-17T02:29:12.748Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1509,13 +687,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-02e3e9aaf79bebcf15e1",
+          "id": "037b2995da0c90b014e5-e3573e19cf650d8181b5",
           "file": "velune.spec.ts",
-          "line": 361,
+          "line": 19,
           "column": 5
         },
         {
-          "title": "WebGL context loss switches to the static alternative",
+          "title": "category filters, search and empty states work",
           "ok": true,
           "tags": [],
           "tests": [
@@ -1530,12 +708,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2324,
+                  "duration": 2659,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:21:57.396Z",
+                  "startTime": "2026-10-17T02:29:19.916Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1543,13 +721,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-80e42d2392dd7abaa1d4",
+          "id": "037b2995da0c90b014e5-7ff3f99f138b03f16e55",
           "file": "velune.spec.ts",
-          "line": 402,
+          "line": 35,
           "column": 5
         },
         {
-          "title": "menu is present in initial HTML and scroll content stays readable",
+          "title": "cards open a new tab with full drink details and favorites synchronize",
           "ok": true,
           "tags": [],
           "tests": [
@@ -1564,12 +742,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3411,
+                  "duration": 3936,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T11:21:59.776Z",
+                  "startTime": "2026-10-17T02:29:22.593Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1577,9 +755,315 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-37f4c5142341496d6fba",
+          "id": "037b2995da0c90b014e5-05e35a72ebe44e5ac302",
           "file": "velune.spec.ts",
-          "line": 419,
+          "line": 54,
+          "column": 5
+        },
+        {
+          "title": "home signature opens the actual lavender drink in a new tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2125,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:26.548Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-94011978692b40adabb7",
+          "file": "velune.spec.ts",
+          "line": 74,
+          "column": 5
+        },
+        {
+          "title": "Russian preference persists, translates content and supports Russian search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:28.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-9c1d1fa5323c9635a22d",
+          "file": "velune.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "all journal articles, related links and drink pagination work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:37.383Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-571ac107dd6414b49028",
+          "file": "velune.spec.ts",
+          "line": 113,
+          "column": 5
+        },
+        {
+          "title": "navigation, language controls, gallery and grind remain usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4360,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:41.681Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-7cf0eb4ea7d6df85beac",
+          "file": "velune.spec.ts",
+          "line": 127,
+          "column": 5
+        },
+        {
+          "title": "background story advances and reverses deterministically without scroll trapping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3128,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:46.091Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-2169a51153a7459bafeb",
+          "file": "velune.spec.ts",
+          "line": 148,
+          "column": 5
+        },
+        {
+          "title": "reduced motion keeps all content visible and disables decorative motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2309,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:49.248Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-ac29648a2822f43b4321",
+          "file": "velune.spec.ts",
+          "line": 162,
+          "column": 5
+        },
+        {
+          "title": "sound preference is explicit and persists",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2652,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:51.606Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-7a8323862bb5051ba5b9",
+          "file": "velune.spec.ts",
+          "line": 172,
+          "column": 5
+        },
+        {
+          "title": "blocked storage leaves the menu usable with an honest notice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3414,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:54.293Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-91bc8f264563ba7fcce5",
+          "file": "velune.spec.ts",
+          "line": 182,
+          "column": 5
+        },
+        {
+          "title": "critical content and links are available without JavaScript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2696,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:29:57.731Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-478606eab037ff551281",
+          "file": "velune.spec.ts",
+          "line": 191,
           "column": 5
         }
       ]
@@ -1587,10 +1071,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-16T11:18:28.640Z",
-    "duration": 214845.569,
-    "expected": 38,
-    "skipped": 2,
+    "startTime": "2026-10-17T02:27:26.223Z",
+    "duration": 154496.727,
+    "expected": 26,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

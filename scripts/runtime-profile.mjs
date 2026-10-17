@@ -14,7 +14,7 @@ const results = {
     "Headless Chromium in cloud container; software/virtual GPU. Not representative of physical phone GPU.",
   heaps: [],
   frames: null,
-  frameMeasurementNote: "Idle requestAnimationFrame cadence with the model mounted; not actual GPU render FPS. On-demand scene may be idle. Physical-device GPU timing and sustained animation FPS are unverified.",
+  frameMeasurementNote: "Rendered FPS and physical-device GPU timing are not measured. This probe samples navigation heap and menu event durations.",
   interactionSamples: [],
   resourceFailures: [],
 };
@@ -22,50 +22,18 @@ page.on("response", (r) => {
   if (r.status() >= 400) results.resourceFailures.push(r.url());
 });
 try {
-await page.goto(base + "/experience/", { waitUntil: "networkidle" });
 for (let i = 0; i < 4; i++) {
-  await page.getByRole("button", { name: "Explore in 3D" }).click();
-  await page.waitForTimeout(1800);
-  const before = await client.send("Performance.getMetrics");
-  results.heaps.push({
-    cycle: i,
-    state: "model active",
-    usedJSHeap: before.metrics.find((m) => m.name === "JSHeapUsedSize")?.value,
+  await page.goto(base + "/experience/", { waitUntil: "networkidle" });
+  await page.evaluate(async () => {
+    for (let n = 0; n <= 40; n++) {
+      scrollTo({ top: (document.documentElement.scrollHeight - innerHeight) * n / 40, behavior: "instant" });
+      await new Promise(requestAnimationFrame);
+    }
   });
-  if (i === 0) {
-    results.frames = await page.evaluate(
-      () =>
-        new Promise((resolve) => {
-          const deltas = [];
-          let prev = performance.now();
-          function frame(now) {
-            deltas.push(now - prev);
-            prev = now;
-            if (deltas.length < 120) requestAnimationFrame(frame);
-            else {
-              deltas.sort((a, b) => a - b);
-              resolve({
-                samples: deltas.length,
-                medianFrameMs: deltas[60],
-                p95FrameMs: deltas[114],
-                approxMedianFPS: 1000 / deltas[60],
-              });
-            }
-          }
-          requestAnimationFrame(frame);
-        }),
-    );
-  }
-  await page.getByRole("button", { name: "Image view" }).click();
-  // Allow R3F's deferred renderer disposal before measuring and reopening.
-  await page.waitForTimeout(700);
+  await page.goto(base + "/", { waitUntil: "networkidle" });
   await client.send("HeapProfiler.collectGarbage");
   const after = await client.send("Performance.getMetrics");
-  results.heaps.push({
-    cycle: i,
-    state: "model unmounted, GC requested",
-    usedJSHeap: after.metrics.find((m) => m.name === "JSHeapUsedSize")?.value,
-  });
+  results.heaps.push({ cycle: i, state: "ritual scrolled; home returned; GC requested", usedJSHeap: after.metrics.find(m => m.name === "JSHeapUsedSize")?.value });
 }
 await page.goto(base + "/menu/", { waitUntil: "networkidle" });
 await page.evaluate(() => {

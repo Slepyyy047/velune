@@ -1,3 +1,4 @@
+import { Localized } from "@/components/language";
 import type { Metadata } from "next";
 import { PageIntro } from "@/components/ui";
 import { MenuBrowser } from "@/components/menu-browser";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 };
 export default function Menu() {
   return (
-    <main id="main">
+    <Localized><main id="main">
       <PageIntro
         label="The VELUNE menu"
         title={
@@ -36,6 +37,6 @@ export default function Menu() {
           <p>This is a fictional menu. No orders or payments are accepted.</p>
         </div>
       </section>
-    </main>
+    </main></Localized>
   );
 }

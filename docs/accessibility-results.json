@@ -3,108 +3,140 @@
     "width": 1440,
     "route": "/",
     "violations": [],
-    "passes": 22,
+    "passes": 23,
     "incomplete": 1
   },
   {
     "width": 1440,
     "route": "/menu/",
     "violations": [],
-    "passes": 23,
+    "passes": 25,
     "incomplete": 1
   },
   {
     "width": 1440,
     "route": "/story/",
     "violations": [],
-    "passes": 25,
-    "incomplete": 0
+    "passes": 26,
+    "incomplete": 1
   },
   {
     "width": 1440,
     "route": "/experience/",
     "violations": [],
     "passes": 23,
-    "incomplete": 2
+    "incomplete": 1
   },
   {
     "width": 1440,
     "route": "/journal/",
     "violations": [],
-    "passes": 21,
-    "incomplete": 0
+    "passes": 23,
+    "incomplete": 1
   },
   {
     "width": 1440,
     "route": "/visit/",
     "violations": [],
-    "passes": 22,
+    "passes": 23,
     "incomplete": 1
   },
   {
     "width": 1440,
     "route": "/journal/the-art-of-slow-coffee/",
     "violations": [],
-    "passes": 21,
-    "incomplete": 0
+    "passes": 23,
+    "incomplete": 1
   },
   {
     "width": 1440,
-    "route": "menu dialog",
-    "violations": []
+    "route": "/menu/sesame-latte/",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/menu/?lang=ru",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/experience/?lang=ru",
+    "violations": [],
+    "passes": 23,
+    "incomplete": 1
   },
   {
     "width": 390,
     "route": "/",
     "violations": [],
-    "passes": 22,
+    "passes": 23,
     "incomplete": 1
   },
   {
     "width": 390,
     "route": "/menu/",
     "violations": [],
-    "passes": 23,
+    "passes": 25,
     "incomplete": 1
   },
   {
     "width": 390,
     "route": "/story/",
     "violations": [],
-    "passes": 25,
-    "incomplete": 0
+    "passes": 26,
+    "incomplete": 1
   },
   {
     "width": 390,
     "route": "/experience/",
     "violations": [],
     "passes": 23,
-    "incomplete": 2
+    "incomplete": 1
   },
   {
     "width": 390,
     "route": "/journal/",
     "violations": [],
-    "passes": 21,
-    "incomplete": 0
+    "passes": 23,
+    "incomplete": 1
   },
   {
     "width": 390,
     "route": "/visit/",
     "violations": [],
-    "passes": 22,
+    "passes": 23,
     "incomplete": 1
   },
   {
     "width": 390,
     "route": "/journal/the-art-of-slow-coffee/",
     "violations": [],
-    "passes": 21,
-    "incomplete": 0
+    "passes": 23,
+    "incomplete": 1
   },
   {
     "width": 390,
-    "route": "menu dialog",
-    "violations": []
+    "route": "/menu/sesame-latte/",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/menu/?lang=ru",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/experience/?lang=ru",
+    "violations": [],
+    "passes": 23,
+    "incomplete": 1
   }
 ]

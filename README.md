@@ -1,86 +1,68 @@
 # velune.
 
-Live site: https://velune-theta.vercel.app/
+Live: https://velune-theta.vercel.app/
 
 Source: https://github.com/Slepyyy047/velune
 
-A fictional premium specialty coffee shop concept based in Osaka, built with Next.js App Router, React, TypeScript, Three.js, React Three Fiber, Drei and GSAP. Six primary pages, five complete articles, a 20-drink menu and an original interactive cup study. No real café, payments, reservations, address or backend is represented.
+A fictional Osaka specialty coffee concept built with Next.js App Router, React, TypeScript and GSAP. Six primary pages, twenty dedicated drink pages, five full journal articles, English/Russian content, and a quiet scroll-driven coffee illustration. The former interactive 3D cup has been removed at the owner's request.
 
 ## Run
 
-Requires Node.js 22+ and npm.
+Node.js 22+ and npm:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. For a production static build:
+For a production static build:
 
 ```bash
 npm run build
 npm start
 ```
 
-This project uses Next.js `output: 'export'`. Deploy the **contents of `out/`** to any static host supporting directory indexes. `npm start` runs the included compressed static preview server; `next start` is not used for a static export. All image/font/model assets are local; no service credentials are needed. Deep route URLs use trailing slashes. Serve `404.html` as your host's missing-page response.
+Both serve http://localhost:3000. `npm start` serves `out/` with compression; restart it after rebuilding because files are cached in memory. Next.js uses static export and trailing slashes. No database, API keys or service credentials are needed.
 
 ## Verify
 
+With the production preview running:
+
 ```bash
 npm run typecheck
-npx playwright install chromium
-CHROMIUM_PATH=/path/to/chromium npm run test:e2e
+npm run test:e2e
 npm run test:a11y
 npm run test:visual
 npm run test:performance
 node scripts/runtime-profile.mjs
 ```
 
-Tests expect a running server at http://localhost:3000; override `BASE_URL` if needed. Playwright defaults to `/usr/bin/chromium` in this workspace. If using Playwright's downloaded browser, set `CHROMIUM_PATH` to its executable. The audit script respects the same variables.
+Tests default to `/usr/bin/chromium`. Set `CHROMIUM_PATH` for another installed Chromium executable, and `BASE_URL` for another server. Screenshots and raw Lighthouse reports are ignored by Git; summary JSON is retained in `docs/`. See [the implementation report](docs/IMPLEMENTATION-REPORT.md) for actual executed results and limitations.
 
 ## Structure
 
-- `app/`: six page routes, journal article routes, error/not-found states, metadata, responsive design tokens and styling.
-- `components/`: navigation, footer/sound, menu interactions, gallery, motion, grind study, experience controller, actual-load 3D indicator and reusable editorial components.
-- `components/three/`: lazily imported cup/bean scenes, camera control, runtime materials and adaptive rendering.
-- `data/`: typed 20-drink dataset and five original journal articles.
-- `public/`: optimized WebP imagery, locally hosted fonts, original authored GLB.
-- `assets/originals/`: master generated imagery, excluded from the runtime export.
-- `scripts/`: reproducible cup generation, image preparation, visual/accessibility/performance audits.
-- `tests/`: functional end-to-end coverage.
-- `docs/`: asset provenance, production specification, screenshots, measurements and implementation report.
+- `app/`: six primary routes, twenty static drink routes, five journal routes, metadata and responsive CSS.
+- `components/`: menu filters, persistent favorites, language provider, photo crops, drink details, gallery, grind study, navigation, sound preference and motion.
+- `components/coffee-background.tsx`: decorative SVG sequence; scroll position determines progress, so reversing scroll reverses the story. No WebGL or real-time physics.
+- `data/`: drink recipes, distinct preparation copy, journal articles, Russian dictionary and twenty-photo crop manifest.
+- `public/`: local optimized images and licensed local fonts.
+- `assets/originals/`: generated image masters; not part of the deployed static output.
+- `tests/`, `scripts/`, `docs/`: functional tests, visual/accessibility/performance checks, provenance and results.
 
-The CSS is a custom responsive design system; Tailwind and Motion were intentionally not added because neither is needed for this implementation. GSAP handles scroll motion; native CSS handles the immediate hero entrance and simple interface transitions; R3F handles model motion.
+Content is visible before animation enhancement. CSS handles hero, letter interactions, card transitions and hover feedback; GSAP handles section entrances and reversible image movement. Reduced-motion preferences disable decorative movement. Russian headings use Georgia for Cyrillic coverage; the Latin wordmark keeps Instrument Serif.
 
 ## Content and persistence
 
-The concept menu is in USD. Images illustrate drink styles, not all twenty exact recipes. Favorites and sound preference use local storage only; blocked storage has a session fallback. Sound is off until explicitly enabled and only plays during interactions. Menu detail dialogs, mobile navigation and gallery support keyboard use. The app does not send contact, booking or order messages.
+All prices are illustrative USD prices. Each drink has a distinct generated concept photograph, ingredients, allergens, volume, tasting notes and preparation copy. Menu cards open dedicated detail pages in new tabs; related/previous/next drink links stay within the detail tab. A second image view is honestly labeled as a closer crop of the same photograph.
 
-## 3D scope
+English/Russian is switched in the header and saved locally. `?lang=ru` or `?lang=en` can set the language of a shared page. Favorites synchronize between tabs. Sound is off until enabled; it plays only during interactions. Favorites, language and sound use local storage; the menu remains usable when storage is blocked.
 
-The cup is a 13-mesh authored GLB design study with detailed rim, base and lid geometry. It is not claimed to meet the final photorealistic standard. The 36-bean scene uses deterministic simplified paths, not full collision physics. Professional grinder animation and extraction footage are not supplied; their chapters display honestly labeled stills. See [3D production plan](docs/3D-PRODUCTION-PLAN.md) and [asset provenance](docs/ASSETS.md).
+All five articles and all recipe descriptions are translated. No account, checkout, booking, real street address or contact backend is represented. Images depict an imagined café, not actual premises or prepared products. See [asset provenance](docs/ASSETS.md) and [drink image sources](docs/DRINK-IMAGE-SOURCES.md).
 
-Regenerate assets:
+## Publish
 
-```bash
-node scripts/build-cup.mjs
-node scripts/prepare-images.mjs
-```
+GitHub `main` is connected to the existing Vercel project `velune`. `vercel.json` uses `npm ci`, `npm run build` and the `out` directory. Pushes to `main` trigger production deployment. Project linkage and environment files are ignored.
 
-Instrument Serif and Manrope are locally hosted Google Fonts, distributed under the SIL Open Font License. License files are retained in `public/fonts/`.
+For another host, upload the contents of `out/`, support directory indexes and serve `404.html` for missing pages. Set `NEXT_PUBLIC_SITE_URL` to the public origin before building; otherwise metadata uses Vercel's production domain or localhost locally.
 
-Before publishing to your own domain, set `NEXT_PUBLIC_SITE_URL` to that origin and rebuild so social-image metadata resolves to the deployed site. The local default is `http://localhost:3000`.
-
-Prebuilt WOFF2 fonts reduce runtime font transfer to about 110 KiB. TTF masters and licenses are retained; optional regeneration uses `python scripts/prepare-fonts.py` with `fonttools` and `brotli` installed.
-
-## Package
-
-```bash
-python scripts/package.py /path/to/delivery
-```
-
-Creates CRC-verified source, static-export and QA-evidence ZIP files. Run `npm run build` first. Restart the preview server after rebuilding; it caches static files in memory. See [implementation report](docs/IMPLEMENTATION-REPORT.md) for executed checks, measured performance and outstanding production assets.
-
-## Vercel deployment from GitHub
-
-The GitHub repository is connected to the existing Vercel project `velune`; pushes to `main` trigger deployment. `vercel.json` selects a static deployment: `npm ci`, `npm run build`, and output directory `out`. No database or application secrets are required. Social metadata uses `NEXT_PUBLIC_SITE_URL` when set, otherwise Vercel's production-domain environment variable. Local Vercel project linkage and environment files are excluded from Git.
+Optional archives: `python scripts/package.py /path/to/delivery` after a successful build. Font licenses are retained in `public/fonts/`.

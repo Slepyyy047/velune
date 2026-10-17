@@ -22,6 +22,9 @@ for (const width of [1440, 390]) {
     "/journal/",
     "/visit/",
     "/journal/the-art-of-slow-coffee/",
+    "/menu/sesame-latte/",
+    "/menu/?lang=ru",
+    "/experience/?lang=ru",
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
     await page.evaluate(async () => {
@@ -53,25 +56,6 @@ for (const width of [1440, 390]) {
     results.push(summary);
     console.log(width, route, summary.violations.length, "violations");
   }
-  await page.goto(base + "/menu/", { waitUntil: "networkidle" });
-  await page
-    .getByRole("button", { name: "View Black Sesame Latte details" })
-    .click();
-  const dialog = await new AxeBuilder({ page })
-    .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-    .analyze();
-  results.push({
-    width,
-    route: "menu dialog",
-    violations: dialog.violations.map((v) => ({
-      id: v.id,
-      impact: v.impact,
-      nodes: v.nodes.map((n) => ({
-        target: n.target,
-        summary: n.failureSummary,
-      })),
-    })),
-  });
   await context.close();
 }
 await writeFile(

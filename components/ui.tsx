@@ -1,3 +1,5 @@
+"use client";
+import { Localized } from "@/components/language";
 import Link from "next/link";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
@@ -8,7 +10,7 @@ export function Eyebrow({
   children: ReactNode;
   className?: string;
 }) {
-  return <p className={`eyebrow ${className}`}>{children}</p>;
+  return <Localized><p className={`eyebrow ${className}`}>{children}</p></Localized>;
 }
 export function TextLink({
   href,
@@ -19,12 +21,12 @@ export function TextLink({
   children: ReactNode;
   light?: boolean;
 }) {
-  return (
+  return (<Localized>
     <Link prefetch={false} className={`text-link ${light ? "light" : ""}`} href={href}>
       {children}
       <ArrowUpRight size={17} />
     </Link>
-  );
+  </Localized>);
 }
 export function ButtonLink({
   href,
@@ -35,12 +37,12 @@ export function ButtonLink({
   children: ReactNode;
   outline?: boolean;
 }) {
-  return (
+  return (<Localized>
     <Link prefetch={false} className={`button magnetic ${outline ? "outline" : ""}`} href={href}>
       {children}
       <ArrowUpRight size={17} />
     </Link>
-  );
+  </Localized>);
 }
 export function SectionHeading({
   label,
@@ -53,7 +55,7 @@ export function SectionHeading({
   href?: string;
   link?: string;
 }) {
-  return (
+  return (<Localized>
     <div className="section-heading">
       <div>
         <Eyebrow>{label}</Eyebrow>
@@ -61,7 +63,7 @@ export function SectionHeading({
       </div>
       {href && <TextLink href={href}>{link || "Explore more"}</TextLink>}
     </div>
-  );
+  </Localized>);
 }
 export function PageIntro({
   label,
@@ -72,16 +74,16 @@ export function PageIntro({
   title: ReactNode;
   description: string;
 }) {
-  return (
+  return (<Localized>
     <div className="page-intro container">
       <Eyebrow>{label}</Eyebrow>
       <h1>{title}</h1>
       <p>{description}</p>
     </div>
-  );
+  </Localized>);
 }
 export function VisitInvitation() {
-  return (
+  return (<Localized>
     <section className="visit-invitation container" data-reveal>
       <div>
         <Eyebrow>An imagined place. A familiar feeling.</Eyebrow>
@@ -99,13 +101,13 @@ export function VisitInvitation() {
         <ButtonLink href="/visit">Discover the space</ButtonLink>
       </div>
     </section>
-  );
+  </Localized>);
 }
 export function ArrowLabel({ children }: { children: ReactNode }) {
-  return (
+  return (<Localized>
     <span className="arrow-label">
       {children}
       <ArrowRight size={16} />
     </span>
-  );
+  </Localized>);
 }
