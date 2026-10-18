@@ -13,10 +13,7 @@ import {
 const links = [
   ["/", "Home"],
   ["/menu", "Menu"],
-  ["/story", "Our story"],
-  ["/experience", "The ritual"],
-  ["/journal", "Journal"],
-  ["/visit", "Visit us"],
+  ["/visit", "The café"],
 ];
 export function Header() {
   const path = usePathname();
@@ -61,11 +58,11 @@ export function Header() {
         velune.
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation">
-        {links.slice(1).map(([href, label]) => (
+        {links.map(([href, label]) => (
           <Link prefetch={false}
             key={href}
             href={href}
-            aria-current={path.startsWith(href) ? "page" : undefined}
+            aria-current={(href === "/" ? path === "/" : path.startsWith(href)) ? "page" : undefined}
           >
             {label}
             {href === "/visit" && <ArrowUpRight size={14} />}
@@ -104,7 +101,7 @@ export function Header() {
             </Link>
           ))}
           <p>
-            A softer kind of ritual.
+            Coffee, just how you like it.
             <br />
             <small>A fictional coffee shop concept.</small>
           </p>
@@ -167,13 +164,13 @@ export function Footer() {
             velune.
           </Link>
           <p>
-            Thoughtfully crafted coffee.
+            Coffee. Matcha. Good company.
             <br />
-            Beautifully unhurried moments.
+            Pick your favorite.
           </p>
         </div>
         <div className="footer-links">
-          <p className="eyebrow">Take your time</p>
+          <p className="eyebrow">Find us here</p>
           {links.slice(1).map(([href, label]) => (
             <Link prefetch={false} href={href} key={href}>
               {label}
@@ -183,9 +180,9 @@ export function Footer() {
         <div className="footer-note">
           <span className="tiny-dot" />
           <p>
-            Imagined in Osaka.
+            Osaka, Japan.
             <br />
-            Made for the everyday.
+            A café concept.
           </p>
           <p className="small">
             An independent coffee shop concept.

@@ -22,11 +22,7 @@ for (const width of [1440, 768, 390]) {
   for (const route of [
     "/",
     "/menu/",
-    "/story/",
-    "/experience/",
-    "/journal/",
     "/visit/",
-    "/journal/the-art-of-slow-coffee/",
     "/menu/lavender-cloud/",
     "/menu/espresso/?lang=ru",
     "/?lang=ru",

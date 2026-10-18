@@ -4,5 +4,22 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "out",
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/story/:path*",
+      "destination": "/visit/",
+      "permanent": false
+    },
+    {
+      "source": "/experience/:path*",
+      "destination": "/menu/",
+      "permanent": false
+    },
+    {
+      "source": "/journal/:path*",
+      "destination": "/menu/",
+      "permanent": false
+    }
+  ]
 }

@@ -2954,3 +2954,177 @@ html[lang="ru"] .letter-word { white-space:normal; max-width:100%; }
 @media (prefers-reduced-motion:no-preference) {
   .page-intro { animation:card-arrive .65s cubic-bezier(.2,.7,.2,1) both; }
 }
+
+/* Café edition: compact, photographic and focused on the menu. */
+:root { --cream:#faf7f1; --ink:#342b2b; --muted:#5d5159; --line:#ded4db; }
+body { background:var(--cream); }
+.site-header { background:var(--cream); height:82px; }
+.desktop-nav { gap:38px; }
+.desktop-nav a { font-size:13px; }
+.wordmark { color:#44364c; }
+.site-header .wordmark { font-size:43px; }
+.coffee-background { width:190px; height:190px; top:55vh; right:-100px; opacity:.16; overflow:visible; }
+.coffee-background img { object-fit:contain; }
+.custom-cursor { display:none; }
+.cafe-hero { display:grid; grid-template-columns:46% 54%; min-height:620px; margin:0 20px; background:#d8c6e6; overflow:hidden; }
+.cafe-hero-copy { padding:42px clamp(26px,4.1vw,64px) 26px; display:flex; flex-direction:column; align-items:flex-start; }
+.cafe-hero-copy .eyebrow { margin-bottom:18px; font-size:9px; letter-spacing:.15em; }
+.cafe-hero-copy .hero-wordmark { position:static; font-size:clamp(105px,11.5vw,175px); font-family:var(--font-serif),Georgia,serif; line-height:.92; color:#3e3044; letter-spacing:-.065em; margin:0 0 25px; }
+.cafe-hero-heading { font-family:var(--serif); font-size:clamp(36px,3.8vw,58px); line-height:1.05; letter-spacing:-.025em; }
+.cafe-hero-description { font-size:13px; line-height:1.8; margin-top:19px; }
+.cafe-hero-copy .button { margin-top:25px; background:#3e3044; border-color:#3e3044; border-radius:3px; font-size:12px; gap:36px; }
+.cafe-hero-copy .button:hover { background:#584262; }
+.cafe-hero-foot { display:flex; justify-content:space-between; gap:22px; width:100%; padding-top:36px; margin-top:auto; font-size:7px; font-weight:600; letter-spacing:.09em; }
+.cafe-hero-photo { position:relative; min-height:100%; overflow:hidden; }
+.cafe-hero-photo picture { display:block; height:100%; }
+.cafe-hero-photo img { height:100%; object-fit:cover; object-position:49% center; animation:interior-enter 1.8s ease-out both; }
+.photo-caption { position:absolute; left:22px; right:22px; bottom:22px; background:#faf7f1ef; color:var(--ink); display:flex; align-items:center; justify-content:space-between; padding:17px 20px; font-size:12px; }
+.photo-caption svg { transition:transform .3s; }
+.photo-caption:hover svg { transform:translate(3px,-3px); }
+.cafe-strip { display:flex; justify-content:space-around; align-items:center; gap:20px; padding:24px var(--gutter); border-bottom:1px solid var(--line); font-size:9px; letter-spacing:.12em; color:#615164; }
+.cafe-strip > span[aria-hidden] { font-size:22px; line-height:1; color:#8b6e99; }
+.cafe-menu { position:relative; padding-block:65px 48px; overflow:hidden; }
+.cafe-menu .section-heading,.cafe-menu .signature-grid,.cafe-menu .menu-note { position:relative; z-index:1; }
+.cafe-menu .section-heading { margin-bottom:32px; }
+.cafe-menu .section-heading h2 { font-size:clamp(42px,4vw,62px); }
+.menu-beans { position:absolute; width:145px; height:145px; object-fit:contain; top:-36px; right:25%; opacity:.65; pointer-events:none; }
+.cafe-menu .signature-image { aspect-ratio:1.16; border-radius:5px; }
+.cafe-menu .product-label { letter-spacing:.07em; font-size:8px; background:#faf7f1ed; }
+.cafe-menu .signature-card p { font-size:12px; }
+.cafe-menu .product-title > span { font-size:14px; }
+.cafe-pick { display:grid; grid-template-columns:1fr 1fr; gap:5%; align-items:center; background:#e5d8ed; padding-block:20px; overflow:hidden; }
+.cafe-pick-photo { position:relative; max-width:430px; width:100%; margin:auto; }
+.cafe-cup { object-fit:contain; transform:rotate(-10deg); }
+.cafe-pick-copy { padding-block:30px; max-width:470px; }
+.cafe-pick-copy .eyebrow { margin-bottom:20px; }
+.cafe-pick-copy h2 { font-size:clamp(44px,4.8vw,72px); }
+.cafe-pick-copy > p:not(.eyebrow) { max-width:330px; margin-top:22px; font-size:14px; }
+.cafe-pick-action { display:flex; align-items:center; gap:35px; margin-top:20px; }
+.cafe-pick-action > span { font-size:22px; }
+.cafe-pick-action small { font-size:11px; margin-left:8px; color:var(--muted); }
+.cafe-space { display:grid; grid-template-columns: .8fr 1.2fr; align-items:center; gap:7%; padding-block:72px; }
+.cafe-space-copy > p:not(.eyebrow) { max-width:340px; margin-block:23px 16px; }
+.cafe-space-photos { position:relative; padding-bottom:70px; }
+.space-large { width:83%; overflow:hidden; border-radius:4px; }
+.space-large img { aspect-ratio:1.25; }
+.space-small { width:42%; position:absolute; right:0; bottom:0; padding:8px; background:var(--cream); transform:rotate(5deg); }
+.space-small img { aspect-ratio:1.15; }
+.space-small figcaption { font-size:7px; padding:10px 4px 2px; letter-spacing:.1em; }
+.site-footer { background:#e1d2eb; padding-top:38px; }
+.footer-top { padding-bottom:28px; grid-template-columns:1.3fr .6fr 1fr; }
+.footer-wordmark { font-size:95px; }
+.footer-top p { max-width:280px; }
+.footer-bottom { padding-block:18px; }
+.page-intro { background:transparent; padding-block:42px 30px; }
+.page-intro h1 { font-size:clamp(52px,5.7vw,82px); }
+.menu-browser { position:relative; }
+.menu-toolbar { border-radius:3px; }
+.drink-image { border-radius:4px; }
+.drink-card .product-title h2 { font-size:26px; }
+.menu-footer { background:#eee5f1; }
+.menu-footer .serif { font-size:42px; }
+.cafe-visit-info { display:grid; grid-template-columns:1.1fr 1fr; gap:12%; padding-block:50px; }
+.cafe-visit-info h2 { font-size:50px; }
+.cafe-visit-info p:not(.eyebrow) { margin-block:20px; max-width:460px; }
+.cafe-visit-info aside { background:#e8dcef; padding:28px; }
+.cafe-visit-info aside h3 { font-size:30px; }
+.cafe-visit-info aside p { font-size:13px; }
+.cafe-visit .space-gallery { padding-bottom:50px; }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .letter:hover { transform:translateY(-.045em); color:#765488; }
+  .cafe-hero-heading { animation:interface-enter .8s ease-out both; }
+  .cafe-decoration { will-change:transform; }
+}
+html[lang="ru"] .cafe-hero-heading { font-size:clamp(32px,3.2vw,48px); }
+html[lang="ru"] .cafe-menu .section-heading h2 { font-size:clamp(34px,3.3vw,50px); }
+html[lang="ru"] .cafe-pick-copy h2 { font-size:clamp(36px,4vw,58px); }
+@media (max-width:1000px) {
+  .cafe-hero { grid-template-columns:48% 52%; min-height:560px; }
+  .cafe-hero-copy { padding:32px 26px 24px; }
+  .cafe-hero-foot { flex-direction:column; gap:5px; }
+  .cafe-strip { font-size:8px; }
+  .cafe-space { gap:5%; }
+  .cafe-pick-action { gap:20px; }
+}
+@media (max-width:800px) {
+  .site-header { height:76px; }
+  .cafe-hero { margin-inline:12px; }
+  .cafe-pick-action { flex-wrap:wrap; gap:8px 24px; }
+  .cafe-visit-info { gap:6%; }
+  .cafe-visit-info h2 { font-size:40px; }
+}
+@media (max-width:600px) {
+  .cafe-hero { grid-template-columns:1fr; min-height:0; margin-inline:10px; }
+  .cafe-hero-copy { padding:28px 25px 24px; }
+  .cafe-hero-copy .eyebrow { font-size:8px; margin-bottom:20px; }
+  .cafe-hero-copy .hero-wordmark { font-size:115px; margin-bottom:22px; }
+  .cafe-hero-heading { font-size:43px; }
+  .cafe-hero-description { font-size:12px; margin-top:17px; }
+  .cafe-hero-copy .button { margin-top:22px; min-height:46px; }
+  .cafe-hero-foot { display:none; }
+  .cafe-hero-photo { height:310px; min-height:0; }
+  .cafe-hero-photo img { object-position:center 55%; }
+  .photo-caption { inset:auto 14px 14px; padding:12px 16px; font-size:11px; }
+  .cafe-strip { padding:18px 20px; gap:10px; font-size:7px; letter-spacing:.06em; }
+  .cafe-strip > span:last-child,.cafe-strip > span:nth-last-child(2) { display:none; }
+  .cafe-menu { padding-block:38px; }
+  .cafe-menu .section-heading { align-items:flex-start; gap:18px; flex-direction:column; margin-bottom:25px; }
+  .cafe-menu .section-heading .eyebrow { font-size:9px; margin-bottom:12px; }
+  .cafe-menu .section-heading h2 { font-size:45px; }
+  .cafe-menu .section-heading .text-link { padding-top:0; }
+  .menu-beans { width:110px; height:110px; right:-7px; top:3px; opacity:.65; }
+  .cafe-menu .signature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px 14px; }
+  .cafe-menu .signature-card:first-child { grid-column:1/-1; }
+  .cafe-menu .signature-card:first-child .signature-image { aspect-ratio:1.35; }
+  .cafe-menu .signature-card:not(:first-child) .signature-image { aspect-ratio:1; }
+  .cafe-menu .signature-card:not(:first-child) .product-title { flex-wrap:wrap; gap:5px; }
+  .cafe-menu .signature-card:not(:first-child) .product-title h3 { font-size:25px; width:100%; }
+  .cafe-menu .product-label { font-size:6px; left:8px; top:8px; padding:5px 6px; }
+  .cafe-menu .signature-card p { font-size:11px; }
+  .cafe-menu .round-arrow { width:30px; height:30px; right:9px; bottom:9px; }
+  .cafe-pick { grid-template-columns:1fr; gap:0; padding-block:10px 34px; }
+  .cafe-pick-photo { max-width:280px; }
+  .cafe-pick-copy { padding:0; width:100%; }
+  .cafe-pick-copy h2 { font-size:48px; }
+  .cafe-pick-copy .eyebrow { margin-bottom:16px; }
+  .cafe-pick-copy > p:not(.eyebrow) { font-size:13px; margin-top:18px; }
+  .cafe-pick-action { margin-top:18px; gap:25px; }
+  .cafe-space { grid-template-columns:1fr; padding-block:38px; gap:28px; }
+  .cafe-space-copy h2 { font-size:48px; }
+  .cafe-space-copy > p:not(.eyebrow) { font-size:13px; margin-block:18px 12px; }
+  .cafe-space-copy .eyebrow { margin-bottom:16px; }
+  .cafe-space-photos { padding-bottom:38px; }
+  .space-large { width:88%; }
+  .space-small { width:43%; }
+  .footer-top { grid-template-columns:1fr 1fr; gap:28px; }
+  .footer-top > div:first-child { grid-column:1/-1; }
+  .footer-wordmark { font-size:85px; }
+  .footer-top .footer-note { display:block; }
+  .footer-links .eyebrow { font-size:9px; }
+  .footer-top p { font-size:12px; }
+  .footer-note .small { font-size:10px; }
+  .page-intro { padding-block:30px 26px; }
+  .page-intro h1 { font-size:49px; }
+  .cafe-visit-info { grid-template-columns:1fr; gap:24px; padding-block:30px; }
+  .cafe-visit-info aside { padding:23px; }
+  .cafe-visit-info h2 { font-size:40px; }
+  .cafe-visit-info p:not(.eyebrow) { font-size:13px; }
+  .cafe-visit .space-gallery { padding-bottom:32px; }
+  .coffee-background { width:130px; height:130px; right:-90px; opacity:.12; }
+  html[lang="ru"] .cafe-hero-heading { font-size:36px; }
+  html[lang="ru"] .cafe-pick-copy h2 { font-size:39px; }
+  html[lang="ru"] .cafe-menu .section-heading h2 { font-size:36px; }
+  html[lang="ru"] .cafe-menu .signature-card:not(:first-child) h3 { font-size:22px; }
+}
+/* Keep supporting copy readable on phones as well as the large headlines. */
+@media (max-width:600px) {
+  .cafe-menu .signature-card p, .footer-top > div:first-child > p,
+  .footer-note > .small, .footer-links, .text-link, .section-heading > .text-link,
+  .photo-caption, .cafe-pick-action small, .menu-note { font-size:12px; }
+  .footer-top > div:first-child > p { max-width:290px; }
+  .footer-bottom, .sound-control { font-size:11px; }
+  .cafe-menu .product-label { font-size:8px; letter-spacing:0; max-width:calc(100% - 16px); }
+  .cafe-strip { font-size:9px; }
+  .cafe-hero-copy .eyebrow, .cafe-menu .section-heading .eyebrow,
+  .footer-links .eyebrow, .space-small figcaption { font-size:10px; }
+}

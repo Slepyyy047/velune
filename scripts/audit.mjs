@@ -17,14 +17,10 @@ for (const width of [1440, 390]) {
   for (const route of [
     "/",
     "/menu/",
-    "/story/",
-    "/experience/",
-    "/journal/",
     "/visit/",
-    "/journal/the-art-of-slow-coffee/",
     "/menu/sesame-latte/",
     "/menu/?lang=ru",
-    "/experience/?lang=ru",
+    "/visit/?lang=ru",
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
     await page.evaluate(async () => {

@@ -1,69 +1,62 @@
-# VELUNE — revision report
+# VELUNE — café redesign
 
-17 October 2026. This report replaces the initial-build report. VELUNE remains a fictional coffee concept, not an operating café.
+18 October 2026. Verification ran on 17 October 2026; the release was finalized on 18 October. This revision supersedes the earlier editorial/coffee-journey design at the owner's request.
 
-## Completed revision
+## What changed
 
-- Removed the entire interactive 3D cup, its GLB, scene components, model generator and Three.js/R3F/Drei dependencies. No WebGL canvas is created.
-- Replaced the Experience page with four compact editorial chapters. A faint, non-interactive SVG coffee illustration sits behind foreground content across the site. Scroll position determines beans, grinding, brewing and pause stages; backward scrolling is deterministic. It is an illustration, not a fluid or physical simulation.
-- Increased lilac/lavender in the header, editorial surfaces, calls to action, accents and footer; reduced major section spacing and removed the oversized scene layout.
-- Added heading-letter hover responses, section/image movement, card/filter entrances and refined navigation/button transitions. All core text is rendered before enhancement. Reduced-motion preferences turn off decorative motion, and no entrance blocks navigation.
-- Exactly twenty distinct drink portraits, rendered from five original generated image sheets. Added twenty dedicated static drink pages, each with USD price, volume, ingredients, allergens, flavor notes, original preparation copy, portrait/closeup view, favorites, related drinks and previous/next navigation.
-- Menu cards and home signatures open drink pages in a new tab, with an accessible indication. Removed the drink modal. Search, six category filters, empty states and local favorites remain functional; favorites synchronize across tabs.
-- English/Russian switch in the header, locally saved preference, Russian search, translated recipes and all five complete articles. Shared detail links carry a language query. Russian headings use Georgia for Cyrillic; the Latin wordmark retains Instrument Serif.
-- Kept the keyboard-operated interior gallery, interactive grind-size explanation, responsive navigation, optional sound preference and clear fictional-concept disclosures.
+- Three primary destinations: Home, Menu, The café. Removed the journal, philosophy and ritual pages from navigation and content. Old editorial URLs redirect to the menu or café through both static-export redirects and Vercel routing rules.
+- Rebuilt the homepage: lavender brand panel beside architectural photography, three drinks with prices, a cappuccino feature, and a short interior section. No journal feed, manifesto or coffee-journey chapters.
+- Rewrote all twenty drink summaries in plain language and shortened recipe notes. Updated English/Russian content and retained search, filters, persistent favorites, separate drink tabs and full ingredients/allergens.
+- Added two generated photographic cutouts: a lavender ceramic cappuccino and scattered coffee beans. Soft reversible scroll movement and photo entrances; no 3D model, canvas, WebGL, forced intro, custom cursor or scroll interception.
+- Preserved keyboard-accessible gallery, responsive navigation, reduced-motion support, opt-in sound and the fictional-café disclosure. No real location, booking, checkout or opening hours are claimed.
 
 ## Routes
 
-31 public content pages: `/`, `/menu/`, `/story/`, `/experience/`, `/journal/`, `/visit/`; twenty `/menu/[slug]/` routes defined in `data/menu.ts`; five `/journal/[slug]/` routes defined in `data/journal.ts`. Static 404 and application error UI are also included.
+23 content pages: `/`, `/menu/`, `/visit/`, and twenty `/menu/[slug]/` pages. `/story/` redirects to `/visit/`; `/experience/`, `/journal/`, and the five former article URLs redirect to `/menu/`.
 
-## Assets and scope
+## Assets
 
-No 3D assets are used in this revision. The earlier 3D production specification is marked historical and is no longer a delivery requirement under the revised direction.
+Existing optimized concept interior and drink photography is reused. The two new cutouts total approximately 168 KB compressed, with alpha retained. Sources and generation provenance are recorded in [DRINK-IMAGE-SOURCES.md](DRINK-IMAGE-SOURCES.md). Generated imagery is not represented as photographs of an operating venue. No external 3D assets are needed for this design.
 
-All imagery is generated concept imagery, not photographs of real premises or served drinks. The full-resolution drink sheets total 1.18 MiB, with a native 627 × 627 crop per drink. Optimized phone-card sheets total 269 KiB (400 × 400 per portrait); larger-card sheets total 353 KiB (480 × 480). Detail views retain the full-resolution sheets. An additional 1100 × 733 grinding editorial image replaces the unrelated pouring image in that chapter. Detail-page closeups are explicitly identified as enlarged crops of the same portrait, not additional photographs. Provenance is in `ASSETS.md` and `DRINK-IMAGE-SOURCES.md`.
+## Verification
 
-## Executed verification
-
-- `npm run build`: successful static export of all routes; Next.js 15.5.28.
-- `npm run typecheck`: passed.
-- Playwright: **26 passed, 0 failed, 0 skipped, 0 flaky**, desktop Chromium and iPhone 13 emulation. The full run took 154.5 seconds. After the final performance changes, **10 additional targeted desktop/mobile regressions passed** in 41.6 seconds, covering menu interactions, new tabs, Russian content, reversible background progress and reduced motion. Coverage includes all routes and all twenty detail pages, unique image crops, filters/search, new tabs, cross-tab favorites, Russian content/persistence, all articles, mobile navigation, gallery, grind controls, sound, storage failure, reduced motion and content without JavaScript.
-- axe: **0 violations across 20 route/viewport cases** after fixing heading markup, language names, one contrast issue and signature-link accessible names. Four affected menu cases were rerun after the final accessible-name-only change. This is automated WCAG A/AA checking, not a manual assistive-technology certification.
-- Visual QA: **33 page/viewport cases** at 1440, 768 and 390 px: no horizontal overflow, broken images, browser exceptions or failed asset responses. The final grinding photograph was separately checked and captured at all three sizes. Six additional image-delivery cases verified responsive source selection, square image proportions, all photos loaded and no horizontal overflow after optimization; new-tab behavior was rechecked on both sizes. Representative full-page desktop, tablet and Russian mobile screenshots were inspected.
-- Runtime sample: four ritual-scroll/home cycles returned approximately 3.59–3.60 MB used JS heap after requested garbage collection. Menu event samples were 40–64 ms in an unthrottled lab. No resource failures were recorded. This short sample does not establish real-user INP, rendered FPS or physical-device behavior.
+- Production static build and TypeScript: passed.
+- Playwright: 26/26 desktop and mobile Chromium tests passed in 1.7 minutes. Includes all twenty drink pages, search/categories/empty states, cross-tab favorites, Russian persistence, old URL redirects, gallery/navigation, decorative scroll reversal, reduced motion, sound, blocked storage, and critical content without JavaScript.
+- After final contrast and pointer-effect cleanup: 8/8 relevant desktop/mobile regression tests passed in 28.4 seconds.
+- Visual checks: 21 route/viewport cases at 1440, 768 and 390 px; no overflow, broken images or browser errors. Homepage screenshots were manually inspected at all three widths, including Russian at tablet width.
+- Axe accessibility: 12 desktop/mobile English/Russian cases passed with zero WCAG A/AA violations after fixing footer contrast.
+- Final responsive/axe checks after mobile typography and photo optimization: 6/6 cases passed at 320, 390 and 1440 px, including Russian on the narrowest viewport. No overflow, broken images, browser errors or WCAG A/AA violations.
+- React review: animation effects and listeners clean up, scroll handlers are passive and frame-throttled, GSAP loads conditionally, decorative imagery cannot intercept pointer input, and primary content is statically rendered.
 
 ## Performance measurements
 
-Lighthouse measured normal production functionality on 17 October 2026, without audit-specific disabling. Desktop uses 40 ms RTT / 10 Mbps / CPU ×1; mobile uses 150 ms RTT / 1.638 Mbps / CPU ×4.
+Lighthouse 12.8, local compressed production export, Chromium. Desktop uses 40 ms RTT / 10 Mbps / 1× CPU; mobile uses 150 ms RTT / 1.6 Mbps / 4× CPU. These are lab measurements, not real-user field metrics.
 
 | Page | Desktop performance | Mobile performance | Desktop LCP | Mobile LCP |
-| --- | ---: | ---: | ---: | ---: |
-| Home | 98 | 91 | 1.17 s | 3.49 s |
-| Menu | 100 | 88 | 0.69 s | 3.28 s |
-| Ritual | 100 | 94 | 0.64 s | 3.06 s |
+| --- | --- | --- | --- | --- |
 
-All six cases scored 100 Accessibility, 100 Best Practices and 100 SEO, with CLS 0. Mobile performance meets the initial 85 target, but mobile LCP still misses the 2.5-second target. The measurements are lab results, not real-user INP or physical-device FPS. The menu improved from 78 to 88 mobile performance and from 5.33 s to 3.28 s LCP after responsive image delivery and reduced hydration/animation setup. Scores can vary between runs; raw reports are retained locally, with summaries in `performance-results.json`.
+| Home | 98 | 90 | 1.07 s | 3.52 s |
+| Menu | 100 | 92 | 0.69 s | 3.26 s |
+| The café | 99 | 90 | 0.91 s | 3.55 s |
 
-Next.js reports 138–147 kB first-load JavaScript across primary/detail routes. Scroll animation code is only loaded on routes with scroll scenes; menu cards use CSS motion. Phone drink-image sheets total 269 KiB versus 1.18 MiB for the original full-size set.
+All six runs scored 100 for Accessibility, Best Practices and SEO; CLS was 0. The mobile interior page improved from 80 to 90 after serving the smaller hero image and removing initial image-transform work. Mobile LCP remains above the 2.5-second goal (3.3–3.6 s); photography and client hydration remain the main tradeoffs. No physical Safari/device-GPU or field INP measurements were performed.
 
-## Known limits
+## Run
 
-- Browser testing used Chromium and emulated phone/tablet dimensions, not physical Safari/iOS devices.
-- The background brewing sequence is intentionally subtle 2D illustration. There is no 3D cup, realistic fluid simulation or extraction video.
-- Language switching and preferences require JavaScript. With JavaScript disabled, English core content and ordinary page links remain available.
-- Generated images are illustrative; the closeup view reuses the corresponding portrait. No real menu ordering, payments, reservations, address or operating hours are claimed.
-- Favorites and sound preference are local to the browser; no account or backend is configured.
-
-## Run and publish
-
-```bash
+```sh
 npm ci
 npm run dev
-# Production preview:
+```
+
+Production preview:
+
+```sh
 npm run build
 npm start
 ```
 
-Both serve http://localhost:3000. Restart the static preview after a build. Validation commands and asset details are in `README.md`.
+Open `http://localhost:3000`. Restart the preview after rebuilding because it caches static files. Node.js 22+; no API keys or backend required. Chromium must be available for browser tests; use `CHROMIUM_PATH` to override `/usr/bin/chromium`.
 
-Publication target: https://velune-theta.vercel.app/ from https://github.com/Slepyyy047/velune, Vercel project `velune` in `slepyyy047`, production branch `main`. Git integration builds `main`; Vercel deployment history identifies the exact current production commit.
+## Deployment
+
+The existing public GitHub repository `Slepyyy047/velune` is connected to Vercel project `velune`. Production builds from `main`, with `out/` as the static output. Live address: https://velune-theta.vercel.app/.

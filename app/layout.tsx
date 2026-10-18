@@ -41,15 +41,15 @@ export const metadata: Metadata = {
         : "http://localhost:3000"),
   ),
   title: {
-    default: "velune. — A softer kind of ritual",
+    default: "velune. — Coffee & café",
     template: "%s — velune.",
   },
   description:
-    "An imagined specialty coffee shop in Osaka. Explore thoughtful coffee, quiet spaces, and everyday rituals. VELUNE is a fictional concept.",
+    "Coffee, matcha and a seat by the window. Explore the VELUNE menu and café, a fictional concept in Osaka.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "velune. — A softer kind of ritual",
-    description: "Thoughtfully crafted coffee. Beautifully unhurried moments.",
+    title: "velune. — Coffee & café",
+    description: "Coffee, just how you like it. Explore the menu and café.",
     images: [{ url: "/images/hero.webp", width: 1536, height: 1024 }],
   },
 };

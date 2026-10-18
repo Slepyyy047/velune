@@ -4,7 +4,7 @@ Live: https://velune-theta.vercel.app/
 
 Source: https://github.com/Slepyyy047/velune
 
-A fictional Osaka specialty coffee concept built with Next.js App Router, React, TypeScript and GSAP. Six primary pages, twenty dedicated drink pages, five full journal articles, English/Russian content, and a quiet scroll-driven coffee illustration. The former interactive 3D cup has been removed at the owner's request.
+A fictional Osaka specialty coffee concept built with Next.js App Router, React, TypeScript and GSAP. Three primary pages, twenty dedicated drink pages, English/Russian content, and subtle photographic coffee decorations. The former interactive 3D cup has been removed at the owner's request.
 
 ## Run
 
@@ -41,10 +41,10 @@ Tests default to `/usr/bin/chromium`. Set `CHROMIUM_PATH` for another installed 
 
 ## Structure
 
-- `app/`: six primary routes, twenty static drink routes, five journal routes, metadata and responsive CSS.
-- `components/`: menu filters, persistent favorites, language provider, photo crops, drink details, gallery, grind study, navigation, sound preference and motion.
-- `components/coffee-background.tsx`: decorative SVG sequence; scroll position determines progress, so reversing scroll reverses the story. No WebGL or real-time physics.
-- `data/`: drink recipes, distinct preparation copy, journal articles, Russian dictionary and twenty-photo crop manifest.
+- `app/`: three primary routes, twenty static drink routes, redirects for retired editorial URLs, metadata and responsive CSS.
+- `components/`: menu filters, persistent favorites, language provider, photo crops, drink details, gallery, navigation, sound preference and motion.
+- `components/coffee-background.tsx`: decorative coffee-bean photographs with a small reversible scroll offset. No WebGL, canvas or story sequence.
+- `data/`: drink recipes, distinct preparation copy, archived journal data, Russian dictionary and twenty-photo crop manifest.
 - `public/`: local optimized images and licensed local fonts.
 - `assets/originals/`: generated image masters; not part of the deployed static output.
 - `tests/`, `scripts/`, `docs/`: functional tests, visual/accessibility/performance checks, provenance and results.
@@ -57,7 +57,7 @@ All prices are illustrative USD prices. Each drink has a distinct generated conc
 
 English/Russian is switched in the header and saved locally. `?lang=ru` or `?lang=en` can set the language of a shared page. Favorites synchronize between tabs. Sound is off until enabled; it plays only during interactions. Favorites, language and sound use local storage; the menu remains usable when storage is blocked.
 
-All five articles and all recipe descriptions are translated. No account, checkout, booking, real street address or contact backend is represented. Images depict an imagined café, not actual premises or prepared products. See [asset provenance](docs/ASSETS.md) and [drink image sources](docs/DRINK-IMAGE-SOURCES.md).
+All current pages and recipe descriptions are translated. Editorial pages were retired at the owner’s request; their URLs redirect to the café or menu. No account, checkout, booking, real street address or contact backend is represented. Images depict an imagined café, not actual premises or prepared products. See [asset provenance](docs/ASSETS.md) and [drink image sources](docs/DRINK-IMAGE-SOURCES.md).
 
 ## Publish
 

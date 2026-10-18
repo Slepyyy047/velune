@@ -14,17 +14,17 @@ export default function Menu() {
         label="The VELUNE menu"
         title={
           <>
-            A cup for <em>your kind of day.</em>
+            Coffee & <em>more.</em>
           </>
         }
-        description="Familiar favorites, thoughtful signatures, and a little room to try something new."
+        description="Espresso, filter, iced coffee and matcha. Find a drink, check the ingredients, save your favorites."
       />
       <MenuBrowser />
       <section className="menu-footer container">
         <span className="serif">
-          Made with care.
+          Hot or iced.
           <br />
-          Enjoyed at your pace.
+          Milk or oat.
         </span>
         <div>
           <h2 className="eyebrow">A note on your cup</h2>

@@ -1,0 +1,53 @@
+[
+  {
+    "width": 320,
+    "route": "/",
+    "overflow": false,
+    "brokenImages": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/visit/",
+    "overflow": false,
+    "brokenImages": [],
+    "heroSource": "http://localhost:3000/images/hero-mobile.webp",
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "overflow": false,
+    "brokenImages": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/visit/",
+    "overflow": false,
+    "brokenImages": [],
+    "heroSource": "http://localhost:3000/images/hero-mobile.webp",
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "overflow": false,
+    "brokenImages": [],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/visit/",
+    "overflow": false,
+    "brokenImages": [],
+    "heroSource": "http://localhost:3000/images/hero.webp",
+    "violations": [],
+    "errors": []
+  }
+]

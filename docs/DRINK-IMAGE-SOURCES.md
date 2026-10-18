@@ -60,3 +60,11 @@ Added an original AI-generated landscape concept illustration for the Experience
 ## Responsive delivery optimization
 
 The runtime also includes 800 px and 960 px WebP versions of each sheet at quality 80. These are proportional resize/compression variants, with no content changes. Phone cards use the 800 px sheet (400 px per portrait); larger cards use 960 px (480 px per portrait). Detail portraits and closeups retain the original 1254 px runtime sheet.
+
+## Café redesign — 2026-10-17
+
+Two original generated transparent photographic assets were added as decorative café graphics:
+- `lavender-cup.webp`: a lavender ceramic cappuccino cup, saucer and spoon; generated source `exec-9ee6ddff-b54a-40d4-9b55-ad6ff03b9ee5.png`.
+- `coffee-beans-cutout.webp`: seven scattered roasted beans; generated source `exec-2cf1814e-c9c0-49b3-aa0b-d708248ae9f9.png`.
+
+Both were generated with the image tool and compressed with Sharp (800px / 480px, WebP quality 85, alpha retained). They are concept graphics, not photographs of a real venue. There is no interactive 3D model. Original sources are retained under `assets/originals/cafe/`.

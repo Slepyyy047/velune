@@ -1,8 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { drinks, categories } from "../data/menu";
-import { articles } from "../data/journal";
-const routes = ["/", "/menu/", "/story/", "/experience/", "/journal/", "/visit/"];
-test("all six pages load with visible content and no errors or overflow", async ({ page }) => {
+const routes = ["/", "/menu/", "/visit/"];
+test("all three café pages load with visible content and no errors or overflow", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", e => errors.push(e.message));
   for (const route of routes) {
@@ -90,7 +89,7 @@ test("Russian preference persists, translates content and supports Russian searc
   await expect(page.locator(".drink-card")).not.toContainText("A whisper");
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("lang", "ru");
-  for (const route of [...routes, "/menu/sesame-latte/", ...articles.map(a => `/journal/${a.slug}/`)]) {
+  for (const route of [...routes, "/menu/sesame-latte/", ]) {
     await page.goto(route);
     await expect(page.locator("html")).toHaveAttribute("lang", "ru");
     await expect(page.locator("main")).toContainText(/[А-Яа-я]/);
@@ -110,32 +109,26 @@ test("Russian preference persists, translates content and supports Russian searc
   await page.getByRole("button", { name: "EN — English", exact: true }).click();
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
 });
-test("all journal articles, related links and drink pagination work", async ({ page }) => {
-  for (const article of articles) {
-    await page.goto(`/journal/${article.slug}/`);
-    await expect(page.locator("main h1")).toHaveText(article.title);
-    await expect(page.locator(".article-body section")).toHaveCount(4);
+test("old editorial links redirect and drink pagination works", async ({ page }) => {
+  for (const [from, to] of [["/story/", "/visit/"], ["/experience/", "/menu/"], ["/journal/", "/menu/"], ["/journal/the-art-of-slow-coffee/", "/menu/"]]) {
+    await page.goto(from);
+    await expect(page).toHaveURL(new RegExp(to + "$"));
+    await expect(page.locator("main h1")).toBeVisible();
   }
-  const related = page.locator('.related-articles a[href^="/journal/"]').first();
-  if (await related.count()) { const href = await related.getAttribute("href"); await related.click(); await expect(page).toHaveURL(new RegExp(href!)); }
   await page.goto("/menu/espresso/");
   await page.locator(".drink-pagination a").last().click();
   await expect(page.locator("main h1")).toHaveText("Americano");
   await page.getByRole("link", { name: "Back to menu" }).click();
   await expect(page.locator(".drink-card")).toHaveCount(20);
 });
-test("navigation, language controls, gallery and grind remain usable", async ({ page, isMobile }) => {
+test("simple navigation and interior gallery remain usable", async ({ page, isMobile }) => {
   await page.goto("/");
   if (isMobile) {
     await page.getByRole("button", { name: "Open navigation" }).click();
     await expect(page.locator("#mobile-nav")).toBeVisible();
-    await page.locator("#mobile-nav").getByRole("link", { name: /Our story/ }).click();
+    await page.locator("#mobile-nav").getByRole("link", { name: /The café/ }).click();
     await expect(page.locator("#mobile-nav")).toHaveCount(0);
-  } else { await page.locator(".desktop-nav").getByRole("link", { name: "Our story" }).click(); }
-  const slider = page.getByRole("slider");
-  await slider.focus();
-  await page.keyboard.press("End");
-  await expect(page.locator(".grind-explanation")).toContainText("Cold brew");
+  } else { await page.locator(".desktop-nav").getByRole("link", { name: "The café" }).click(); }
   await page.goto("/visit/");
   await page.locator(".gallery-grid button").first().click();
   await expect(page.getByRole("dialog")).toBeVisible();
@@ -145,18 +138,17 @@ test("navigation, language controls, gallery and grind remain usable", async ({ 
   await expect(page.getByRole("dialog")).not.toBeVisible();
   await expect(page.locator(".gallery-grid button").first()).toBeFocused();
 });
-test("background story advances and reverses deterministically without scroll trapping", async ({ page }) => {
-  await page.goto("/experience/");
+test("photographic decorations move reversibly and never intercept input", async ({ page }) => {
+  await page.goto("/");
   const scene = page.locator(".coffee-background");
-  await expect(scene).toHaveAttribute("data-stage", "0");
-  await page.evaluate(() => scrollTo({ top: (document.documentElement.scrollHeight - innerHeight) * .6, behavior: "instant" }));
-  await expect(scene).toHaveAttribute("data-stage", "2");
+  const first = await scene.evaluate(el => (el as HTMLElement).style.transform);
   await page.locator("footer").scrollIntoViewIfNeeded();
-  await expect(scene).toHaveAttribute("data-stage", "3");
+  await expect.poll(() => scene.evaluate(el => (el as HTMLElement).style.transform)).not.toBe(first);
   await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
-  await expect(scene).toHaveAttribute("data-stage", "0");
-  await expect(page.locator(".ritual-chapter")).toHaveCount(4);
+  await expect.poll(() => scene.evaluate(el => (el as HTMLElement).style.transform)).toBe(first);
   expect(await scene.evaluate(el => getComputedStyle(el).pointerEvents)).toBe("none");
+  await expect(page.locator('.cafe-home a[href^="/journal"], .cafe-home a[href^="/story"], .cafe-home a[href^="/experience"]')).toHaveCount(0);
+  await expect(page.locator('.cafe-cup')).toBeAttached();
   expect(await page.locator("body").evaluate(el => getComputedStyle(el).overflow)).not.toBe("hidden");
 });
 test("reduced motion keeps all content visible and disables decorative motion", async ({ page }) => {
@@ -164,8 +156,8 @@ test("reduced motion keeps all content visible and disables decorative motion", 
   await page.goto("/");
   await expect(page.locator(".hero-wordmark")).toBeVisible();
   expect(await page.locator(".hero-wordmark").evaluate(el => getComputedStyle(el).animationName)).toBe("none");
-  await page.locator(".visit-invitation").scrollIntoViewIfNeeded();
-  await expect(page.locator(".visit-invitation h2")).toBeVisible();
+  await page.locator(".cafe-space").scrollIntoViewIfNeeded();
+  await expect(page.locator(".cafe-space h2")).toBeVisible();
   await page.goto("/menu/");
   await expect(page.locator(".drink-card")).toHaveCount(20);
 });

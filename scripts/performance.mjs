@@ -16,7 +16,7 @@ const results = selectedRoutes ? JSON.parse(await readFile("docs/performance-res
 await mkdir("docs/lighthouse", { recursive: true });
 try {
   for (const formFactor of ["desktop", "mobile"])
-    for (const route of selectedRoutes || ["/", "/menu/", "/experience/"]) {
+    for (const route of selectedRoutes || ["/", "/menu/", "/visit/"]) {
       const desktop = formFactor === "desktop";
       const { lhr, report } = await lighthouse(base + route, {
         port: chrome.port,

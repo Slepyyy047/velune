@@ -183,7 +183,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "all six pages load with visible content and no errors or overflow",
+          "title": "all three café pages load with visible content and no errors or overflow",
           "ok": true,
           "tags": [],
           "tests": [
@@ -198,12 +198,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10599,
+                  "duration": 5169,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:27:28.024Z",
+                  "startTime": "2026-10-17T13:33:36.549Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -211,9 +211,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-6f2531e5e0281df36978",
+          "id": "037b2995da0c90b014e5-3721e3670b98f63c69fe",
           "file": "velune.spec.ts",
-          "line": 5,
+          "line": 4,
           "column": 5
         },
         {
@@ -232,12 +232,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 22201,
+                  "duration": 14418,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:27:39.580Z",
+                  "startTime": "2026-10-17T13:33:42.484Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -247,7 +247,7 @@
           ],
           "id": "037b2995da0c90b014e5-057fc011df065c4df9bd",
           "file": "velune.spec.ts",
-          "line": 19,
+          "line": 18,
           "column": 5
         },
         {
@@ -266,12 +266,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11137,
+                  "duration": 4878,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:01.828Z",
+                  "startTime": "2026-10-17T13:33:56.923Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -281,7 +281,7 @@
           ],
           "id": "037b2995da0c90b014e5-dbbf2b060883fbb9189e",
           "file": "velune.spec.ts",
-          "line": 35,
+          "line": 34,
           "column": 5
         },
         {
@@ -300,12 +300,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9242,
+                  "duration": 5687,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:13.084Z",
+                  "startTime": "2026-10-17T13:34:01.820Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -315,7 +315,7 @@
           ],
           "id": "037b2995da0c90b014e5-6d5aaa6eacf0151ef764",
           "file": "velune.spec.ts",
-          "line": 54,
+          "line": 53,
           "column": 5
         },
         {
@@ -334,12 +334,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3064,
+                  "duration": 3488,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:22.403Z",
+                  "startTime": "2026-10-17T13:34:07.529Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -349,7 +349,7 @@
           ],
           "id": "037b2995da0c90b014e5-ce0d5e6953379571ec70",
           "file": "velune.spec.ts",
-          "line": 74,
+          "line": 73,
           "column": 5
         },
         {
@@ -368,12 +368,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14111,
+                  "duration": 9280,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:25.505Z",
+                  "startTime": "2026-10-17T13:34:11.198Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -383,11 +383,11 @@
           ],
           "id": "037b2995da0c90b014e5-e1d01e8bd311d1c6d1c5",
           "file": "velune.spec.ts",
-          "line": 83,
+          "line": 82,
           "column": 5
         },
         {
-          "title": "all journal articles, related links and drink pagination work",
+          "title": "old editorial links redirect and drink pagination works",
           "ok": true,
           "tags": [],
           "tests": [
@@ -402,12 +402,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5214,
+                  "duration": 4344,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:39.677Z",
+                  "startTime": "2026-10-17T13:34:20.509Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -415,13 +415,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-6ba0fda2312f9a1d39ba",
+          "id": "037b2995da0c90b014e5-e7bacf6f069f93883041",
           "file": "velune.spec.ts",
-          "line": 113,
+          "line": 112,
           "column": 5
         },
         {
-          "title": "navigation, language controls, gallery and grind remain usable",
+          "title": "simple navigation and interior gallery remain usable",
           "ok": true,
           "tags": [],
           "tests": [
@@ -436,12 +436,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3613,
+                  "duration": 3244,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:44.928Z",
+                  "startTime": "2026-10-17T13:34:24.883Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -449,13 +449,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-544de66ca46c247f2b6a",
+          "id": "037b2995da0c90b014e5-9da68ae5b735f61b6c67",
           "file": "velune.spec.ts",
-          "line": 127,
+          "line": 124,
           "column": 5
         },
         {
-          "title": "background story advances and reverses deterministically without scroll trapping",
+          "title": "photographic decorations move reversibly and never intercept input",
           "ok": true,
           "tags": [],
           "tests": [
@@ -470,12 +470,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1826,
+                  "duration": 1712,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:48.568Z",
+                  "startTime": "2026-10-17T13:34:28.143Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -483,9 +483,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-458450bc8a20090c4353",
+          "id": "037b2995da0c90b014e5-f49c2942f4cb0e2c1944",
           "file": "velune.spec.ts",
-          "line": 148,
+          "line": 141,
           "column": 5
         },
         {
@@ -504,12 +504,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4028,
+                  "duration": 2446,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:50.420Z",
+                  "startTime": "2026-10-17T13:34:29.876Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -519,7 +519,7 @@
           ],
           "id": "037b2995da0c90b014e5-8bfe025513ff3db6eb09",
           "file": "velune.spec.ts",
-          "line": 162,
+          "line": 154,
           "column": 5
         },
         {
@@ -538,12 +538,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4403,
+                  "duration": 2505,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:54.593Z",
+                  "startTime": "2026-10-17T13:34:32.363Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -553,7 +553,7 @@
           ],
           "id": "037b2995da0c90b014e5-9d7b5a2359b7b6a1878b",
           "file": "velune.spec.ts",
-          "line": 172,
+          "line": 164,
           "column": 5
         },
         {
@@ -572,12 +572,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2964,
+                  "duration": 2060,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:28:59.086Z",
+                  "startTime": "2026-10-17T13:34:34.906Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -587,7 +587,7 @@
           ],
           "id": "037b2995da0c90b014e5-49f43816ed1165edae68",
           "file": "velune.spec.ts",
-          "line": 182,
+          "line": 174,
           "column": 5
         },
         {
@@ -606,12 +606,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1735,
+                  "duration": 1603,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:02.083Z",
+                  "startTime": "2026-10-17T13:34:36.988Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -621,11 +621,11 @@
           ],
           "id": "037b2995da0c90b014e5-583aaff9da10b5ffb2f6",
           "file": "velune.spec.ts",
-          "line": 191,
+          "line": 183,
           "column": 5
         },
         {
-          "title": "all six pages load with visible content and no errors or overflow",
+          "title": "all three café pages load with visible content and no errors or overflow",
           "ok": true,
           "tags": [],
           "tests": [
@@ -640,12 +640,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7794,
+                  "duration": 3889,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:04.576Z",
+                  "startTime": "2026-10-17T13:34:39.202Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -653,9 +653,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-897dd910ba90adcfecc5",
+          "id": "037b2995da0c90b014e5-6497c6d7f9c2b1b5fe25",
           "file": "velune.spec.ts",
-          "line": 5,
+          "line": 4,
           "column": 5
         },
         {
@@ -674,12 +674,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7093,
+                  "duration": 6723,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:12.748Z",
+                  "startTime": "2026-10-17T13:34:43.412Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -689,7 +689,7 @@
           ],
           "id": "037b2995da0c90b014e5-e3573e19cf650d8181b5",
           "file": "velune.spec.ts",
-          "line": 19,
+          "line": 18,
           "column": 5
         },
         {
@@ -708,12 +708,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2659,
+                  "duration": 3800,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:19.916Z",
+                  "startTime": "2026-10-17T13:34:50.192Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -723,7 +723,7 @@
           ],
           "id": "037b2995da0c90b014e5-7ff3f99f138b03f16e55",
           "file": "velune.spec.ts",
-          "line": 35,
+          "line": 34,
           "column": 5
         },
         {
@@ -742,12 +742,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3936,
+                  "duration": 4958,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:22.593Z",
+                  "startTime": "2026-10-17T13:34:54.014Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -757,7 +757,7 @@
           ],
           "id": "037b2995da0c90b014e5-05e35a72ebe44e5ac302",
           "file": "velune.spec.ts",
-          "line": 54,
+          "line": 53,
           "column": 5
         },
         {
@@ -776,12 +776,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2125,
+                  "duration": 2318,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:26.548Z",
+                  "startTime": "2026-10-17T13:34:58.996Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -791,7 +791,7 @@
           ],
           "id": "037b2995da0c90b014e5-94011978692b40adabb7",
           "file": "velune.spec.ts",
-          "line": 74,
+          "line": 73,
           "column": 5
         },
         {
@@ -810,12 +810,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8649,
+                  "duration": 3558,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:28.717Z",
+                  "startTime": "2026-10-17T13:35:01.332Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -825,11 +825,11 @@
           ],
           "id": "037b2995da0c90b014e5-9c1d1fa5323c9635a22d",
           "file": "velune.spec.ts",
-          "line": 83,
+          "line": 82,
           "column": 5
         },
         {
-          "title": "all journal articles, related links and drink pagination work",
+          "title": "old editorial links redirect and drink pagination works",
           "ok": true,
           "tags": [],
           "tests": [
@@ -844,12 +844,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4279,
+                  "duration": 2823,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:37.383Z",
+                  "startTime": "2026-10-17T13:35:04.898Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -857,13 +857,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-571ac107dd6414b49028",
+          "id": "037b2995da0c90b014e5-008354d70ba318c64f05",
           "file": "velune.spec.ts",
-          "line": 113,
+          "line": 112,
           "column": 5
         },
         {
-          "title": "navigation, language controls, gallery and grind remain usable",
+          "title": "simple navigation and interior gallery remain usable",
           "ok": true,
           "tags": [],
           "tests": [
@@ -878,12 +878,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4360,
+                  "duration": 1974,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:41.681Z",
+                  "startTime": "2026-10-17T13:35:07.747Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -891,13 +891,13 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-7cf0eb4ea7d6df85beac",
+          "id": "037b2995da0c90b014e5-6d9f142e4912b7884720",
           "file": "velune.spec.ts",
-          "line": 127,
+          "line": 124,
           "column": 5
         },
         {
-          "title": "background story advances and reverses deterministically without scroll trapping",
+          "title": "photographic decorations move reversibly and never intercept input",
           "ok": true,
           "tags": [],
           "tests": [
@@ -912,12 +912,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3128,
+                  "duration": 1628,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:46.091Z",
+                  "startTime": "2026-10-17T13:35:09.744Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -925,9 +925,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-2169a51153a7459bafeb",
+          "id": "037b2995da0c90b014e5-0d535241bf5a0362275f",
           "file": "velune.spec.ts",
-          "line": 148,
+          "line": 141,
           "column": 5
         },
         {
@@ -946,12 +946,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2309,
+                  "duration": 1178,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:49.248Z",
+                  "startTime": "2026-10-17T13:35:11.395Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -961,7 +961,7 @@
           ],
           "id": "037b2995da0c90b014e5-ac29648a2822f43b4321",
           "file": "velune.spec.ts",
-          "line": 162,
+          "line": 154,
           "column": 5
         },
         {
@@ -980,12 +980,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2652,
+                  "duration": 1707,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:51.606Z",
+                  "startTime": "2026-10-17T13:35:12.594Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -995,7 +995,7 @@
           ],
           "id": "037b2995da0c90b014e5-7a8323862bb5051ba5b9",
           "file": "velune.spec.ts",
-          "line": 172,
+          "line": 164,
           "column": 5
         },
         {
@@ -1014,12 +1014,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3414,
+                  "duration": 1445,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:54.293Z",
+                  "startTime": "2026-10-17T13:35:14.314Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1029,7 +1029,7 @@
           ],
           "id": "037b2995da0c90b014e5-91bc8f264563ba7fcce5",
           "file": "velune.spec.ts",
-          "line": 182,
+          "line": 174,
           "column": 5
         },
         {
@@ -1048,12 +1048,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2696,
+                  "duration": 1401,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T02:29:57.731Z",
+                  "startTime": "2026-10-17T13:35:15.788Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1063,7 +1063,7 @@
           ],
           "id": "037b2995da0c90b014e5-478606eab037ff551281",
           "file": "velune.spec.ts",
-          "line": 191,
+          "line": 183,
           "column": 5
         }
       ]
@@ -1071,8 +1071,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-17T02:27:26.223Z",
-    "duration": 154496.727,
+    "startTime": "2026-10-17T13:33:33.637Z",
+    "duration": 103673.686,
     "expected": 26,
     "skipped": 0,
     "unexpected": 0,
