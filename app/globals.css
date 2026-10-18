@@ -3072,7 +3072,7 @@ html[lang="ru"] .cafe-pick-copy h2 { font-size:clamp(36px,4vw,58px); }
   .cafe-menu .section-heading .eyebrow { font-size:9px; margin-bottom:12px; }
   .cafe-menu .section-heading h2 { font-size:45px; }
   .cafe-menu .section-heading .text-link { padding-top:0; }
-  .menu-beans { width:110px; height:110px; right:-7px; top:3px; opacity:.65; }
+  .menu-beans { width:90px; height:90px; right:-14px; top:-28px; opacity:.5; }
   .cafe-menu .signature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px 14px; }
   .cafe-menu .signature-card:first-child { grid-column:1/-1; }
   .cafe-menu .signature-card:first-child .signature-image { aspect-ratio:1.35; }
