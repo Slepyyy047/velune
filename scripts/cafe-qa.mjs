@@ -16,7 +16,7 @@ for (const width of [320, 390, 1440]) {
       scrollTo({top:0,behavior:'instant'});
     });
     await page.waitForTimeout(500);
-    const metrics = await page.evaluate(() => ({ overflow:document.documentElement.scrollWidth>innerWidth, brokenImages:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src), heroSource:document.querySelector('.visit-hero img')?.currentSrc }));
+    const metrics = await page.evaluate(() => ({ overflow:document.documentElement.scrollWidth>innerWidth, brokenImages:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src), heroSource:document.querySelector('.photo-panel--visit img')?.currentSrc }));
     const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
     await page.screenshot({path:`docs/screenshots/cafe-final-${route==='/'?'home':'visit'}-${width}.png`,fullPage:true});
     results.push({width,route,...metrics,violations:axe.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),errors:[...errors]});

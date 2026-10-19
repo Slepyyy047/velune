@@ -198,12 +198,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5169,
+                  "duration": 9192,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:33:36.549Z",
+                  "startTime": "2026-10-19T00:43:00.795Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -232,12 +232,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14418,
+                  "duration": 15926,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:33:42.484Z",
+                  "startTime": "2026-10-19T00:43:10.888Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -266,12 +266,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4878,
+                  "duration": 5192,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:33:56.923Z",
+                  "startTime": "2026-10-19T00:43:26.860Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -300,12 +300,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5687,
+                  "duration": 7841,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:01.820Z",
+                  "startTime": "2026-10-19T00:43:32.085Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -334,12 +334,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3488,
+                  "duration": 2934,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:07.529Z",
+                  "startTime": "2026-10-19T00:43:39.952Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -368,12 +368,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9280,
+                  "duration": 7253,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:11.198Z",
+                  "startTime": "2026-10-19T00:43:42.960Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -402,12 +402,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4344,
+                  "duration": 4415,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:20.509Z",
+                  "startTime": "2026-10-19T00:43:50.241Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -436,12 +436,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3244,
+                  "duration": 3191,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:24.883Z",
+                  "startTime": "2026-10-19T00:43:54.681Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -455,7 +455,7 @@
           "column": 5
         },
         {
-          "title": "photographic decorations move reversibly and never intercept input",
+          "title": "line illustrations move reversibly and never intercept input",
           "ok": true,
           "tags": [],
           "tests": [
@@ -470,12 +470,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1712,
+                  "duration": 2536,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:28.143Z",
+                  "startTime": "2026-10-19T00:43:57.893Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -483,7 +483,7 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-f49c2942f4cb0e2c1944",
+          "id": "037b2995da0c90b014e5-dd2a3b75a79da14f9fa6",
           "file": "velune.spec.ts",
           "line": 141,
           "column": 5
@@ -504,12 +504,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2446,
+                  "duration": 2380,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:29.876Z",
+                  "startTime": "2026-10-19T00:44:00.483Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -538,12 +538,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2505,
+                  "duration": 2471,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:32.363Z",
+                  "startTime": "2026-10-19T00:44:02.893Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -572,12 +572,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2060,
+                  "duration": 1800,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:34.906Z",
+                  "startTime": "2026-10-19T00:44:05.379Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -606,12 +606,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1603,
+                  "duration": 1879,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:36.988Z",
+                  "startTime": "2026-10-19T00:44:07.275Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -622,6 +622,108 @@
           "id": "037b2995da0c90b014e5-583aaff9da10b5ffb2f6",
           "file": "velune.spec.ts",
           "line": 183,
+          "column": 5
+        },
+        {
+          "title": "hero keeps the complete café photograph with its wordmark over it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1325,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:44:09.185Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-c11d52de3c9fa5db20a4",
+          "file": "velune.spec.ts",
+          "line": 195,
+          "column": 5
+        },
+        {
+          "title": "sticky navigation stays reachable and anchors close the mobile menu",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3241,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:44:10.527Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-017e9439cad83641254c",
+          "file": "velune.spec.ts",
+          "line": 213,
+          "column": 5
+        },
+        {
+          "title": "coffee questions expand with keyboard input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1227,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:44:13.787Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-237882a155c8e3013013",
+          "file": "velune.spec.ts",
+          "line": 235,
           "column": 5
         },
         {
@@ -640,12 +742,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3889,
+                  "duration": 4025,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:39.202Z",
+                  "startTime": "2026-10-19T00:44:15.681Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -674,12 +776,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6723,
+                  "duration": 5444,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:43.412Z",
+                  "startTime": "2026-10-19T00:44:20.209Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -708,12 +810,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3800,
+                  "duration": 1929,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:50.192Z",
+                  "startTime": "2026-10-19T00:44:25.675Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -742,12 +844,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4958,
+                  "duration": 4191,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:54.014Z",
+                  "startTime": "2026-10-19T00:44:27.626Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -776,12 +878,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2318,
+                  "duration": 1896,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:34:58.996Z",
+                  "startTime": "2026-10-19T00:44:31.836Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -810,12 +912,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3558,
+                  "duration": 2918,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:01.332Z",
+                  "startTime": "2026-10-19T00:44:33.765Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -844,12 +946,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2823,
+                  "duration": 2515,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:04.898Z",
+                  "startTime": "2026-10-19T00:44:36.706Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -878,12 +980,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1974,
+                  "duration": 2054,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:07.747Z",
+                  "startTime": "2026-10-19T00:44:39.243Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -897,7 +999,7 @@
           "column": 5
         },
         {
-          "title": "photographic decorations move reversibly and never intercept input",
+          "title": "line illustrations move reversibly and never intercept input",
           "ok": true,
           "tags": [],
           "tests": [
@@ -912,12 +1014,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1628,
+                  "duration": 1301,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:09.744Z",
+                  "startTime": "2026-10-19T00:44:41.313Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -925,7 +1027,7 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-0d535241bf5a0362275f",
+          "id": "037b2995da0c90b014e5-2720062f97d4fbc29457",
           "file": "velune.spec.ts",
           "line": 141,
           "column": 5
@@ -946,12 +1048,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1178,
+                  "duration": 1318,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:11.395Z",
+                  "startTime": "2026-10-19T00:44:42.623Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -980,12 +1082,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1707,
+                  "duration": 1239,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:12.594Z",
+                  "startTime": "2026-10-19T00:44:43.963Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1014,12 +1116,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1445,
+                  "duration": 1357,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:14.314Z",
+                  "startTime": "2026-10-19T00:44:45.217Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1048,12 +1150,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1401,
+                  "duration": 1254,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-17T13:35:15.788Z",
+                  "startTime": "2026-10-19T00:44:46.593Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1065,15 +1167,117 @@
           "file": "velune.spec.ts",
           "line": 183,
           "column": 5
+        },
+        {
+          "title": "hero keeps the complete café photograph with its wordmark over it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1488,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:44:47.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-a8913cc61345a1b21197",
+          "file": "velune.spec.ts",
+          "line": 195,
+          "column": 5
+        },
+        {
+          "title": "sticky navigation stays reachable and anchors close the mobile menu",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3175,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:44:49.366Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-84ebeb6cb6946da66e68",
+          "file": "velune.spec.ts",
+          "line": 213,
+          "column": 5
+        },
+        {
+          "title": "coffee questions expand with keyboard input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2020,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:44:52.574Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-47e478b09e74bb56247e",
+          "file": "velune.spec.ts",
+          "line": 235,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-17T13:33:33.637Z",
-    "duration": 103673.686,
-    "expected": 26,
+    "startTime": "2026-10-19T00:42:58.296Z",
+    "duration": 116449.48300000001,
+    "expected": 32,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

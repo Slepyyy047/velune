@@ -3,7 +3,7 @@
     "width": 1440,
     "route": "/",
     "violations": [],
-    "passes": 23,
+    "passes": 24,
     "incomplete": 1
   },
   {
@@ -18,7 +18,7 @@
     "route": "/visit/",
     "violations": [],
     "passes": 23,
-    "incomplete": 0
+    "incomplete": 1
   },
   {
     "width": 1440,
@@ -39,13 +39,13 @@
     "route": "/visit/?lang=ru",
     "violations": [],
     "passes": 23,
-    "incomplete": 0
+    "incomplete": 1
   },
   {
     "width": 390,
     "route": "/",
     "violations": [],
-    "passes": 23,
+    "passes": 24,
     "incomplete": 1
   },
   {
@@ -60,7 +60,7 @@
     "route": "/visit/",
     "violations": [],
     "passes": 23,
-    "incomplete": 0
+    "incomplete": 1
   },
   {
     "width": 390,
@@ -81,6 +81,6 @@
     "route": "/visit/?lang=ru",
     "violations": [],
     "passes": 23,
-    "incomplete": 0
+    "incomplete": 1
   }
 ]

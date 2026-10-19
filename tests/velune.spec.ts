@@ -138,7 +138,7 @@ test("simple navigation and interior gallery remain usable", async ({ page, isMo
   await expect(page.getByRole("dialog")).not.toBeVisible();
   await expect(page.locator(".gallery-grid button").first()).toBeFocused();
 });
-test("photographic decorations move reversibly and never intercept input", async ({ page }) => {
+test("line illustrations move reversibly and never intercept input", async ({ page }) => {
   await page.goto("/");
   const scene = page.locator(".coffee-background");
   const first = await scene.evaluate(el => (el as HTMLElement).style.transform);
@@ -189,4 +189,56 @@ test("critical content and links are available without JavaScript", async ({ bro
   await expect(page.locator("main h1")).toHaveText("Espresso");
   await expect(page.locator(".drink-facts")).toContainText("Double espresso");
   await context.close();
+});
+
+
+test("hero keeps the complete café photograph with its wordmark over it", async ({ page, isMobile }) => {
+  await page.goto("/");
+  const photo = page.locator(".home-hero-picture img");
+  await expect(photo).toBeVisible();
+  const geometry = await page.evaluate(() => {
+    const img = document.querySelector<HTMLImageElement>(".home-hero-picture img")!;
+    const photo = img.getBoundingClientRect();
+    const brand = document.querySelector(".home-hero-brand")!.getBoundingClientRect();
+    return { ratio:photo.width/photo.height, naturalRatio:img.naturalWidth/img.naturalHeight, fit:getComputedStyle(img).objectFit, brandInside:brand.top>=photo.top && brand.bottom<=photo.bottom, bottom:photo.bottom };
+  });
+  expect(Math.abs(geometry.ratio-geometry.naturalRatio)).toBeLessThan(.01);
+  expect(geometry.fit).toBe("contain");
+  expect(geometry.brandInside).toBeTruthy();
+  if (!isMobile) expect(geometry.bottom).toBeLessThanOrEqual(page.viewportSize()!.height);
+  await expect(page.locator('img[src*="cutout"],img[src*="lavender-cup"]')).toHaveCount(0);
+  await expect(page.locator("svg.cafe-cup")).toHaveCount(1);
+});
+
+test("sticky navigation stays reachable and anchors close the mobile menu", async ({ page, isMobile }) => {
+  await page.goto("/");
+  await page.locator("#questions").scrollIntoViewIfNeeded();
+  expect(await page.locator(".site-header").evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
+  const navigate = async (name:string) => {
+    if (isMobile) {
+      await page.getByRole("button",{name:"Open navigation",exact:true}).click();
+      await page.locator("#mobile-nav").getByRole("link",{name:new RegExp(name)}).click();
+      await expect(page.locator("#mobile-nav")).toHaveCount(0);
+    } else await page.locator(".desktop-nav").getByRole("link",{name,exact:true}).click();
+  };
+  await navigate("At the counter");
+  await expect(page).toHaveURL(/#counter$/);
+  await expect.poll(()=>page.locator("#counter").evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBeGreaterThanOrEqual(76);
+  expect(await page.locator("body").evaluate(el=>getComputedStyle(el).overflow)).not.toBe("hidden");
+  await page.goto("/menu/cappuccino/");
+  await page.locator("footer").scrollIntoViewIfNeeded();
+  await navigate("Questions");
+  await expect(page).toHaveURL(/\/#questions$/);
+  await expect(page.locator("#questions h2")).toBeVisible();
+});
+
+test("coffee questions expand with keyboard input", async ({ page }) => {
+  await page.goto("/");
+  const summary = page.locator(".coffee-faq summary").first();
+  await summary.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator(".coffee-faq details").first()).toHaveAttribute("open", "");
+  await expect(page.locator(".coffee-faq details").first().locator("p")).toBeVisible();
+  await page.keyboard.press("Enter");
+  await expect(page.locator(".coffee-faq details").first()).not.toHaveAttribute("open", "");
 });

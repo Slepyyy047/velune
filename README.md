@@ -4,7 +4,7 @@ Live: https://velune-theta.vercel.app/
 
 Source: https://github.com/Slepyyy047/velune
 
-A fictional Osaka specialty coffee concept built with Next.js App Router, React, TypeScript and GSAP. Three primary pages, twenty dedicated drink pages, English/Russian content, and subtle photographic coffee decorations. The former interactive 3D cup has been removed at the owner's request.
+A fictional Osaka specialty coffee concept built with Next.js App Router, React, TypeScript and GSAP. Three primary pages, twenty dedicated drink pages, English/Russian content, and original coffee line illustrations and photographic section headings. The former interactive 3D cup has been removed at the owner's request.
 
 ## Run
 
@@ -43,13 +43,13 @@ Tests default to `/usr/bin/chromium`. Set `CHROMIUM_PATH` for another installed 
 
 - `app/`: three primary routes, twenty static drink routes, redirects for retired editorial URLs, metadata and responsive CSS.
 - `components/`: menu filters, persistent favorites, language provider, photo crops, drink details, gallery, navigation, sound preference and motion.
-- `components/coffee-background.tsx`: decorative coffee-bean photographs with a small reversible scroll offset. No WebGL, canvas or story sequence.
+- `components/coffee-background.tsx`: decorative vector coffee-bean illustration with a small reversible scroll offset. No WebGL, canvas or story sequence.
 - `data/`: drink recipes, distinct preparation copy, archived journal data, Russian dictionary and twenty-photo crop manifest.
 - `public/`: local optimized images and licensed local fonts.
 - `assets/originals/`: generated image masters; not part of the deployed static output.
 - `tests/`, `scripts/`, `docs/`: functional tests, visual/accessibility/performance checks, provenance and results.
 
-Content is visible before animation enhancement. CSS handles hero, letter interactions, card transitions and hover feedback; GSAP handles section entrances and reversible image movement. Reduced-motion preferences disable decorative movement. Russian headings use Georgia for Cyrillic coverage; the Latin wordmark keeps Instrument Serif.
+Content is visible before animation enhancement. A complete café photograph fills the home hero in its original 3:2 proportions, with the real HTML wordmark overlaid. Shared photo panels carry headings across the home, menu, café and drink pages. Sticky navigation links remain available while scrolling, including anchors for the counter and coffee questions. CSS handles the hero, letter interactions, drawn steam, cards and hover feedback; GSAP handles section entrances and reversible illustration movement. Reduced-motion preferences disable decorative movement. Russian headings use Georgia for Cyrillic coverage; the Latin wordmark keeps Instrument Serif.
 
 ## Content and persistence
 

@@ -68,3 +68,9 @@ Two original generated transparent photographic assets were added as decorative 
 - `coffee-beans-cutout.webp`: seven scattered roasted beans; generated source `exec-2cf1814e-c9c0-49b3-aa0b-d708248ae9f9.png`.
 
 Both were generated with the image tool and compressed with Sharp (800px / 480px, WebP quality 85, alpha retained). They are concept graphics, not photographs of a real venue. There is no interactive 3D model. Original sources are retained under `assets/originals/cafe/`.
+
+## Photography revision — 2026-10-19
+
+The cup and bean photographic cutouts from the café redesign are retired from all rendered pages. Their source files remain for provenance. `components/coffee-drawing.tsx` now supplies three original, scalable line illustrations (cup, beans, filter), drawn with SVG paths. These are openly illustrative graphics, not generated product photos or 3D models. Interior and drink photography remains unchanged.
+
+The photographic menu header additionally uses `espresso-mobile.webp`, resized from the existing `espresso.webp` to 800×533 at WebP quality 80 (58,060 bytes). Desktop photography is unchanged.

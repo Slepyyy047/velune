@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { CoffeeDrawing } from "@/components/coffee-drawing";
 
-/** Decorative photographs only: no canvas, timeline or scroll interception. */
+/** Original line drawing; decorative and independent from page interaction. */
 export function CoffeeBackground() {
   const ref = useRef<HTMLDivElement>(null);
   const path = usePathname();
@@ -24,5 +25,5 @@ export function CoffeeBackground() {
     reduced.addEventListener("change", schedule);
     return () => { cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule); reduced.removeEventListener("change", schedule); };
   }, [path]);
-  return <div className="coffee-background" ref={ref} aria-hidden="true"><img src="/images/coffee-beans-cutout.webp" alt="" width="480" height="480" loading="lazy"/></div>;
+  return <div className="coffee-background" ref={ref} aria-hidden="true"><CoffeeDrawing kind="beans"/></div>;
 }

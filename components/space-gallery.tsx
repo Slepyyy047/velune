@@ -21,15 +21,18 @@ const items = [
 ];
 export function SpaceGallery() {
   const [index, setIndex] = useState(0);
+  const [active, setActive] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement | null>(null);
   function open(i: number, e: React.MouseEvent<HTMLButtonElement>) {
     trigger.current = e.currentTarget;
     setIndex(i);
+    setActive(true);
     dialog.current?.showModal();
   }
   function close() {
     dialog.current?.close();
+    setActive(false);
     trigger.current?.focus();
   }
   return (<Localized>
@@ -79,12 +82,12 @@ export function SpaceGallery() {
         >
           <X />
         </button>
-        <img
+        {active && <img
           src={`/images/${items[index].image}.webp`}
           alt={items[index].alt}
           width="1100"
           height="733"
-        />
+        />}
         <div className="gallery-controls">
           <button
             className="icon-button"

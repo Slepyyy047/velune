@@ -13,7 +13,9 @@ import {
 const links = [
   ["/", "Home"],
   ["/menu", "Menu"],
+  ["/#counter", "At the counter"],
   ["/visit", "The café"],
+  ["/#questions", "Questions"],
 ];
 export function Header() {
   const path = usePathname();
@@ -62,6 +64,7 @@ export function Header() {
           <Link prefetch={false}
             key={href}
             href={href}
+            onClick={() => setOpen(false)}
             aria-current={(href === "/" ? path === "/" : path.startsWith(href)) ? "page" : undefined}
           >
             {label}
@@ -93,6 +96,7 @@ export function Header() {
             <Link prefetch={false}
               key={href}
               href={href}
+              onClick={() => setOpen(false)}
               aria-current={path === href ? "page" : undefined}
             >
               <span>0{i + 1}</span>

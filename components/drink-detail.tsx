@@ -5,6 +5,7 @@ import { drinks, price, type Drink } from "@/data/menu";
 import { DrinkPhoto } from "@/components/drink-photo";
 import { Localized, useLanguage } from "@/components/language";
 import { useFavorites } from "@/components/favorites";
+import { PhotoPanel } from "@/components/photo-panel";
 import { preparation } from "@/data/preparation";
 export function DrinkDetail({ drink }: { drink: Drink }) {
   const { language, t } = useLanguage();
@@ -32,6 +33,7 @@ export function DrinkDetail({ drink }: { drink: Drink }) {
       <figure><div className="drink-macro"><DrinkPhoto id={drink.id} detail fullSize/></div><figcaption>Full composition and a closer crop of the same concept photograph.</figcaption></figure>
     </section>
     {related.length > 0 && <section className="drink-related container" data-reveal><p className="eyebrow">You might also like</p><div className="signature-grid">{related.map(d => <Link prefetch={false} href={`/menu/${d.id}/?lang=${language}`} className="signature-card" key={d.id}><div className="signature-image"><DrinkPhoto id={d.id}/></div><div className="product-title"><h3>{d.name}</h3><span>{price(d.price)}</span></div></Link>)}</div></section>}
+    <PhotoPanel image="space" alt="Window-side seating in the VELUNE café concept" label="THE CAFÉ" title="Coffee at velune." href="/visit/" link="Look inside" className="photo-panel--detail"/>
     <nav className="drink-pagination container" aria-label={language === "ru" ? "Другие напитки" : "More drinks"}>
       <Link prefetch={false} href={`/menu/${drinks[(index + 19) % 20].id}/?lang=${language}`}><ArrowLeft size={18}/><span><small>Previous drink</small>{t(drinks[(index + 19) % 20].name)}</span></Link>
       <Link prefetch={false} href={`/menu/${drinks[(index + 1) % 20].id}/?lang=${language}`}><span><small>Next drink</small>{t(drinks[(index + 1) % 20].name)}</span><ArrowRight size={18}/></Link>
