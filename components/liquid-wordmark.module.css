@@ -1,0 +1,40 @@
+.root {
+  position: relative;
+  pointer-events: auto;
+  isolation: isolate;
+  --water-x: 50%;
+  --water-y: 50%;
+  --water-shift: 0px;
+  --water-lift: 0px;
+  --water-echo: 0;
+}
+
+.ink { display: block; }
+.definitions { position: absolute; pointer-events: none; }
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .root[data-water-active="true"] .ink { filter: var(--water-filter); }
+
+  .root[data-water-active="true"]::before,
+  .root[data-water-active="true"]::after {
+    content: attr(data-wordmark);
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: var(--water-echo);
+    filter: var(--water-filter) blur(1px);
+    mask-image: radial-gradient(ellipse 43% 95% at var(--water-x) var(--water-y), #000 15%, transparent 90%);
+  }
+
+  .root::before {
+    color: #e6d4f5;
+    clip-path: polygon(0 29%, 100% 38%, 100% 57%, 0 48%);
+    transform: translate3d(var(--water-shift), calc(var(--water-lift) * -1), 0);
+  }
+
+  .root::after {
+    color: #d4e4d0;
+    clip-path: polygon(0 61%, 100% 51%, 100% 72%, 0 82%);
+    transform: translate3d(calc(var(--water-shift) * -1), var(--water-lift), 0);
+  }
+}

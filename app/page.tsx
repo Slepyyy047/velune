@@ -5,6 +5,7 @@ import { ButtonLink, TextLink, SectionHeading } from "@/components/ui";
 import { CoffeeDrawing } from "@/components/coffee-drawing";
 import { PhotoPanel } from "@/components/photo-panel";
 import { MenuPreviewCard } from "@/components/menu-preview-card";
+import { LiquidWordmark } from "@/components/liquid-wordmark";
 
 export default function Home() {
   return <Localized><main id="main" className="cafe-home bakery-home">
@@ -12,7 +13,7 @@ export default function Home() {
       <picture className="home-hero-picture"><source media="(max-width:600px)" srcSet="/images/hero-mobile.webp"/><img src="/images/hero.webp" alt="Sunlit café with a stone coffee counter, oak stools and green seating" width="1536" height="1024" fetchPriority="high"/></picture>
       <div className="home-hero-shade"/>
       <div className="home-hero-meta"><span>COFFEE & BAKERY</span><span>OSAKA, JAPAN · A CONCEPT</span></div>
-      <div className="home-hero-brand"><h1 className="hero-wordmark" data-no-letters>velune.</h1><p>Coffee. Cake. A seat by the window.</p></div>
+      <div className="home-hero-brand"><LiquidWordmark/><p>Coffee. Cake. A seat by the window.</p></div>
       <div className="home-hero-bottom"><p>Your usual coffee.<br/>And something from the bakery.</p><div><ButtonLink href="/menu/">Drinks menu</ButtonLink><Link href="/desserts/" className="hero-counter-link">See the desserts <ArrowDown size={16}/></Link></div></div>
     </section>
     <section className="cafe-benefits container" aria-label="On the menu">

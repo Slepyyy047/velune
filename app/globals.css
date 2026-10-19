@@ -3144,7 +3144,7 @@ html { scroll-padding-top:calc(var(--header-height) + 20px); }
 .home-hero-picture img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:contain; transform:none; animation:none; }
 .home-hero-shade { position:absolute; inset:0; background:linear-gradient(180deg,#181b1ab0 0%,#181b1a4d 29%,#181b1a00 58%,#181b1ab8 100%); }
 .home-hero-meta { position:absolute; z-index:1; top:28px; left:34px; right:34px; display:flex; justify-content:space-between; gap:20px; font-size:9px; letter-spacing:.13em; }
-.home-hero-brand { position:absolute; z-index:1; top:8%; left:0; right:0; text-align:center; }
+.home-hero-brand { position:absolute; z-index:1; inset:0 0 auto; aspect-ratio:3/2; display:flex; flex-direction:column; align-items:center; justify-content:center; padding-bottom:5%; text-align:center; pointer-events:none; }
 .home-hero-brand .hero-wordmark { font-family:var(--font-serif),Georgia,serif; font-size:clamp(120px,19vw,290px); line-height:.94; letter-spacing:-.06em; color:inherit; margin:0; }
 .home-hero-brand > p { margin-top:16px; font-family:var(--serif); font-size:clamp(25px,2.4vw,38px); line-height:1.2; }
 .home-hero-bottom { position:absolute; z-index:1; bottom:36px; left:36px; right:36px; display:flex; align-items:flex-end; justify-content:space-between; gap:28px; }
@@ -3253,7 +3253,7 @@ html[lang="ru"] .home-hero-brand .hero-wordmark { font-family:var(--font-serif),
 }
 @media (max-width:600px) {
   .photo-home-hero { width:calc(100% - 16px); aspect-ratio:auto; margin-inline:auto; }
-  .home-hero-brand { top:17%; }
+  .home-hero-brand { top:0; }
   .home-hero-brand .hero-wordmark { font-size:29vw; }
   .home-hero-brand > p { font-size:20px; margin-top:6px; }
   .home-hero-meta { inset:15px 15px auto; font-size:6px; gap:10px; }
@@ -3262,7 +3262,7 @@ html[lang="ru"] .home-hero-brand .hero-wordmark { font-family:var(--font-serif),
   .home-hero-bottom > div { flex-shrink:0; }
   .home-hero-bottom .button { background:#493553; border-color:#493553; color:#fff8f1; padding:12px 14px; gap:12px; min-width:0; font-size:11px; }
   .home-hero-shade { bottom:auto; height:auto; aspect-ratio:3/2; background:linear-gradient(180deg,#171b1ca8,#171b1c30 60%,#171b1c00); }
-  .home-hero-brand { top:clamp(50px,14vw,80px); }
+  .home-hero-brand { top:0; }
   .cafe-welcome { grid-template-columns:1fr; gap:24px; padding-block:38px 0; }
   .cafe-welcome .eyebrow { margin-bottom:16px; }
   .cafe-welcome h2 { font-size:43px; }
@@ -3323,16 +3323,16 @@ html[lang="ru"] .home-hero-brand .hero-wordmark { font-family:var(--font-serif),
 }
 
 /* Coffee & bakery — sage frame, cream paper and lavender accents. */
-:root { --ink:#2f3e32; --muted:#596256; --sage:#b8cbb3; --lavender:#d3c1e7; --cream:#faf6ec; --line:#d9ddcf; --gutter:clamp(20px,4.2vw,64px); }
+:root { --site-width:1840px; --ink:#2f3e32; --muted:#596256; --sage:#b8cbb3; --lavender:#d3c1e7; --cream:#faf6ec; --line:#d9ddcf; --gutter:clamp(20px,4.2vw,64px); }
 html { background:#a7bba1; }
 body { background:var(--sage); padding-block:12px; }
-.site-header { width:calc(100% - 32px); max-width:1440px; margin:0 auto; top:12px; border:0; border-radius:26px 26px 0 0; background:#faf6ecf7; gap:22px; }
+.site-header { width:calc(100% - 32px); max-width:var(--site-width); margin:0 auto; top:12px; border:0; border-radius:26px 26px 0 0; background:#faf6ecf7; gap:22px; }
 .site-header .wordmark { color:#3e5741; }
 .desktop-nav { gap:clamp(16px,1.8vw,26px); }
 .desktop-nav a { font-size:12px; }
-main#main { width:calc(100% - 32px); max-width:1440px; margin-inline:auto; background:var(--cream); padding-top:16px; }
+main#main { width:calc(100% - 32px); max-width:var(--site-width); margin-inline:auto; background:var(--cream); padding-top:16px; }
 main#main > .container { max-width:none; }
-.site-footer { width:calc(100% - 32px); max-width:1440px; margin:0 auto 8px; border-radius:0 0 28px 28px; background:#e2d5ec; padding-top:40px; }
+.site-footer { width:calc(100% - 32px); max-width:var(--site-width); margin:0 auto 8px; border-radius:0 0 28px 28px; background:#e2d5ec; padding-top:40px; }
 .footer-wordmark { color:#3e5741; }
 .footer-top { gap:40px; }
 .footer-top > div:first-child > p { font-size:12px; max-width:300px; }
@@ -3346,8 +3346,8 @@ main#main > .container { max-width:none; }
 .text-link { font-size:12px; }
 .eyebrow { letter-spacing:.12em; font-size:10px; }
 h2 em { color:#78558b; }
-.photo-home-hero { width:min(calc(100% - 36px),calc((100svh - var(--header-height) - 68px) * 1.5)); border-radius:24px; container-type:inline-size; }
-.home-hero-brand .hero-wordmark { font-size:clamp(100px,22cqw,270px); }
+.photo-home-hero { width:calc(100% - 36px); border-radius:24px; container-type:inline-size; }
+.home-hero-brand .hero-wordmark { font-size:clamp(100px,22cqw,310px); }
 .home-hero-brand > p { font-size:clamp(23px,2.2vw,35px); }
 .home-hero-bottom .button { border-radius:999px; }
 .home-hero-shade { background:linear-gradient(180deg,#192119a3,#19211935 45%,#19211900 60%,#192119bd); }
@@ -3378,7 +3378,7 @@ h2 em { color:#78558b; }
 .is-compact .preview-photo { border-radius:50%; border:4px solid #f3f1e5; box-shadow:0 5px 12px #33492f12; }
 .is-compact .preview-copy { padding:17px 0 0; }
 .is-compact .preview-copy h3 { font-size:27px; }
-.is-compact .preview-copy > p { min-height:40px; font-size:11px; }
+.is-compact .preview-copy > p { min-height:40px; font-size:11px; color:#43533e; }
 .is-compact .preview-meta { justify-content:center; flex-wrap:wrap; gap:7px 12px; margin-top:10px; }
 .is-compact .preview-meta small { display:none; }
 .is-compact .preview-arrow { margin-left:0; background:#edf2e8; width:29px; height:29px; }
@@ -3511,7 +3511,7 @@ html[lang="ru"] .drink-card .product-title h2 { font-size:24px; }
   .cafe-benefits { grid-template-columns:repeat(2,1fr); gap:20px; padding-block:29px; }
   .cafe-benefits > div { justify-content:flex-start; font-size:13px; }
   .cafe-benefits small { font-size:11px; }
-  .photo-home-hero { width:min(calc(100% - 30px),calc((100svh - var(--header-height) - 68px) * 1.5)); }
+  .photo-home-hero { width:calc(100% - 30px); }
   .pairing-feature { display:grid; grid-template-columns:1fr; }
   .pairing-feature:after { display:none; }
   .pairing-feature img { height:310px; object-fit:cover; object-position:right center; }
@@ -3533,7 +3533,7 @@ html[lang="ru"] .drink-card .product-title h2 { font-size:24px; }
   .mobile-nav { inset:calc(var(--header-height) + 8px) 8px 8px; }
   .photo-home-hero { width:calc(100% - 20px); border-radius:17px; }
   .home-hero-brand .hero-wordmark { font-size:clamp(91px,27vw,145px); }
-  .home-hero-brand { top:12vw; }
+  .home-hero-brand { top:0; }
   .home-hero-brand > p { font-size:18px; max-width:90%; margin-inline:auto; }
   .home-hero-meta { font-size:6px; inset:12px 12px auto; }
   .home-hero-bottom { border-radius:0; padding:16px 14px; background:#d8c5e7; gap:12px; }

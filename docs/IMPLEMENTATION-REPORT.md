@@ -23,24 +23,32 @@
 ## Verification
 
 - Production export and TypeScript passed.
-- Final Playwright run: **42/42 passed** across desktop and mobile Chromium. The full detail-page test opens all 54 item routes and checks title, price, ingredients, dietary information and loaded portrait images.
-- New tests cover dessert categories, deep-link/reload persistence, accent-insensitive search, dessert detail tabs, grams/portions, allergen information, cross-tab favorites, Russian ingredient search, and manual keyboard tab activation (arrows move focus, Enter/Space activates). Existing tests cover navigation, complete hero geometry, sound, gallery, reduced motion, blocked storage and critical content without JavaScript.
+- Final Playwright run: **48/48 passed** across desktop and mobile Chromium. The full detail-page test opens all 54 item routes and checks title, price, ingredients, dietary information and loaded portrait images.
+- Tests also cover complete hero geometry at 320–2560 px, centered lettering, mouse refraction/settling, touch fallback and a runtime switch to reduced motion. Catalogue tests cover dessert categories, deep-link/reload persistence, accent-insensitive search, dessert detail tabs, grams/portions, allergen information, cross-tab favorites, Russian ingredient search, and manual keyboard tab activation (arrows move focus, Enter/Space activates). Existing tests cover navigation, complete hero geometry, sound, gallery, reduced motion, blocked storage and critical content without JavaScript.
 - Axe accessibility: 20 route/viewport/language cases, zero WCAG A/AA violations.
 - Visual audit: 33 route/viewport cases at 1440, 768 and 390 px, with no overflow, broken images or browser errors. Home and dessert pages were manually inspected on desktop and phone.
 - Final narrow-screen audit: 9 cases at 320, 390 and 1440 px, including Russian at 320 px; no overflow, broken images, page errors or axe violations.
 
 ## Performance measurements
 
-Lighthouse 12.8 against the production export, with all normal functionality enabled. Desktop: 40 ms RTT, 10 Mbps, 1× CPU. Mobile: 150 ms RTT, 1.6 Mbps, 4× CPU slowdown. These are local laboratory measurements rather than field data.
+Lighthouse 12.8 against the production export, with all normal functionality enabled. Desktop: 40 ms RTT, 10 Mbps, 1× CPU. Mobile: 150 ms RTT, 1.6 Mbps, 4× CPU slowdown. These are local laboratory measurements rather than field data. Home was rerun after the wide-layout/wordmark update; the other routes retain their measurements from the bakery revision earlier the same day.
 
 | Page | Desktop score / LCP | Mobile score / LCP |
 | --- | --- | --- |
-| `/` | 97 / 1.23 s | 90 / 3.63 s |
+| `/` | 96 / 1.40 s | 90 / 3.62 s |
 | `/menu/` | 99 / 0.83 s | 89 / 3.75 s |
 | `/desserts/` | 98 / 1.17 s | 86 / 4.06 s |
 | `/visit/` | 99 / 0.89 s | 91 / 3.54 s |
 
-All eight measurements recorded CLS 0. Desktop blocking time was 0 ms; mobile was 44–129 ms. Accessibility scored 96 on home and 100 on the other pages; SEO scored 100 throughout. The initial performance goal of 85+ was reached. The 2.5 s LCP goal was reached on desktop, but **not on the throttled mobile profile** (3.54–4.06 s). Complete photographic compositions and the usable bilingual catalogue remain enabled. Field INP has not been measured. Raw summary: `performance-results.json`.
+All eight measurements recorded CLS 0. Desktop blocking time was 0–1 ms; mobile was 44–129 ms. Accessibility scored 100 on all four pages; SEO scored 100 throughout. The initial performance goal of 85+ was reached. The 2.5 s LCP goal was reached on desktop, but **not on the throttled mobile profile** (3.54–4.06 s). Complete photographic compositions and the usable bilingual catalogue remain enabled. Field INP has not been measured. Raw summary: `performance-results.json`.
+
+## Wide layout and liquid wordmark update
+
+The desktop frame now expands to 1840 px. The home interior uses the available width rather than being constrained by viewport height, remains centered and retains its complete 3:2 composition. On short desktop windows the photo continues below the fold instead of becoming a narrow inset. The HTML wordmark is centered over the photograph.
+
+Mouse hover adds smooth SVG refraction, a small amount of directional blur and localized sage/lavender echoes. Pointer coordinates are interpolated without React renders. The animation loop and filter stop after the effect settles, when the heading leaves view, or when the tab loses focus. Touch and reduced-motion preferences leave the wordmark clear. No dependencies, WebGL or image downloads were added. Compact coffee descriptions were darkened after the wide-screen contrast audit.
+
+Final validation for this update: production export/types passed; 48 functional tests passed. Nine further visual cases cover 320, 390, 1366, 1920 and 2560 px, English/Russian home, menu, desserts and a drink detail. No overflow, broken images or browser errors; both home axe checks (1920/390 px) have zero violations after the contrast correction. See `wordmark-layout-checks.json`.
 
 ## Run and deployment
 

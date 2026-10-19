@@ -202,13 +202,15 @@ test("hero keeps the complete café photograph with its wordmark over it", async
   const geometry = await page.evaluate(() => {
     const img = document.querySelector<HTMLImageElement>(".home-hero-picture img")!;
     const photo = img.getBoundingClientRect();
-    const brand = document.querySelector(".home-hero-brand")!.getBoundingClientRect();
+    const brand = document.querySelector(".home-hero-brand h1")!.getBoundingClientRect();
     return { ratio:photo.width/photo.height, naturalRatio:img.naturalWidth/img.naturalHeight, fit:getComputedStyle(img).objectFit, brandInside:brand.top>=photo.top && brand.bottom<=photo.bottom, bottom:photo.bottom };
   });
   expect(Math.abs(geometry.ratio-geometry.naturalRatio)).toBeLessThan(.01);
   expect(geometry.fit).toBe("contain");
   expect(geometry.brandInside).toBeTruthy();
-  if (!isMobile) expect(geometry.bottom).toBeLessThanOrEqual(page.viewportSize()!.height);
+  const frame = await page.locator(".photo-home-hero").boundingBox();
+  const main = await page.locator("main").boundingBox();
+  expect(frame!.width / main!.width).toBeGreaterThan(.94);
   await expect(page.locator('img[src*="cutout"],img[src*="lavender-cup"]')).toHaveCount(0);
   await expect(page.locator("svg.cafe-cup")).toHaveCount(1);
 });
@@ -325,4 +327,67 @@ test("Russian dessert names and ingredients are searchable", async ({ page }) =>
   await page.getByRole("searchbox").fill("маскарпоне");
   await expect(page.locator(".drink-card")).toHaveCount(1);
   await expect(page.locator(".drink-card")).toContainText("Тирамису");
+});
+
+
+test("wide and narrow windows keep the complete interior centered at the available width", async ({ page, isMobile }) => {
+  for (const width of isMobile ? [320,390,768] : [1366,1920,2560]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto("/");
+    const geometry=await page.evaluate(()=>{
+      const main=document.querySelector("main")!.getBoundingClientRect();
+      const frame=document.querySelector(".photo-home-hero")!.getBoundingClientRect();
+      const image=document.querySelector<HTMLImageElement>(".home-hero-picture img")!;
+      const photo=image.getBoundingClientRect();
+      const heading=document.querySelector(".hero-wordmark")!.getBoundingClientRect();
+      return {mainWidth:main.width,frameWidth:frame.width,center:frame.left+frame.width/2,viewport:innerWidth,photoRatio:photo.width/photo.height,naturalRatio:image.naturalWidth/image.naturalHeight,headingCenter:heading.left+heading.width/2,headingY:heading.top+heading.height/2,photoY:photo.top+photo.height/2,overflow:document.documentElement.scrollWidth>innerWidth+1};
+    });
+    expect(geometry.mainWidth).toBe(Math.min(width-(width<=600?16:32),1840));
+    expect(geometry.frameWidth/geometry.mainWidth).toBeGreaterThan(.93);
+    expect(Math.abs(geometry.center-width/2)).toBeLessThan(1);
+    expect(Math.abs(geometry.headingCenter-geometry.center)).toBeLessThan(1);
+    expect(Math.abs(geometry.headingY-geometry.photoY)).toBeLessThan(geometry.frameWidth*.14);
+    expect(Math.abs(geometry.photoRatio-geometry.naturalRatio)).toBeLessThan(.01);
+    expect(geometry.overflow).toBe(false);
+  }
+});
+
+test("the HTML wordmark refracts under a mouse and settles back to clear lettering", async ({ page, isMobile }) => {
+  await page.goto("/");
+  const wordmark=page.locator(".hero-wordmark");
+  await expect(wordmark).toHaveText("velune.");
+  await expect(wordmark).toHaveAttribute("data-water-active","false");
+  const box=(await wordmark.boundingBox())!;
+  if(isMobile) {
+    await wordmark.tap();
+    await expect(wordmark).toHaveAttribute("data-water-active","false");
+    expect(await wordmark.locator("span").first().evaluate(el=>getComputedStyle(el).filter)).toBe("none");
+  } else {
+    await page.mouse.move(box.x+box.width*.3,box.y+box.height*.5);
+    await expect(wordmark).toHaveAttribute("data-water-active","true");
+    await expect.poll(()=>wordmark.locator("feDisplacementMap").getAttribute("scale").then(Number)).toBeGreaterThan(12);
+    const first=await wordmark.evaluate(el=>(el as HTMLElement).style.getPropertyValue("--water-x"));
+    await page.mouse.move(box.x+box.width*.75,box.y+box.height*.55);
+    await expect.poll(()=>wordmark.evaluate(el=>(el as HTMLElement).style.getPropertyValue("--water-x"))).not.toBe(first);
+    expect(await wordmark.locator("span").first().evaluate(el=>getComputedStyle(el).filter)).toContain("url(");
+    await page.mouse.move(8,8);
+    await expect(wordmark).toHaveAttribute("data-water-active","false");
+    expect(await wordmark.locator("feDisplacementMap").getAttribute("scale")).toBe("0");
+    expect(await wordmark.locator("span").first().evaluate(el=>getComputedStyle(el).filter)).toBe("none");
+  }
+  await page.locator('.home-hero-bottom a[href="/menu/"]').click();
+  await expect(page.locator(".drink-card")).toHaveCount(36);
+});
+
+test("changing to reduced motion immediately removes the water effect", async ({ page, isMobile }) => {
+  await page.goto("/");
+  const wordmark=page.locator(".hero-wordmark");
+  if(!isMobile) {
+    await wordmark.hover();
+    await expect(wordmark).toHaveAttribute("data-water-active","true");
+  }
+  await page.emulateMedia({reducedMotion:"reduce"});
+  await expect(wordmark).toHaveAttribute("data-water-active","false");
+  expect(await wordmark.locator("span").first().evaluate(el=>getComputedStyle(el).filter)).toBe("none");
+  await expect(wordmark).toHaveText("velune.");
 });
