@@ -1,0 +1,342 @@
+{
+  "vanilla-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Vanilla syrup is mixed with a double espresso, then topped with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Ванильный сироп смешивают с двойным эспрессо и добавляют вспененное молоко."
+    }
+  },
+  "caramel-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Caramel is stirred into espresso before the steamed milk is poured in."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Карамель размешивают в эспрессо, затем вливают вспененное молоко."
+    }
+  },
+  "mocha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Dark chocolate sauce is blended with espresso, then topped with steamed milk and cocoa."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Шоколадный соус смешивают с эспрессо и добавляют молоко и какао."
+    }
+  },
+  "white-mocha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "White chocolate is melted into hot milk and poured over a double espresso."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Белый шоколад растворяют в горячем молоке и вливают в двойной эспрессо."
+    }
+  },
+  "pistachio-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Pistachio paste and a little sugar are mixed with espresso, then softened with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Фисташковую пасту и немного сахара смешивают с эспрессо и добавляют молоко."
+    }
+  },
+  "spanish-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Condensed milk is stirred with cold milk, poured over ice and topped with espresso."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Сгущёнку смешивают с холодным молоком, наливают на лёд и добавляют эспрессо."
+    }
+  },
+  "honey-cinnamon-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Honey is dissolved in espresso before steamed milk is added. Finished with cinnamon."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Мёд растворяют в эспрессо, добавляют вспененное молоко и немного корицы."
+    }
+  },
+  "orange-espresso": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Fresh orange zest is expressed over a double espresso to release its aromatic oils."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Над двойным эспрессо сжимают свежую апельсиновую цедру, чтобы высвободить ароматные масла."
+    }
+  },
+  "iced-caramel-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Caramel and fresh espresso are poured over cold milk and ice."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Карамель и свежий эспрессо вливают в холодное молоко со льдом."
+    }
+  },
+  "iced-mocha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Chocolate sauce is mixed with espresso, then poured over milk and ice."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Шоколадный соус смешивают с эспрессо и вливают в молоко со льдом."
+    }
+  },
+  "coconut-iced-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Cold coconut drink and ice fill the glass, then a double espresso is added."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Стакан наполняют холодным кокосовым напитком и льдом, затем добавляют двойной эспрессо."
+    }
+  },
+  "affogato": {
+    "en": {
+      "title": "How it’s made",
+      "body": "A hot double espresso is poured over one scoop of vanilla ice cream. Eat with a spoon."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Горячий двойной эспрессо вливают на шарик ванильного мороженого. Подают с ложкой."
+    }
+  },
+  "strawberry-matcha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Strawberry purée is layered with ice, cold milk and whisked matcha. Stir to combine."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Клубничное пюре выкладывают слоями со льдом, холодным молоком и взбитой матчей. Перед питьём перемешайте."
+    }
+  },
+  "iced-matcha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Matcha is whisked smooth with warm water, then poured over cold milk and ice."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Матча взбивается с тёплой водой до однородности и вливается в холодное молоко со льдом."
+    }
+  },
+  "chai-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Black tea is steeped with warming spices and finished with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Чёрный чай заваривают со специями, затем добавляют вспененное молоко."
+    }
+  },
+  "dirty-chai": {
+    "en": {
+      "title": "How it’s made",
+      "body": "A single espresso is added to spiced black tea, then topped with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "В пряный чёрный чай добавляют эспрессо и вспененное молоко."
+    }
+  },
+  "butter-croissant": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Laminated butter dough is proofed, brushed with egg and baked until golden."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Слоёное дрожжевое тесто расстаивают, смазывают яйцом и выпекают до золотистой корочки."
+    }
+  },
+  "almond-croissant": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "A butter croissant is filled with almond cream, topped with sliced almonds and baked again."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Сливочный круассан наполняют миндальным кремом, посыпают лепестками миндаля и запекают ещё раз."
+    }
+  },
+  "pain-au-chocolat": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Butter dough is folded around dark chocolate batons, proofed and baked."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "В сливочное тесто заворачивают тёмный шоколад, дают подняться и выпекают."
+    }
+  },
+  "cinnamon-bun": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Sweet dough is rolled with cinnamon butter, baked and finished with a thin vanilla glaze."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Сладкое тесто сворачивают с коричным маслом, выпекают и покрывают тонкой ванильной глазурью."
+    }
+  },
+  "pistachio-swirl": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Laminated dough is rolled with pistachio cream, baked and topped with chopped nuts."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Слоёное тесто сворачивают с фисташковым кремом, выпекают и посыпают орехами."
+    }
+  },
+  "blueberry-danish": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "A pastry square is filled with vanilla custard and blueberries, then baked until crisp."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Квадрат слоёного теста наполняют ванильным кремом и черникой и выпекают до хрустящей корочки."
+    }
+  },
+  "basque-cheesecake": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Cream cheese batter is baked hot for a dark top and a soft centre, then chilled."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Сырную массу выпекают при высокой температуре для тёмной корочки и мягкой середины, затем охлаждают."
+    }
+  },
+  "strawberry-cheesecake": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "The cheesecake is baked on a buttered biscuit base and topped with strawberry sauce after cooling."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Чизкейк выпекают на основе из печенья и масла, охлаждают и покрывают клубничным соусом."
+    }
+  },
+  "tiramisu": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Coffee-soaked sponge fingers are layered with mascarpone cream, chilled and dusted with cocoa."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Пропитанное кофе печенье выкладывают слоями с кремом маскарпоне, охлаждают и посыпают какао."
+    }
+  },
+  "matcha-crepe-cake": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Thin crêpes are cooked individually, cooled and stacked with matcha cream before chilling."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Тонкие блинчики готовят по одному, охлаждают и чередуют с кремом с матчей."
+    }
+  },
+  "carrot-cake": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Grated carrot and walnuts are folded into spiced cake batter. The cooled layers are filled with cream-cheese frosting."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Тёртую морковь и орехи добавляют в пряное тесто. Остывшие коржи прослаивают сырным кремом."
+    }
+  },
+  "chocolate-ganache-cake": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Chocolate sponge layers are cooled, filled and coated with a cream-and-dark-chocolate ganache."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Шоколадные коржи охлаждают, прослаивают и покрывают ганашем из сливок и тёмного шоколада."
+    }
+  },
+  "chocolate-chip-cookie": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Cookie dough is folded with dark chocolate chunks, portioned and baked with a pinch of sea salt."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "В тесто добавляют кусочки шоколада, формуют печенье и выпекают с щепоткой морской соли."
+    }
+  },
+  "pistachio-cookie": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Chopped pistachios and white chocolate are mixed into cookie dough and baked with a soft centre."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "В тесто добавляют рубленые фисташки и белый шоколад и выпекают с мягкой серединой."
+    }
+  },
+  "fudge-brownie": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Cocoa and dairy-free dark chocolate are mixed into an oil-based batter, baked and cooled before slicing."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Какао и тёмный шоколад без молока добавляют в тесто на растительном масле, выпекают и охлаждают перед нарезкой."
+    }
+  },
+  "lemon-loaf": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Lemon zest is folded into butter cake batter. The baked loaf is brushed with lemon glaze."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Лимонную цедру добавляют в сливочное тесто. Готовый кекс покрывают лимонной глазурью."
+    }
+  },
+  "raspberry-financier": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Browned butter is mixed with almond batter, topped with raspberries and baked in a small mould."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Коричневое масло смешивают с миндальным тестом, добавляют малину и выпекают в небольшой форме."
+    }
+  },
+  "vanilla-panna-cotta": {
+    "en": {
+      "title": "In the kitchen",
+      "body": "Vanilla cream is gently heated, set with gelatin and chilled, then finished with raspberry sauce."
+    },
+    "ru": {
+      "title": "На кухне",
+      "body": "Ванильные сливки слегка нагревают, добавляют желатин, охлаждают и дополняют малиновым соусом."
+    }
+  }
+}

@@ -2,7 +2,83 @@
   {
     "route": "/",
     "formFactor": "desktop",
-    "fetchTime": "2026-10-19T00:39:07.614Z",
+    "fetchTime": "2026-10-19T01:27:43.288Z",
+    "scores": {
+      "performance": 97,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 1233.0113000000001,
+        "display": "1.2 s"
+      },
+      "first-contentful-paint": {
+        "value": 257.6742,
+        "display": "0.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 623.6999148350676,
+        "display": "0.6 s"
+      },
+      "total-byte-weight": {
+        "value": 1878937,
+        "display": "Total size was 1,835 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/menu/",
+    "formFactor": "desktop",
+    "fetchTime": "2026-10-19T01:27:51.803Z",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 826.5617499999998,
+        "display": "0.8 s"
+      },
+      "first-contentful-paint": {
+        "value": 255.3745,
+        "display": "0.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 273.73198316656914,
+        "display": "0.3 s"
+      },
+      "total-byte-weight": {
+        "value": 1146303,
+        "display": "Total size was 1,119 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/desserts/",
+    "formFactor": "desktop",
+    "fetchTime": "2026-10-19T01:28:00.676Z",
     "scores": {
       "performance": 98,
       "accessibility": 100,
@@ -11,66 +87,28 @@
     },
     "metrics": {
       "largest-contentful-paint": {
-        "value": 1110.2623000000003,
-        "display": "1.1 s"
+        "value": 1165.45805,
+        "display": "1.2 s"
       },
       "first-contentful-paint": {
-        "value": 250.26229999999998,
-        "display": "0.3 s"
+        "value": 243.63869999999997,
+        "display": "0.2 s"
       },
       "total-blocking-time": {
-        "value": 9,
-        "display": "10 ms"
+        "value": 0,
+        "display": "0 ms"
       },
       "cumulative-layout-shift": {
         "value": 0,
         "display": "0"
       },
       "speed-index": {
-        "value": 630.5127523118356,
-        "display": "0.6 s"
+        "value": 425.42717351742544,
+        "display": "0.4 s"
       },
       "total-byte-weight": {
-        "value": 1056265,
-        "display": "Total size was 1,032 KiB"
-      }
-    },
-    "warnings": []
-  },
-  {
-    "route": "/menu/",
-    "formFactor": "desktop",
-    "fetchTime": "2026-10-19T00:42:07.089Z",
-    "scores": {
-      "performance": 97,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 100
-    },
-    "metrics": {
-      "largest-contentful-paint": {
-        "value": 1109.39035,
-        "display": "1.1 s"
-      },
-      "first-contentful-paint": {
-        "value": 519.46345,
-        "display": "0.5 s"
-      },
-      "total-blocking-time": {
-        "value": 112,
-        "display": "110 ms"
-      },
-      "cumulative-layout-shift": {
-        "value": 0,
-        "display": "0"
-      },
-      "speed-index": {
-        "value": 932.9948420126525,
-        "display": "0.9 s"
-      },
-      "total-byte-weight": {
-        "value": 771077,
-        "display": "Total size was 753 KiB"
+        "value": 1135055,
+        "display": "Total size was 1,108 KiB"
       }
     },
     "warnings": []
@@ -78,37 +116,37 @@
   {
     "route": "/visit/",
     "formFactor": "desktop",
-    "fetchTime": "2026-10-19T00:42:17.871Z",
+    "fetchTime": "2026-10-19T01:28:08.556Z",
     "scores": {
-      "performance": 97,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
     "metrics": {
       "largest-contentful-paint": {
-        "value": 885.2428,
+        "value": 888.8518,
         "display": "0.9 s"
       },
       "first-contentful-paint": {
-        "value": 245.2428,
-        "display": "0.2 s"
+        "value": 250.90120000000002,
+        "display": "0.3 s"
       },
       "total-blocking-time": {
-        "value": 129,
-        "display": "130 ms"
+        "value": 0,
+        "display": "0 ms"
       },
       "cumulative-layout-shift": {
         "value": 0,
         "display": "0"
       },
       "speed-index": {
-        "value": 458.5533724415474,
-        "display": "0.5 s"
+        "value": 335.3939709472505,
+        "display": "0.3 s"
       },
       "total-byte-weight": {
-        "value": 764218,
-        "display": "Total size was 746 KiB"
+        "value": 772805,
+        "display": "Total size was 755 KiB"
       }
     },
     "warnings": []
@@ -116,24 +154,24 @@
   {
     "route": "/",
     "formFactor": "mobile",
-    "fetchTime": "2026-10-19T00:39:36.617Z",
+    "fetchTime": "2026-10-19T01:28:15.561Z",
     "scores": {
-      "performance": 91,
-      "accessibility": 100,
-      "best-practices": 100,
+      "performance": 90,
+      "accessibility": 96,
+      "best-practices": 96,
       "seo": 100
     },
     "metrics": {
       "largest-contentful-paint": {
-        "value": 3486.0094999999997,
-        "display": "3.5 s"
+        "value": 3630.8746499999997,
+        "display": "3.6 s"
       },
       "first-contentful-paint": {
-        "value": 905.673,
+        "value": 904.4998,
         "display": "0.9 s"
       },
       "total-blocking-time": {
-        "value": 82.5,
+        "value": 75,
         "display": "80 ms"
       },
       "cumulative-layout-shift": {
@@ -141,12 +179,12 @@
         "display": "0"
       },
       "speed-index": {
-        "value": 1520.2441871990866,
-        "display": "1.5 s"
+        "value": 2091.76408595705,
+        "display": "2.1 s"
       },
       "total-byte-weight": {
-        "value": 821348,
-        "display": "Total size was 802 KiB"
+        "value": 1298153,
+        "display": "Total size was 1,268 KiB"
       }
     },
     "warnings": []
@@ -154,7 +192,7 @@
   {
     "route": "/menu/",
     "formFactor": "mobile",
-    "fetchTime": "2026-10-19T00:42:25.480Z",
+    "fetchTime": "2026-10-19T01:28:23.813Z",
     "scores": {
       "performance": 89,
       "accessibility": 100,
@@ -163,53 +201,53 @@
     },
     "metrics": {
       "largest-contentful-paint": {
-        "value": 3728.9194499999994,
+        "value": 3747.7448,
         "display": "3.7 s"
       },
       "first-contentful-paint": {
-        "value": 907.9463000000001,
+        "value": 907.1632,
         "display": "0.9 s"
       },
       "total-blocking-time": {
-        "value": 74.5,
-        "display": "70 ms"
+        "value": 43.5,
+        "display": "40 ms"
       },
       "cumulative-layout-shift": {
         "value": 0,
         "display": "0"
       },
       "speed-index": {
-        "value": 907.9463000000001,
+        "value": 907.1632,
         "display": "0.9 s"
       },
       "total-byte-weight": {
-        "value": 630874,
-        "display": "Total size was 616 KiB"
+        "value": 582219,
+        "display": "Total size was 569 KiB"
       }
     },
     "warnings": []
   },
   {
-    "route": "/visit/",
+    "route": "/desserts/",
     "formFactor": "mobile",
-    "fetchTime": "2026-10-19T00:42:35.003Z",
+    "fetchTime": "2026-10-19T01:28:32.866Z",
     "scores": {
-      "performance": 90,
+      "performance": 86,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
     "metrics": {
       "largest-contentful-paint": {
-        "value": 3422.7176499999996,
-        "display": "3.4 s"
+        "value": 4060.0775999999987,
+        "display": "4.1 s"
       },
       "first-contentful-paint": {
-        "value": 906.1451,
+        "value": 906.7184,
         "display": "0.9 s"
       },
       "total-blocking-time": {
-        "value": 130.5,
+        "value": 128.99999999999977,
         "display": "130 ms"
       },
       "cumulative-layout-shift": {
@@ -217,12 +255,50 @@
         "display": "0"
       },
       "speed-index": {
-        "value": 1075.0028577513808,
-        "display": "1.1 s"
+        "value": 906.7184,
+        "display": "0.9 s"
       },
       "total-byte-weight": {
-        "value": 849161,
-        "display": "Total size was 829 KiB"
+        "value": 739969,
+        "display": "Total size was 723 KiB"
+      }
+    },
+    "warnings": []
+  },
+  {
+    "route": "/visit/",
+    "formFactor": "mobile",
+    "fetchTime": "2026-10-19T01:28:40.951Z",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "value": 3539.03805,
+        "display": "3.5 s"
+      },
+      "first-contentful-paint": {
+        "value": 909.3587,
+        "display": "0.9 s"
+      },
+      "total-blocking-time": {
+        "value": 50.5,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1293.164980908135,
+        "display": "1.3 s"
+      },
+      "total-byte-weight": {
+        "value": 857748,
+        "display": "Total size was 838 KiB"
       }
     },
     "warnings": []

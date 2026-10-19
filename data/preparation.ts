@@ -1,23 +1,203 @@
 type Copy = { title: string; body: string };
 export const preparation: Record<string, { en: Copy; ru: Copy }> = {
-  espresso: { en: { title: "How it’s made", body: "A double shot is the whole recipe. Finely ground coffee meets hot water under pressure; a short extraction keeps the cup concentrated." }, ru: { title: "Как готовится", body: "Двойной шот — весь рецепт. Горячая вода под давлением проходит через мелко смолотый кофе; короткая экстракция сохраняет концентрацию." } },
-  americano: { en: { title: "How it’s made", body: "Hot filtered water makes room around a fresh double espresso. The result is lighter in texture while keeping the character of the shot." }, ru: { title: "Как готовится", body: "Горячая фильтрованная вода раскрывает свежий двойной эспрессо. Текстура становится легче, но характер шота остаётся." } },
-  macchiato: { en: { title: "How it’s made", body: "A spoonful of finely textured milk marks the surface of a double espresso. There is enough milk to soften the first sip without turning the drink into a small latte." }, ru: { title: "Как готовится", body: "Ложка молока с тонкой пеной отмечает поверхность двойного эспрессо. Молока достаточно, чтобы смягчить первый глоток, но не превратить напиток в маленький латте." } },
-  cortado: { en: { title: "How it’s made", body: "Warm, lightly textured milk meets espresso in roughly equal measure. A small glass shows the warm coffee color; a thin layer of microfoam gives the finish a little softness." }, ru: { title: "Как готовится", body: "Тёплое молоко с лёгкой текстурой соединяется с эспрессо примерно в равных пропорциях. Небольшой стакан подчёркивает кофейный оттенок, а тонкая микропена смягчает послевкусие." } },
-  'flat-white': { en: { title: "How it’s made", body: "Finely steamed milk folds through a double espresso in a compact ceramic cup. The microfoam is thin and glossy, so the texture feels continuous from surface to last sip." }, ru: { title: "Как готовится", body: "Молоко с тонкой микропеной вливается в двойной эспрессо в небольшой керамической чашке. Пена тонкая и гладкая, поэтому текстура ощущается цельной до последнего глотка." } },
-  cappuccino: { en: { title: "How it’s made", body: "Milk is steamed to a generous, fine foam, then poured over a double espresso. The airy surface gives way to the warm coffee beneath." }, ru: { title: "Как готовится", body: "Молоко взбивается до пышной мелкой пены и вливается в двойной эспрессо. Под воздушной поверхностью раскрывается тёплый кофе." } },
-  latte: { en: { title: "How it’s made", body: "A double espresso is lengthened with gently steamed whole milk. The larger cup gives milk more room, carrying caramel-like coffee notes through a soft, even texture." }, ru: { title: "Как готовится", body: "Двойной эспрессо дополняется бережно вспененным цельным молоком. Большой объём даёт молоку больше пространства и смягчает карамельные ноты кофе." } },
-  'oat-latte': { en: { title: "How it’s made", body: "Barista oat drink is steamed gently and poured through a double espresso. Its toasted-grain character brings a different finish from dairy milk." }, ru: { title: "Как готовится", body: "Овсяный напиток для бариста бережно вспенивается и соединяется с двойным эспрессо. Его злаковый характер создаёт другое послевкусие, чем обычное молоко." } },
-  'pour-over': { en: { title: "How it’s made", body: "A rinsed paper filter holds freshly ground coffee. A small first pour lets the grounds bloom, then steady additions of water complete the brew." }, ru: { title: "Как готовится", body: "Свежемолотый кофе засыпается в промытый бумажный фильтр. Первая небольшая порция воды запускает предсмачивание, затем ровные проливы завершают заваривание." } },
-  'batch-brew': { en: { title: "How it’s made", body: "A measured batch of filter coffee is brewed with an even shower of hot water. A consistent dose and grind keep the cup balanced." }, ru: { title: "Как готовится", body: "Порция фильтр-кофе заваривается равномерным потоком горячей воды. Постоянные дозировка и помол помогают сохранить баланс." } },
-  aeropress: { en: { title: "How it’s made", body: "Ground coffee steeps in hot water before a slow press sends the brew through a paper filter. Contact time gives a rounded body; filtration keeps the texture clean." }, ru: { title: "Как готовится", body: "Молотый кофе настаивается в горячей воде, затем медленное нажатие проводит напиток через бумажный фильтр. Контакт с водой создаёт округлую плотность, а фильтрация — чистую текстуру." } },
-  'cold-brew': { en: { title: "How it’s made", body: "Coarsely ground coffee steeps in cool water for an extended period before careful filtration. Served over ice, it has a rounded texture and a quiet sweetness." }, ru: { title: "Как готовится", body: "Кофе крупного помола долго настаивается в прохладной воде, затем тщательно фильтруется. Со льдом он раскрывается округлой текстурой и спокойной сладостью." } },
-  'iced-latte': { en: { title: "How it’s made", body: "Clear ice and cold whole milk go into a tall glass, followed by a fresh double espresso. The layers briefly catch the light before they meet." }, ru: { title: "Как готовится", body: "В высокий стакан кладут прозрачный лёд и наливают холодное цельное молоко, затем добавляют свежий двойной эспрессо. Слои на мгновение остаются раздельными." } },
-  'espresso-tonic': { en: { title: "How it’s made", body: "Chilled tonic is poured over ice before espresso is added slowly. Orange peel releases a little aromatic oil above the glass." }, ru: { title: "Как готовится", body: "Охлаждённый тоник наливается на лёд, затем медленно добавляется эспрессо. Апельсиновая цедра отдаёт немного ароматного масла." } },
-  matcha: { en: { title: "How it’s made", body: "Matcha is whisked with a little warm water until smooth, then joined by steamed milk. The green tea brings savory depth and a fresh, grassy finish." }, ru: { title: "Как готовится", body: "Матча взбивается с небольшим количеством тёплой воды до однородности, затем добавляется вспененное молоко. Зелёный чай даёт глубину умами и свежие травяные ноты." } },
-  hojicha: { en: { title: "How it’s made", body: "Roasted green tea powder is blended with warm water and steamed milk. Roasting gives the tea its brown color and comforting grain-like aroma." }, ru: { title: "Как готовится", body: "Порошок обжаренного зелёного чая смешивается с тёплой водой и вспененным молоком. Обжарка даёт коричневый цвет и уютный злаковый аромат." } },
-  chocolate: { en: { title: "How it’s made", body: "Dark chocolate and cocoa are melted into hot milk, with a little cane sugar to round the bitterness. The result is deep and smooth, without espresso." }, ru: { title: "Как готовится", body: "Тёмный шоколад и какао растворяются в горячем молоке; немного тростникового сахара смягчает горечь. Вкус получается глубоким и гладким, без эспрессо." } },
-  'lavender-cloud': { en: { title: "How it’s made", body: "A small measure of culinary lavender syrup and vanilla blends with espresso before silky milk is added. The lavender is an accent, not a perfume." }, ru: { title: "Как готовится", body: "Небольшое количество кулинарного лавандового сиропа и ванили смешивается с эспрессо, затем добавляется шелковистое молоко. Лаванда — акцент, а не парфюм." } },
-  'sesame-latte': { en: { title: "How it’s made", body: "Black sesame paste is mixed smooth with espresso and a little cane sugar before steamed milk is added. Its roasted, seed-like character is distinct from chocolate, and the sesame gives the drink a natural gray tone." }, ru: { title: "Как готовится", body: "Паста из чёрного кунжута размешивается с эспрессо и небольшим количеством тростникового сахара, затем добавляется молоко. Обжаренный вкус семян отличается от шоколадного, а кунжут придаёт естественный серый оттенок." } },
-  'yuzu-cold-brew': { en: { title: "How it’s made", body: "Yuzu juice and a little cane sugar lift a cold-brew base. Sparkling water adds a light finish, and ice keeps the glass fresh." }, ru: { title: "Как готовится", body: "Сок юдзу и немного тростникового сахара оживляют основу из колд-брю. Газированная вода облегчает послевкусие, лёд сохраняет прохладу." } }
+  "espresso": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Finely ground coffee is extracted under pressure as a double shot."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Кофе мелкого помола заваривают под давлением в виде двойного шота."
+    }
+  },
+  "americano": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Hot filtered water is added to a double espresso."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "К двойному эспрессо добавляют горячую фильтрованную воду."
+    }
+  },
+  "macchiato": {
+    "en": {
+      "title": "How it’s made",
+      "body": "A spoonful of milk foam is added to a double espresso."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "К двойному эспрессо добавляют ложку молочной пены."
+    }
+  },
+  "cortado": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Warm milk is poured into espresso in roughly equal volumes."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Тёплое молоко вливают в эспрессо примерно в равных пропорциях."
+    }
+  },
+  "flat-white": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Steamed milk with fine microfoam is poured over a double espresso."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "В двойной эспрессо вливают молоко с тонкой микропеной."
+    }
+  },
+  "cappuccino": {
+    "en": {
+      "title": "How it’s made",
+      "body": "A double espresso is topped with steamed milk and a thicker layer of milk foam."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Двойной эспрессо дополняют вспененным молоком и густым слоем пены."
+    }
+  },
+  "latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "A double espresso is topped with steamed whole milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Двойной эспрессо дополняют вспененным цельным молоком."
+    }
+  },
+  "oat-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Barista oat drink is steamed and poured over a double espresso."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Овсяный напиток для бариста вспенивают и вливают в двойной эспрессо."
+    }
+  },
+  "pour-over": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Coffee is bloomed with hot water, then brewed through a paper filter in steady pours."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Кофе смачивают горячей водой, затем заваривают ровными проливами через бумажный фильтр."
+    }
+  },
+  "batch-brew": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Ground coffee is brewed with evenly distributed hot water through a paper filter."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Молотый кофе заваривают равномерным потоком горячей воды через бумажный фильтр."
+    }
+  },
+  "aeropress": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Coffee steeps in hot water before being pressed through a paper filter."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Кофе настаивают в горячей воде, затем продавливают через бумажный фильтр."
+    }
+  },
+  "cold-brew": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Coarsely ground coffee is steeped in cold water, filtered and served over ice."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Кофе крупного помола настаивают в холодной воде, фильтруют и подают со льдом."
+    }
+  },
+  "iced-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "A double espresso is poured over cold milk and ice."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Двойной эспрессо вливают в холодное молоко со льдом."
+    }
+  },
+  "espresso-tonic": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Chilled tonic and ice are topped with espresso and orange peel."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "К охлаждённому тонику со льдом добавляют эспрессо и апельсиновую цедру."
+    }
+  },
+  "matcha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Matcha is whisked with warm water, then mixed with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Матча взбивают с тёплой водой, затем добавляют вспененное молоко."
+    }
+  },
+  "hojicha": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Roasted green tea powder is mixed with hot water and steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Порошок обжаренного зелёного чая смешивают с горячей водой и вспененным молоком."
+    }
+  },
+  "chocolate": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Cocoa and dark chocolate are melted into warm milk with a little cane sugar."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Какао и тёмный шоколад растворяют в тёплом молоке с небольшим количеством тростникового сахара."
+    }
+  },
+  "lavender-cloud": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Lavender syrup and vanilla are stirred into espresso, then topped with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Лавандовый сироп и ваниль размешивают в эспрессо и добавляют вспененное молоко."
+    }
+  },
+  "sesame-latte": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Black sesame paste and sugar are mixed with espresso, then topped with steamed milk."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Пасту из чёрного кунжута и сахар смешивают с эспрессо, затем добавляют молоко."
+    }
+  },
+  "yuzu-cold-brew": {
+    "en": {
+      "title": "How it’s made",
+      "body": "Cold brew and yuzu juice are mixed with a little sugar, sparkling water and ice."
+    },
+    "ru": {
+      "title": "Как готовится",
+      "body": "Колд-брю и сок юдзу смешивают с небольшим количеством сахара, газированной водой и льдом."
+    }
+  }
 };

@@ -8,7 +8,7 @@ for (const width of [320, 390, 1440]) {
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
-  for (const route of ['/', '/visit/']) {
+  for (const route of ['/', '/desserts/', '/menu/pistachio-latte/']) {
     await page.goto((process.env.BASE_URL || 'http://localhost:3000') + route, { waitUntil:'networkidle' });
     if (width === 320) await page.getByRole('button', { name:'RU — Русский', exact:true }).click();
     await page.evaluate(async () => {

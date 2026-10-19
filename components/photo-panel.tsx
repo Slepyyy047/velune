@@ -7,7 +7,7 @@ export function PhotoPanel({ image, alt, label, title, children, href, link, cla
   image: string; alt: string; label: string; title: ReactNode; children?: ReactNode; href?: string; link?: string; className?: string; priority?: boolean; heading?: "h1" | "h2";
 }) {
   const Heading = heading;
-  const mobileImage = image === "hero" ? "hero-mobile" : image === "espresso" ? "espresso-mobile" : null;
+  const mobileImage = image === "hero" ? "hero-mobile" : image === "espresso" ? "espresso-mobile" : image === "coffee-croissant" ? "coffee-croissant-mobile" : null;
   return <Localized>{priority && <>
     <link rel="preload" as="image" href={`/images/${mobileImage || image}.webp`} media="(max-width:600px)" fetchPriority="high"/>
     <link rel="preload" as="image" href={`/images/${image}.webp`} media="(min-width:601px)" fetchPriority="high"/>

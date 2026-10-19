@@ -13,6 +13,7 @@ import {
 const links = [
   ["/", "Home"],
   ["/menu", "Menu"],
+  ["/desserts", "Desserts"],
   ["/#counter", "At the counter"],
   ["/visit", "The café"],
   ["/#questions", "Questions"],

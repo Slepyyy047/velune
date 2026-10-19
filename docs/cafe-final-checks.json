@@ -4,15 +4,34 @@
     "route": "/",
     "overflow": false,
     "brokenImages": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".popular-coffee-grid > a[href$=\"latte/\"]:nth-child(1) > .preview-copy > p"
+          ],
+          [
+            "a[href$=\"pistachio-latte/\"] > .preview-copy > p"
+          ]
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "/desserts/",
+    "overflow": false,
+    "brokenImages": [],
     "violations": [],
     "errors": []
   },
   {
     "width": 320,
-    "route": "/visit/",
+    "route": "/menu/pistachio-latte/",
     "overflow": false,
     "brokenImages": [],
-    "heroSource": "http://localhost:3000/images/hero-mobile.webp",
     "violations": [],
     "errors": []
   },
@@ -21,15 +40,34 @@
     "route": "/",
     "overflow": false,
     "brokenImages": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".popular-coffee-grid > a[href$=\"latte/\"]:nth-child(1) > .preview-copy > p"
+          ],
+          [
+            "a[href$=\"strawberry-matcha/\"] > .preview-copy > p"
+          ]
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/desserts/",
+    "overflow": false,
+    "brokenImages": [],
     "violations": [],
     "errors": []
   },
   {
     "width": 390,
-    "route": "/visit/",
+    "route": "/menu/pistachio-latte/",
     "overflow": false,
     "brokenImages": [],
-    "heroSource": "http://localhost:3000/images/hero-mobile.webp",
     "violations": [],
     "errors": []
   },
@@ -38,15 +76,31 @@
     "route": "/",
     "overflow": false,
     "brokenImages": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".popular-coffee-grid > a[href$=\"latte/\"]:nth-child(1) > .preview-copy > p"
+          ]
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/desserts/",
+    "overflow": false,
+    "brokenImages": [],
     "violations": [],
     "errors": []
   },
   {
     "width": 1440,
-    "route": "/visit/",
+    "route": "/menu/pistachio-latte/",
     "overflow": false,
     "brokenImages": [],
-    "heroSource": "http://localhost:3000/images/hero.webp",
     "violations": [],
     "errors": []
   }

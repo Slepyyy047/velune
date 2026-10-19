@@ -2,7 +2,21 @@
   {
     "width": 1440,
     "route": "/",
-    "violations": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".popular-coffee-grid > a[href$=\"latte/\"]:nth-child(1) > .preview-copy > p"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #596256, background color: #c6d4bf, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
     "passes": 24,
     "incomplete": 1
   },
@@ -10,7 +24,14 @@
     "width": 1440,
     "route": "/menu/",
     "violations": [],
-    "passes": 25,
+    "passes": 28,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/desserts/",
+    "violations": [],
+    "passes": 28,
     "incomplete": 1
   },
   {
@@ -30,6 +51,27 @@
   {
     "width": 1440,
     "route": "/menu/?lang=ru",
+    "violations": [],
+    "passes": 28,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/desserts/?lang=ru",
+    "violations": [],
+    "passes": 28,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/menu/pistachio-latte/",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 1
+  },
+  {
+    "width": 1440,
+    "route": "/menu/tiramisu/",
     "violations": [],
     "passes": 25,
     "incomplete": 1
@@ -44,7 +86,27 @@
   {
     "width": 390,
     "route": "/",
-    "violations": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".popular-coffee-grid > a[href$=\"latte/\"]:nth-child(1) > .preview-copy > p"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #596256, background color: #c6d4bf, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "a[href$=\"strawberry-matcha/\"] > .preview-copy > p"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #596256, background color: #c6d4bf, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
     "passes": 24,
     "incomplete": 1
   },
@@ -52,7 +114,14 @@
     "width": 390,
     "route": "/menu/",
     "violations": [],
-    "passes": 25,
+    "passes": 28,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/desserts/",
+    "violations": [],
+    "passes": 28,
     "incomplete": 1
   },
   {
@@ -72,6 +141,27 @@
   {
     "width": 390,
     "route": "/menu/?lang=ru",
+    "violations": [],
+    "passes": 28,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/desserts/?lang=ru",
+    "violations": [],
+    "passes": 28,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/menu/pistachio-latte/",
+    "violations": [],
+    "passes": 25,
+    "incomplete": 1
+  },
+  {
+    "width": 390,
+    "route": "/menu/tiramisu/",
     "violations": [],
     "passes": 25,
     "incomplete": 1

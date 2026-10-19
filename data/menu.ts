@@ -1,3 +1,4 @@
+import additionalDrinks from "@/data/additional-drinks.json";
 export type Drink = {
   id: string;
   name: string;
@@ -283,6 +284,7 @@ export const drinks: Drink[] = [
     dietary: "Vegan. Contains caffeine.",
     signature: true,
   },
+  ...additionalDrinks,
 ];
 export const price = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(

@@ -183,7 +183,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "all three café pages load with visible content and no errors or overflow",
+          "title": "all four café pages load with visible content and no errors or overflow",
           "ok": true,
           "tags": [],
           "tests": [
@@ -198,12 +198,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9192,
+                  "duration": 6295,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:00.795Z",
+                  "startTime": "2026-10-19T01:24:34.972Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -211,18 +211,18 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-3721e3670b98f63c69fe",
+          "id": "037b2995da0c90b014e5-7ccb2a6e2ec8b34400ed",
           "file": "velune.spec.ts",
-          "line": 4,
+          "line": 5,
           "column": 5
         },
         {
-          "title": "all twenty drinks have a separate working page and different photograph crop",
+          "title": "all 54 menu items have a separate working page and different photograph crop",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 90000,
+              "timeout": 180000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "desktop",
@@ -232,12 +232,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 15926,
+                  "duration": 40842,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:10.888Z",
+                  "startTime": "2026-10-19T01:24:41.892Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -245,9 +245,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-057fc011df065c4df9bd",
+          "id": "037b2995da0c90b014e5-e842a307acee13eeea38",
           "file": "velune.spec.ts",
-          "line": 18,
+          "line": 19,
           "column": 5
         },
         {
@@ -266,12 +266,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5192,
+                  "duration": 4200,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:26.860Z",
+                  "startTime": "2026-10-19T01:25:22.767Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -281,7 +281,7 @@
           ],
           "id": "037b2995da0c90b014e5-dbbf2b060883fbb9189e",
           "file": "velune.spec.ts",
-          "line": 34,
+          "line": 37,
           "column": 5
         },
         {
@@ -300,12 +300,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7841,
+                  "duration": 4294,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:32.085Z",
+                  "startTime": "2026-10-19T01:25:27.004Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -315,11 +315,11 @@
           ],
           "id": "037b2995da0c90b014e5-6d5aaa6eacf0151ef764",
           "file": "velune.spec.ts",
-          "line": 53,
+          "line": 56,
           "column": 5
         },
         {
-          "title": "home signature opens the actual lavender drink in a new tab",
+          "title": "home coffee preview opens the pistachio drink in a new tab",
           "ok": true,
           "tags": [],
           "tests": [
@@ -334,12 +334,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2934,
+                  "duration": 1931,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:39.952Z",
+                  "startTime": "2026-10-19T01:25:31.368Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -347,9 +347,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-ce0d5e6953379571ec70",
+          "id": "037b2995da0c90b014e5-86eb1eae3451d3189cd2",
           "file": "velune.spec.ts",
-          "line": 73,
+          "line": 76,
           "column": 5
         },
         {
@@ -368,12 +368,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7253,
+                  "duration": 4392,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:42.960Z",
+                  "startTime": "2026-10-19T01:25:33.334Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -383,7 +383,7 @@
           ],
           "id": "037b2995da0c90b014e5-e1d01e8bd311d1c6d1c5",
           "file": "velune.spec.ts",
-          "line": 82,
+          "line": 85,
           "column": 5
         },
         {
@@ -402,12 +402,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4415,
+                  "duration": 3399,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:50.241Z",
+                  "startTime": "2026-10-19T01:25:37.748Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -417,7 +417,7 @@
           ],
           "id": "037b2995da0c90b014e5-e7bacf6f069f93883041",
           "file": "velune.spec.ts",
-          "line": 112,
+          "line": 115,
           "column": 5
         },
         {
@@ -436,12 +436,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3191,
+                  "duration": 2175,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:54.681Z",
+                  "startTime": "2026-10-19T01:25:41.166Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -451,7 +451,7 @@
           ],
           "id": "037b2995da0c90b014e5-9da68ae5b735f61b6c67",
           "file": "velune.spec.ts",
-          "line": 124,
+          "line": 127,
           "column": 5
         },
         {
@@ -470,12 +470,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2536,
+                  "duration": 1753,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:43:57.893Z",
+                  "startTime": "2026-10-19T01:25:43.354Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -485,7 +485,7 @@
           ],
           "id": "037b2995da0c90b014e5-dd2a3b75a79da14f9fa6",
           "file": "velune.spec.ts",
-          "line": 141,
+          "line": 144,
           "column": 5
         },
         {
@@ -504,12 +504,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2380,
+                  "duration": 1756,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:00.483Z",
+                  "startTime": "2026-10-19T01:25:45.132Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -519,7 +519,7 @@
           ],
           "id": "037b2995da0c90b014e5-8bfe025513ff3db6eb09",
           "file": "velune.spec.ts",
-          "line": 154,
+          "line": 157,
           "column": 5
         },
         {
@@ -538,12 +538,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2471,
+                  "duration": 1989,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:02.893Z",
+                  "startTime": "2026-10-19T01:25:46.908Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -553,7 +553,7 @@
           ],
           "id": "037b2995da0c90b014e5-9d7b5a2359b7b6a1878b",
           "file": "velune.spec.ts",
-          "line": 164,
+          "line": 167,
           "column": 5
         },
         {
@@ -572,12 +572,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1800,
+                  "duration": 1509,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:05.379Z",
+                  "startTime": "2026-10-19T01:25:48.955Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -587,7 +587,7 @@
           ],
           "id": "037b2995da0c90b014e5-49f43816ed1165edae68",
           "file": "velune.spec.ts",
-          "line": 174,
+          "line": 177,
           "column": 5
         },
         {
@@ -606,12 +606,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1879,
+                  "duration": 1263,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:07.275Z",
+                  "startTime": "2026-10-19T01:25:50.482Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -621,7 +621,7 @@
           ],
           "id": "037b2995da0c90b014e5-583aaff9da10b5ffb2f6",
           "file": "velune.spec.ts",
-          "line": 183,
+          "line": 186,
           "column": 5
         },
         {
@@ -640,12 +640,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1325,
+                  "duration": 1641,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:09.185Z",
+                  "startTime": "2026-10-19T01:25:51.770Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -655,7 +655,7 @@
           ],
           "id": "037b2995da0c90b014e5-c11d52de3c9fa5db20a4",
           "file": "velune.spec.ts",
-          "line": 195,
+          "line": 198,
           "column": 5
         },
         {
@@ -674,12 +674,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3241,
+                  "duration": 3064,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:10.527Z",
+                  "startTime": "2026-10-19T01:25:53.436Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -689,7 +689,7 @@
           ],
           "id": "037b2995da0c90b014e5-017e9439cad83641254c",
           "file": "velune.spec.ts",
-          "line": 213,
+          "line": 216,
           "column": 5
         },
         {
@@ -708,12 +708,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1227,
+                  "duration": 1346,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:13.787Z",
+                  "startTime": "2026-10-19T01:25:56.515Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -723,11 +723,181 @@
           ],
           "id": "037b2995da0c90b014e5-237882a155c8e3013013",
           "file": "velune.spec.ts",
-          "line": 235,
+          "line": 238,
           "column": 5
         },
         {
-          "title": "all three café pages load with visible content and no errors or overflow",
+          "title": "dessert categories, ingredient search and accented names work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2139,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:25:57.869Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-231c144b914151685e68",
+          "file": "velune.spec.ts",
+          "line": 250,
+          "column": 5
+        },
+        {
+          "title": "dessert links preserve category and collection through navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2265,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:00.020Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-67bff284c4dd5a0e6750",
+          "file": "velune.spec.ts",
+          "line": 268,
+          "column": 5
+        },
+        {
+          "title": "dessert detail tabs have allergens, portions and persistent favorites",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2916,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:02.299Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-fbfc983f39e5ca41259e",
+          "file": "velune.spec.ts",
+          "line": 282,
+          "column": 5
+        },
+        {
+          "title": "menu collection tabs support focus movement and Enter activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1809,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:05.238Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-5e7300024e15aef599c3",
+          "file": "velune.spec.ts",
+          "line": 303,
+          "column": 5
+        },
+        {
+          "title": "Russian dessert names and ingredients are searchable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:07.067Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-81b88ab3031a02f8dc85",
+          "file": "velune.spec.ts",
+          "line": 320,
+          "column": 5
+        },
+        {
+          "title": "all four café pages load with visible content and no errors or overflow",
           "ok": true,
           "tags": [],
           "tests": [
@@ -742,12 +912,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4025,
+                  "duration": 3539,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:15.681Z",
+                  "startTime": "2026-10-19T01:26:08.847Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -755,18 +925,18 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-6497c6d7f9c2b1b5fe25",
+          "id": "037b2995da0c90b014e5-7a41df4642c7091d3ab5",
           "file": "velune.spec.ts",
-          "line": 4,
+          "line": 5,
           "column": 5
         },
         {
-          "title": "all twenty drinks have a separate working page and different photograph crop",
+          "title": "all 54 menu items have a separate working page and different photograph crop",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 90000,
+              "timeout": 180000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "mobile",
@@ -776,12 +946,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5444,
+                  "duration": 12541,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:20.209Z",
+                  "startTime": "2026-10-19T01:26:12.700Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -789,9 +959,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-e3573e19cf650d8181b5",
+          "id": "037b2995da0c90b014e5-d8bdeb6c1cfac74d8c9d",
           "file": "velune.spec.ts",
-          "line": 18,
+          "line": 19,
           "column": 5
         },
         {
@@ -810,12 +980,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1929,
+                  "duration": 2324,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:25.675Z",
+                  "startTime": "2026-10-19T01:26:25.260Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -825,7 +995,7 @@
           ],
           "id": "037b2995da0c90b014e5-7ff3f99f138b03f16e55",
           "file": "velune.spec.ts",
-          "line": 34,
+          "line": 37,
           "column": 5
         },
         {
@@ -844,12 +1014,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4191,
+                  "duration": 3807,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:27.626Z",
+                  "startTime": "2026-10-19T01:26:27.595Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -859,11 +1029,11 @@
           ],
           "id": "037b2995da0c90b014e5-05e35a72ebe44e5ac302",
           "file": "velune.spec.ts",
-          "line": 53,
+          "line": 56,
           "column": 5
         },
         {
-          "title": "home signature opens the actual lavender drink in a new tab",
+          "title": "home coffee preview opens the pistachio drink in a new tab",
           "ok": true,
           "tags": [],
           "tests": [
@@ -878,12 +1048,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1896,
+                  "duration": 1452,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:31.836Z",
+                  "startTime": "2026-10-19T01:26:31.425Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -891,9 +1061,9 @@
               "status": "expected"
             }
           ],
-          "id": "037b2995da0c90b014e5-94011978692b40adabb7",
+          "id": "037b2995da0c90b014e5-2ff1e428155e35e08abc",
           "file": "velune.spec.ts",
-          "line": 73,
+          "line": 76,
           "column": 5
         },
         {
@@ -912,12 +1082,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2918,
+                  "duration": 3040,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:33.765Z",
+                  "startTime": "2026-10-19T01:26:32.893Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -927,7 +1097,7 @@
           ],
           "id": "037b2995da0c90b014e5-9c1d1fa5323c9635a22d",
           "file": "velune.spec.ts",
-          "line": 82,
+          "line": 85,
           "column": 5
         },
         {
@@ -946,12 +1116,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2515,
+                  "duration": 2292,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:36.706Z",
+                  "startTime": "2026-10-19T01:26:35.949Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -961,7 +1131,7 @@
           ],
           "id": "037b2995da0c90b014e5-008354d70ba318c64f05",
           "file": "velune.spec.ts",
-          "line": 112,
+          "line": 115,
           "column": 5
         },
         {
@@ -980,12 +1150,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2054,
+                  "duration": 1627,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:39.243Z",
+                  "startTime": "2026-10-19T01:26:38.269Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -995,7 +1165,7 @@
           ],
           "id": "037b2995da0c90b014e5-6d9f142e4912b7884720",
           "file": "velune.spec.ts",
-          "line": 124,
+          "line": 127,
           "column": 5
         },
         {
@@ -1014,12 +1184,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1301,
+                  "duration": 1497,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:41.313Z",
+                  "startTime": "2026-10-19T01:26:39.910Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1029,7 +1199,7 @@
           ],
           "id": "037b2995da0c90b014e5-2720062f97d4fbc29457",
           "file": "velune.spec.ts",
-          "line": 141,
+          "line": 144,
           "column": 5
         },
         {
@@ -1048,12 +1218,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1318,
+                  "duration": 1230,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:42.623Z",
+                  "startTime": "2026-10-19T01:26:41.419Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1063,7 +1233,7 @@
           ],
           "id": "037b2995da0c90b014e5-ac29648a2822f43b4321",
           "file": "velune.spec.ts",
-          "line": 154,
+          "line": 157,
           "column": 5
         },
         {
@@ -1082,12 +1252,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1239,
+                  "duration": 1320,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:43.963Z",
+                  "startTime": "2026-10-19T01:26:42.676Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1097,7 +1267,7 @@
           ],
           "id": "037b2995da0c90b014e5-7a8323862bb5051ba5b9",
           "file": "velune.spec.ts",
-          "line": 164,
+          "line": 167,
           "column": 5
         },
         {
@@ -1116,12 +1286,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1357,
+                  "duration": 1269,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:45.217Z",
+                  "startTime": "2026-10-19T01:26:44.013Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1131,7 +1301,7 @@
           ],
           "id": "037b2995da0c90b014e5-91bc8f264563ba7fcce5",
           "file": "velune.spec.ts",
-          "line": 174,
+          "line": 177,
           "column": 5
         },
         {
@@ -1150,12 +1320,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1254,
+                  "duration": 1247,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:46.593Z",
+                  "startTime": "2026-10-19T01:26:45.289Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1165,7 +1335,7 @@
           ],
           "id": "037b2995da0c90b014e5-478606eab037ff551281",
           "file": "velune.spec.ts",
-          "line": 183,
+          "line": 186,
           "column": 5
         },
         {
@@ -1184,12 +1354,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1488,
+                  "duration": 1206,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:47.863Z",
+                  "startTime": "2026-10-19T01:26:46.554Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1199,7 +1369,7 @@
           ],
           "id": "037b2995da0c90b014e5-a8913cc61345a1b21197",
           "file": "velune.spec.ts",
-          "line": 195,
+          "line": 198,
           "column": 5
         },
         {
@@ -1218,12 +1388,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3175,
+                  "duration": 2880,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:49.366Z",
+                  "startTime": "2026-10-19T01:26:47.772Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1233,7 +1403,7 @@
           ],
           "id": "037b2995da0c90b014e5-84ebeb6cb6946da66e68",
           "file": "velune.spec.ts",
-          "line": 213,
+          "line": 216,
           "column": 5
         },
         {
@@ -1252,12 +1422,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2020,
+                  "duration": 1065,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-19T00:44:52.574Z",
+                  "startTime": "2026-10-19T01:26:50.677Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1267,7 +1437,177 @@
           ],
           "id": "037b2995da0c90b014e5-47e478b09e74bb56247e",
           "file": "velune.spec.ts",
-          "line": 235,
+          "line": 238,
+          "column": 5
+        },
+        {
+          "title": "dessert categories, ingredient search and accented names work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1504,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:51.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-f0bdf13c246ac83d355a",
+          "file": "velune.spec.ts",
+          "line": 250,
+          "column": 5
+        },
+        {
+          "title": "dessert links preserve category and collection through navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:53.278Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-9af0eb41bb011394e240",
+          "file": "velune.spec.ts",
+          "line": 268,
+          "column": 5
+        },
+        {
+          "title": "dessert detail tabs have allergens, portions and persistent favorites",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:55.081Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-90f4a1ef4cb8acd30952",
+          "file": "velune.spec.ts",
+          "line": 282,
+          "column": 5
+        },
+        {
+          "title": "menu collection tabs support focus movement and Enter activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1594,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:58.063Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-0742a741340fed06b854",
+          "file": "velune.spec.ts",
+          "line": 303,
+          "column": 5
+        },
+        {
+          "title": "Russian dessert names and ingredients are searchable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T01:26:59.695Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "037b2995da0c90b014e5-72a2ce8613d58fe18972",
+          "file": "velune.spec.ts",
+          "line": 320,
           "column": 5
         }
       ]
@@ -1275,9 +1615,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-19T00:42:58.296Z",
-    "duration": 116449.48300000001,
-    "expected": 32,
+    "startTime": "2026-10-19T01:24:33.172Z",
+    "duration": 147879.336,
+    "expected": 42,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

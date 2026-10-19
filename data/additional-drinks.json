@@ -1,0 +1,322 @@
+[
+  {
+    "id": "vanilla-latte",
+    "name": "Vanilla Latte",
+    "price": 6,
+    "category": "Milk-Based Coffee",
+    "image": "latte",
+    "description": "Espresso, steamed milk and vanilla.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Vanilla syrup"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "Vanilla",
+      "Cream"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  },
+  {
+    "id": "caramel-latte",
+    "name": "Caramel Latte",
+    "price": 6.5,
+    "category": "Milk-Based Coffee",
+    "image": "latte",
+    "description": "Espresso and milk with caramel sauce.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Caramel sauce"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "Caramel",
+      "Toffee"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  },
+  {
+    "id": "mocha",
+    "name": "Mocha",
+    "price": 6.5,
+    "category": "Milk-Based Coffee",
+    "image": "latte",
+    "description": "Coffee and dark chocolate, finished with warm milk.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Dark chocolate sauce",
+      "Cocoa"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "Chocolate",
+      "Roasted coffee"
+    ],
+    "dietary": "Contains milk and caffeine. Chocolate may contain soy."
+  },
+  {
+    "id": "white-mocha",
+    "name": "White Chocolate Mocha",
+    "price": 6.75,
+    "category": "Milk-Based Coffee",
+    "image": "latte",
+    "description": "Espresso and milk with melted white chocolate.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "White chocolate"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "White chocolate",
+      "Vanilla"
+    ],
+    "dietary": "Contains milk and caffeine. White chocolate may contain soy."
+  },
+  {
+    "id": "pistachio-latte",
+    "name": "Pistachio Latte",
+    "price": 7.25,
+    "category": "Seasonal Signatures",
+    "image": "latte",
+    "description": "Espresso, milk and pistachio paste.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Pistachio paste",
+      "Cane sugar"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "Pistachio",
+      "Sweet milk"
+    ],
+    "dietary": "Contains pistachios, milk and caffeine.",
+    "signature": true
+  },
+  {
+    "id": "spanish-latte",
+    "name": "Spanish Latte",
+    "price": 6.5,
+    "category": "Iced Coffee",
+    "image": "latte",
+    "description": "Espresso, cold milk and condensed milk over ice.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Sweetened condensed milk",
+      "Ice"
+    ],
+    "size": "300 ml",
+    "notes": [
+      "Condensed milk",
+      "Caramel"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  },
+  {
+    "id": "honey-cinnamon-latte",
+    "name": "Honey Cinnamon Latte",
+    "price": 6.5,
+    "category": "Seasonal Signatures",
+    "image": "latte",
+    "description": "Espresso, milk, honey and a dusting of cinnamon.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Honey",
+      "Cinnamon"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "Honey",
+      "Cinnamon"
+    ],
+    "dietary": "Contains milk and caffeine. Contains honey; not vegan."
+  },
+  {
+    "id": "orange-espresso",
+    "name": "Orange Espresso",
+    "price": 4.5,
+    "category": "Seasonal Signatures",
+    "image": "latte",
+    "description": "Double espresso with fresh orange zest. No milk.",
+    "ingredients": [
+      "Double espresso",
+      "Orange zest"
+    ],
+    "size": "45 ml",
+    "notes": [
+      "Orange peel",
+      "Cacao"
+    ],
+    "dietary": "Vegan. Contains caffeine."
+  },
+  {
+    "id": "iced-caramel-latte",
+    "name": "Iced Caramel Latte",
+    "price": 6.75,
+    "category": "Iced Coffee",
+    "image": "latte",
+    "description": "Espresso, cold milk, caramel and ice.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Caramel sauce",
+      "Ice"
+    ],
+    "size": "350 ml",
+    "notes": [
+      "Caramel",
+      "Cold milk"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  },
+  {
+    "id": "iced-mocha",
+    "name": "Iced Mocha",
+    "price": 6.75,
+    "category": "Iced Coffee",
+    "image": "latte",
+    "description": "Cold milk and espresso with dark chocolate over ice.",
+    "ingredients": [
+      "Double espresso",
+      "Whole milk",
+      "Dark chocolate sauce",
+      "Ice"
+    ],
+    "size": "350 ml",
+    "notes": [
+      "Dark chocolate",
+      "Coffee"
+    ],
+    "dietary": "Contains milk and caffeine. Chocolate may contain soy."
+  },
+  {
+    "id": "coconut-iced-latte",
+    "name": "Coconut Iced Latte",
+    "price": 6.75,
+    "category": "Iced Coffee",
+    "image": "latte",
+    "description": "Espresso over chilled coconut drink and ice.",
+    "ingredients": [
+      "Double espresso",
+      "Barista coconut drink",
+      "Ice"
+    ],
+    "size": "350 ml",
+    "notes": [
+      "Coconut",
+      "Roasted coffee"
+    ],
+    "dietary": "Plant-based. Contains coconut and caffeine."
+  },
+  {
+    "id": "affogato",
+    "name": "Affogato",
+    "price": 6.5,
+    "category": "Iced Coffee",
+    "image": "latte",
+    "description": "Vanilla ice cream with a hot espresso poured over it.",
+    "ingredients": [
+      "Double espresso",
+      "Vanilla ice cream"
+    ],
+    "size": "120 ml",
+    "notes": [
+      "Vanilla",
+      "Espresso"
+    ],
+    "dietary": "Contains milk, egg and caffeine."
+  },
+  {
+    "id": "strawberry-matcha",
+    "name": "Strawberry Matcha",
+    "price": 7,
+    "category": "Matcha & Alternatives",
+    "image": "latte",
+    "description": "Strawberry purée, cold milk, matcha and ice.",
+    "ingredients": [
+      "Matcha green tea",
+      "Whole milk",
+      "Strawberry purée",
+      "Cane sugar",
+      "Ice"
+    ],
+    "size": "350 ml",
+    "notes": [
+      "Strawberry",
+      "Green tea"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available.",
+    "signature": true
+  },
+  {
+    "id": "iced-matcha",
+    "name": "Iced Matcha Latte",
+    "price": 6.5,
+    "category": "Matcha & Alternatives",
+    "image": "latte",
+    "description": "Whisked matcha with cold milk and ice.",
+    "ingredients": [
+      "Matcha green tea",
+      "Whole milk",
+      "Filtered water",
+      "Ice"
+    ],
+    "size": "350 ml",
+    "notes": [
+      "Green tea",
+      "Cream"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  },
+  {
+    "id": "chai-latte",
+    "name": "Chai Latte",
+    "price": 6,
+    "category": "Matcha & Alternatives",
+    "image": "latte",
+    "description": "Black tea, milk, ginger, cardamom and cinnamon.",
+    "ingredients": [
+      "Black tea",
+      "Whole milk",
+      "Ginger",
+      "Cardamom",
+      "Cinnamon",
+      "Cane sugar"
+    ],
+    "size": "280 ml",
+    "notes": [
+      "Spice",
+      "Black tea"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  },
+  {
+    "id": "dirty-chai",
+    "name": "Dirty Chai",
+    "price": 6.75,
+    "category": "Matcha & Alternatives",
+    "image": "latte",
+    "description": "Spiced black tea and milk with a shot of espresso.",
+    "ingredients": [
+      "Black tea",
+      "Single espresso",
+      "Whole milk",
+      "Ginger",
+      "Cardamom",
+      "Cinnamon",
+      "Cane sugar"
+    ],
+    "size": "300 ml",
+    "notes": [
+      "Spice",
+      "Coffee"
+    ],
+    "dietary": "Contains milk and caffeine. Oat alternative available."
+  }
+]

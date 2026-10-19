@@ -1,0 +1,108 @@
+[
+  {
+    "group": "drinks",
+    "sheet": 6,
+    "ids": [
+      "vanilla-latte",
+      "caramel-latte",
+      "mocha",
+      "white-mocha"
+    ],
+    "generation": "exec-0fb20c32-668f-4fec-aea2-857d95c2c029.png",
+    "original": "assets/originals/catalogue/drinks/sheet-6.png"
+  },
+  {
+    "group": "drinks",
+    "sheet": 7,
+    "ids": [
+      "pistachio-latte",
+      "spanish-latte",
+      "honey-cinnamon-latte",
+      "orange-espresso"
+    ],
+    "generation": "exec-96253a1d-b727-4499-9b85-36bef6c943f0.png",
+    "original": "assets/originals/catalogue/drinks/sheet-7.png"
+  },
+  {
+    "group": "drinks",
+    "sheet": 8,
+    "ids": [
+      "iced-caramel-latte",
+      "iced-mocha",
+      "coconut-iced-latte",
+      "affogato"
+    ],
+    "generation": "exec-cf4efb27-30ed-408e-ad89-95445db13cbb.png",
+    "original": "assets/originals/catalogue/drinks/sheet-8.png"
+  },
+  {
+    "group": "drinks",
+    "sheet": 9,
+    "ids": [
+      "strawberry-matcha",
+      "iced-matcha",
+      "chai-latte",
+      "dirty-chai"
+    ],
+    "generation": "exec-d114e23f-d774-41fd-b7a2-5656a6272c94.png",
+    "original": "assets/originals/catalogue/drinks/sheet-9.png"
+  },
+  {
+    "group": "desserts",
+    "sheet": 1,
+    "ids": [
+      "butter-croissant",
+      "almond-croissant",
+      "pain-au-chocolat",
+      "cinnamon-bun"
+    ],
+    "generation": "exec-e6c44077-bef5-458a-9d2a-b27b50b1f562.png",
+    "original": "assets/originals/catalogue/desserts/sheet-1.png"
+  },
+  {
+    "group": "desserts",
+    "sheet": 2,
+    "ids": [
+      "pistachio-swirl",
+      "blueberry-danish",
+      "basque-cheesecake",
+      "strawberry-cheesecake"
+    ],
+    "generation": "exec-cf637950-9552-48dd-acf0-9bb5f2a254be.png",
+    "original": "assets/originals/catalogue/desserts/sheet-2.png"
+  },
+  {
+    "group": "desserts",
+    "sheet": 3,
+    "ids": [
+      "tiramisu",
+      "matcha-crepe-cake",
+      "carrot-cake",
+      "chocolate-ganache-cake"
+    ],
+    "generation": "exec-339f3637-8ada-4135-bbeb-9ca4fb727234.png",
+    "original": "assets/originals/catalogue/desserts/sheet-3.png"
+  },
+  {
+    "group": "desserts",
+    "sheet": 4,
+    "ids": [
+      "chocolate-chip-cookie",
+      "pistachio-cookie",
+      "fudge-brownie",
+      "lemon-loaf"
+    ],
+    "generation": "exec-73b280b1-1823-4282-b31a-375908a09138.png",
+    "original": "assets/originals/catalogue/desserts/sheet-4.png"
+  },
+  {
+    "group": "desserts",
+    "sheet": 5,
+    "ids": [
+      "raspberry-financier",
+      "vanilla-panna-cotta"
+    ],
+    "generation": "exec-96d3aa7b-c473-4f11-9e5e-ed539154bfd9.png",
+    "original": "assets/originals/catalogue/desserts/sheet-5.png"
+  }
+]

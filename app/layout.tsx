@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     template: "%s — velune.",
   },
   description:
-    "Coffee, matcha and a seat by the window. Explore the VELUNE menu and café, a fictional concept in Osaka.",
+    "36 coffees, teas and iced drinks, plus 18 pastries and desserts. Explore VELUNE, a fictional café and bakery concept in Osaka.",
   robots: { index: true, follow: true },
   openGraph: {
     title: "velune. — Coffee & café",

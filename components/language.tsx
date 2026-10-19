@@ -39,7 +39,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const key = text.replace(/\s+/g, " ").trim();
     const translated = dictionary[key];
     if (translated) return `${/^\s/.test(text) ? " " : ""}${translated}${/\s$/.test(text) ? " " : ""}`;
-    return text.replace(/\bMIN READ\b/g, "МИН ЧТЕНИЯ").replace(/\bml\b/g, "мл");
+    return text.replace(/\bMIN READ\b/g, "МИН ЧТЕНИЯ").replace(/\bml\b/g, "мл").replace(/\bg\b/g, "г");
   }
   return <LanguageContext.Provider value={{ language, setLanguage: change, t }}>{children}</LanguageContext.Provider>;
 }

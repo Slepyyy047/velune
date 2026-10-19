@@ -1,0 +1,420 @@
+[
+  {
+    "id": "butter-croissant",
+    "name": "Butter Croissant",
+    "price": 4.25,
+    "category": "Pastries",
+    "image": "dessert",
+    "description": "A crisp butter croissant with a soft, layered centre.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Milk",
+      "Yeast",
+      "Sugar",
+      "Salt",
+      "Egg glaze"
+    ],
+    "size": "85 g",
+    "notes": [
+      "Butter",
+      "Toasted pastry"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg."
+  },
+  {
+    "id": "almond-croissant",
+    "name": "Almond Croissant",
+    "price": 5.5,
+    "category": "Pastries",
+    "image": "dessert",
+    "description": "Butter pastry filled with almond cream and topped with flaked almonds.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Milk",
+      "Egg",
+      "Almonds",
+      "Sugar",
+      "Yeast",
+      "Salt"
+    ],
+    "size": "110 g",
+    "notes": [
+      "Almond",
+      "Butter"
+    ],
+    "dietary": "Contains almonds, wheat (gluten), milk and egg."
+  },
+  {
+    "id": "pain-au-chocolat",
+    "name": "Pain au Chocolat",
+    "price": 4.75,
+    "category": "Pastries",
+    "image": "dessert",
+    "description": "Flaky butter pastry wrapped around dark chocolate.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Milk",
+      "Dark chocolate",
+      "Egg",
+      "Sugar",
+      "Yeast",
+      "Salt"
+    ],
+    "size": "95 g",
+    "notes": [
+      "Dark chocolate",
+      "Butter"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg. Chocolate may contain soy."
+  },
+  {
+    "id": "cinnamon-bun",
+    "name": "Cinnamon Bun",
+    "price": 4.75,
+    "category": "Pastries",
+    "image": "dessert",
+    "description": "Soft rolled dough with cinnamon sugar and a light vanilla glaze.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Milk",
+      "Egg",
+      "Sugar",
+      "Cinnamon",
+      "Vanilla",
+      "Yeast"
+    ],
+    "size": "110 g",
+    "notes": [
+      "Cinnamon",
+      "Vanilla"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg."
+  },
+  {
+    "id": "pistachio-swirl",
+    "name": "Pistachio Swirl",
+    "price": 5.75,
+    "category": "Pastries",
+    "image": "dessert",
+    "description": "A pastry spiral with pistachio cream and chopped pistachios.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Milk",
+      "Egg",
+      "Pistachios",
+      "Sugar",
+      "Yeast"
+    ],
+    "size": "115 g",
+    "notes": [
+      "Pistachio",
+      "Butter"
+    ],
+    "dietary": "Contains pistachios, wheat (gluten), milk and egg."
+  },
+  {
+    "id": "blueberry-danish",
+    "name": "Blueberry Danish",
+    "price": 5.25,
+    "category": "Pastries",
+    "image": "dessert",
+    "description": "Butter pastry with vanilla custard and blueberries.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Milk",
+      "Egg",
+      "Blueberries",
+      "Sugar",
+      "Vanilla",
+      "Yeast"
+    ],
+    "size": "110 g",
+    "notes": [
+      "Blueberry",
+      "Vanilla"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg."
+  },
+  {
+    "id": "basque-cheesecake",
+    "name": "Basque Cheesecake",
+    "price": 7,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "A browned top, a soft cream-cheese centre. Served plain.",
+    "ingredients": [
+      "Cream cheese",
+      "Cream",
+      "Egg",
+      "Sugar",
+      "Wheat flour",
+      "Vanilla"
+    ],
+    "size": "140 g",
+    "notes": [
+      "Cream cheese",
+      "Caramelised top"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg."
+  },
+  {
+    "id": "strawberry-cheesecake",
+    "name": "Strawberry Cheesecake",
+    "price": 7.5,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "Cream-cheese filling on a biscuit base with strawberry topping.",
+    "ingredients": [
+      "Cream cheese",
+      "Cream",
+      "Egg",
+      "Wheat biscuits",
+      "Butter",
+      "Strawberries",
+      "Sugar"
+    ],
+    "size": "150 g",
+    "notes": [
+      "Strawberry",
+      "Cream cheese"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg."
+  },
+  {
+    "id": "tiramisu",
+    "name": "Tiramisu",
+    "price": 7.5,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "Espresso-soaked sponge, mascarpone cream and cocoa.",
+    "ingredients": [
+      "Mascarpone",
+      "Cream",
+      "Egg",
+      "Wheat sponge fingers",
+      "Espresso",
+      "Sugar",
+      "Cocoa"
+    ],
+    "size": "140 g",
+    "notes": [
+      "Espresso",
+      "Mascarpone"
+    ],
+    "dietary": "Contains wheat (gluten), milk, egg and caffeine. No alcohol in this recipe."
+  },
+  {
+    "id": "matcha-crepe-cake",
+    "name": "Matcha Crêpe Cake",
+    "price": 8,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "Thin crêpes layered with matcha cream.",
+    "ingredients": [
+      "Wheat flour",
+      "Milk",
+      "Egg",
+      "Cream",
+      "Matcha green tea",
+      "Sugar",
+      "Butter"
+    ],
+    "size": "130 g",
+    "notes": [
+      "Matcha",
+      "Cream"
+    ],
+    "dietary": "Contains wheat (gluten), milk, egg and caffeine."
+  },
+  {
+    "id": "carrot-cake",
+    "name": "Carrot Cake",
+    "price": 7,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "Carrot and walnut sponge with cream-cheese frosting.",
+    "ingredients": [
+      "Carrot",
+      "Wheat flour",
+      "Egg",
+      "Walnuts",
+      "Cream cheese",
+      "Butter",
+      "Brown sugar",
+      "Cinnamon",
+      "Sunflower oil"
+    ],
+    "size": "145 g",
+    "notes": [
+      "Carrot",
+      "Walnut",
+      "Cinnamon"
+    ],
+    "dietary": "Contains walnuts, wheat (gluten), milk and egg."
+  },
+  {
+    "id": "chocolate-ganache-cake",
+    "name": "Chocolate Ganache Cake",
+    "price": 7.5,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "Chocolate sponge with dark chocolate ganache.",
+    "ingredients": [
+      "Wheat flour",
+      "Dark chocolate",
+      "Cocoa",
+      "Cream",
+      "Butter",
+      "Egg",
+      "Sugar"
+    ],
+    "size": "145 g",
+    "notes": [
+      "Dark chocolate",
+      "Cocoa"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg. Chocolate may contain soy and has natural caffeine."
+  },
+  {
+    "id": "chocolate-chip-cookie",
+    "name": "Chocolate Chip Cookie",
+    "price": 3.75,
+    "category": "Cookies & Small Bakes",
+    "image": "dessert",
+    "description": "A thick cookie with dark chocolate chunks and sea salt.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Egg",
+      "Brown sugar",
+      "Dark chocolate",
+      "Sea salt",
+      "Vanilla"
+    ],
+    "size": "75 g",
+    "notes": [
+      "Chocolate",
+      "Brown sugar"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg. Chocolate may contain soy."
+  },
+  {
+    "id": "pistachio-cookie",
+    "name": "Pistachio Cookie",
+    "price": 4.25,
+    "category": "Cookies & Small Bakes",
+    "image": "dessert",
+    "description": "A soft-centred cookie with pistachios and white chocolate.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Egg",
+      "Sugar",
+      "Pistachios",
+      "White chocolate",
+      "Vanilla"
+    ],
+    "size": "80 g",
+    "notes": [
+      "Pistachio",
+      "White chocolate"
+    ],
+    "dietary": "Contains pistachios, wheat (gluten), milk and egg. White chocolate may contain soy."
+  },
+  {
+    "id": "fudge-brownie",
+    "name": "Dark Chocolate Brownie",
+    "price": 4.75,
+    "category": "Cookies & Small Bakes",
+    "image": "dessert",
+    "description": "A dense cocoa brownie made without dairy or eggs.",
+    "ingredients": [
+      "Wheat flour",
+      "Dark chocolate without milk",
+      "Cocoa",
+      "Sunflower oil",
+      "Oat drink",
+      "Cane sugar",
+      "Salt"
+    ],
+    "size": "90 g",
+    "notes": [
+      "Dark chocolate",
+      "Fudge"
+    ],
+    "dietary": "Plant-based recipe. Contains wheat (gluten) and oats. Chocolate may contain soy."
+  },
+  {
+    "id": "lemon-loaf",
+    "name": "Lemon Loaf",
+    "price": 4.5,
+    "category": "Cookies & Small Bakes",
+    "image": "dessert",
+    "description": "A slice of butter cake with lemon zest and lemon glaze.",
+    "ingredients": [
+      "Wheat flour",
+      "Butter",
+      "Egg",
+      "Milk",
+      "Sugar",
+      "Lemon juice",
+      "Lemon zest"
+    ],
+    "size": "100 g",
+    "notes": [
+      "Lemon",
+      "Butter"
+    ],
+    "dietary": "Contains wheat (gluten), milk and egg."
+  },
+  {
+    "id": "raspberry-financier",
+    "name": "Raspberry Financier",
+    "price": 4,
+    "category": "Cookies & Small Bakes",
+    "image": "dessert",
+    "description": "A small almond cake with browned butter and raspberries.",
+    "ingredients": [
+      "Almond flour",
+      "Wheat flour",
+      "Butter",
+      "Egg white",
+      "Sugar",
+      "Raspberries"
+    ],
+    "size": "2 pieces · 65 g",
+    "notes": [
+      "Almond",
+      "Raspberry"
+    ],
+    "dietary": "Contains almonds, wheat (gluten), milk and egg."
+  },
+  {
+    "id": "vanilla-panna-cotta",
+    "name": "Vanilla Panna Cotta",
+    "price": 6.5,
+    "category": "Cakes & Chilled Desserts",
+    "image": "dessert",
+    "description": "Set vanilla cream with a raspberry sauce.",
+    "ingredients": [
+      "Cream",
+      "Milk",
+      "Sugar",
+      "Vanilla",
+      "Gelatin",
+      "Raspberries"
+    ],
+    "size": "130 g",
+    "notes": [
+      "Vanilla",
+      "Raspberry"
+    ],
+    "dietary": "Contains milk and gelatin. Not vegetarian."
+  }
+]

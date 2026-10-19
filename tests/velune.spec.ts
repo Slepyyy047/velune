@@ -1,7 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { drinks, categories } from "../data/menu";
-const routes = ["/", "/menu/", "/visit/"];
-test("all three café pages load with visible content and no errors or overflow", async ({ page }) => {
+import { desserts, dessertCategories, menuItems } from "../data/catalogue";
+const routes = ["/", "/menu/", "/desserts/", "/visit/"];
+test("all four café pages load with visible content and no errors or overflow", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", e => errors.push(e.message));
   for (const route of routes) {
@@ -15,19 +16,21 @@ test("all three café pages load with visible content and no errors or overflow"
   }
   expect(errors).toEqual([]);
 });
-test("all twenty drinks have a separate working page and different photograph crop", async ({ page }) => {
-  test.setTimeout(90000);
+test("all 54 menu items have a separate working page and different photograph crop", async ({ page }) => {
+  test.setTimeout(180000);
   await page.goto("/menu/");
-  await expect(page.locator(".drink-card")).toHaveCount(20);
+  await expect(page.locator(".drink-card")).toHaveCount(drinks.length);
   const photos = await page.locator(".drink-card .drink-photo img").evaluateAll(imgs => imgs.map(img => `${img.getAttribute("src")}:${img.getAttribute("style")}`));
-  expect(new Set(photos).size).toBe(20);
-  for (const drink of drinks) {
+  expect(new Set(photos).size).toBe(drinks.length);
+  for (const drink of menuItems) {
     expect((await page.goto(`/menu/${drink.id}/`))?.status()).toBe(200);
     await expect(page.locator("main h1")).toHaveText(drink.name);
     await expect(page.locator(".detail-price")).toContainText(`$${drink.price.toFixed(2)}`);
     await expect(page.locator(".drink-facts")).toContainText(drink.ingredients[0]);
     await expect(page.locator(".drink-facts")).toContainText(drink.dietary);
     await expect(page.locator(".drink-preparation")).toBeAttached();
+    await expect(page.locator(".drink-portrait img")).toBeVisible();
+    await expect.poll(() => page.locator(".drink-portrait img").evaluate(img => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBeTruthy();
   }
 });
@@ -44,8 +47,8 @@ test("category filters, search and empty states work", async ({ page }) => {
   await expect(page.locator(".drink-card")).toContainText("Yuzu Cold Brew");
   await search.fill("not-a-drink");
   await expect(page.locator(".empty-state")).toBeVisible();
-  await page.getByRole("button", { name: "Explore all 20 drinks" }).click();
-  await expect(page.locator(".drink-card")).toHaveCount(20);
+  await page.getByRole("button", { name: "Show all drinks" }).click();
+  await expect(page.locator(".drink-card")).toHaveCount(drinks.length);
   await search.fill("oat");
   await page.getByRole("button", { name: "Clear search" }).click();
   await expect(search).toHaveValue("");
@@ -70,13 +73,13 @@ test("cards open a new tab with full drink details and favorites synchronize", a
   await expect(detail.getByRole("button", { name: "Save to favorites", exact: true })).toBeVisible();
   await detail.close();
 });
-test("home signature opens the actual lavender drink in a new tab", async ({ page, context }) => {
+test("home coffee preview opens the pistachio drink in a new tab", async ({ page, context }) => {
   await page.goto("/");
   const popup = context.waitForEvent("page");
-  await page.locator('.signature-card[href*="lavender-cloud"]').click();
+  await page.locator('.menu-preview-card[href*="pistachio-latte"]').click();
   const detail = await popup;
-  await expect(detail.locator(".drink-facts")).toContainText("Culinary lavender syrup");
-  await expect(detail.locator('.drink-portrait [data-drink-photo="lavender-cloud"]')).toBeVisible();
+  await expect(detail.locator(".drink-facts")).toContainText("Pistachio paste");
+  await expect(detail.locator('.drink-portrait [data-drink-photo="pistachio-latte"]')).toBeVisible();
   await detail.close();
 });
 test("Russian preference persists, translates content and supports Russian search", async ({ page }) => {
@@ -119,7 +122,7 @@ test("old editorial links redirect and drink pagination works", async ({ page })
   await page.locator(".drink-pagination a").last().click();
   await expect(page.locator("main h1")).toHaveText("Americano");
   await page.getByRole("link", { name: "Back to menu" }).click();
-  await expect(page.locator(".drink-card")).toHaveCount(20);
+  await expect(page.locator(".drink-card")).toHaveCount(drinks.length);
 });
 test("simple navigation and interior gallery remain usable", async ({ page, isMobile }) => {
   await page.goto("/");
@@ -159,7 +162,7 @@ test("reduced motion keeps all content visible and disables decorative motion", 
   await page.locator(".cafe-space").scrollIntoViewIfNeeded();
   await expect(page.locator(".cafe-space h2")).toBeVisible();
   await page.goto("/menu/");
-  await expect(page.locator(".drink-card")).toHaveCount(20);
+  await expect(page.locator(".drink-card")).toHaveCount(drinks.length);
 });
 test("sound preference is explicit and persists", async ({ page }) => {
   await page.goto("/");
@@ -213,7 +216,7 @@ test("hero keeps the complete café photograph with its wordmark over it", async
 test("sticky navigation stays reachable and anchors close the mobile menu", async ({ page, isMobile }) => {
   await page.goto("/");
   await page.locator("#questions").scrollIntoViewIfNeeded();
-  expect(await page.locator(".site-header").evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
+  expect(await page.locator(".site-header").evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(isMobile ? 8 : 12);
   const navigate = async (name:string) => {
     if (isMobile) {
       await page.getByRole("button",{name:"Open navigation",exact:true}).click();
@@ -241,4 +244,85 @@ test("coffee questions expand with keyboard input", async ({ page }) => {
   await expect(page.locator(".coffee-faq details").first().locator("p")).toBeVisible();
   await page.keyboard.press("Enter");
   await expect(page.locator(".coffee-faq details").first()).not.toHaveAttribute("open", "");
+});
+
+
+test("dessert categories, ingredient search and accented names work", async ({ page }) => {
+  await page.goto("/desserts/");
+  await expect(page.locator(".drink-card")).toHaveCount(desserts.length);
+  await expect(page.getByRole("tab",{name:/Desserts/})).toHaveAttribute("aria-selected","true");
+  for (const category of dessertCategories) {
+    await page.getByRole("button",{name:category,exact:true}).click();
+    await expect(page.locator(".drink-card")).toHaveCount(desserts.filter(d=>d.category===category).length);
+  }
+  await page.getByRole("button",{name:"All desserts",exact:true}).click();
+  await page.getByRole("searchbox").fill("crepe");
+  await expect(page.locator(".drink-card")).toHaveCount(1);
+  await expect(page.locator(".drink-card")).toContainText("Matcha Crêpe Cake");
+  await page.getByRole("searchbox").fill("not-a-dessert");
+  await expect(page.locator(".empty-state")).toBeVisible();
+  await page.getByRole("button",{name:"Show all desserts",exact:true}).click();
+  await expect(page.locator(".drink-card")).toHaveCount(18);
+});
+
+test("dessert links preserve category and collection through navigation", async ({ page }) => {
+  await page.goto("/desserts/?category=Pastries");
+  await expect(page.locator(".drink-card")).toHaveCount(6);
+  await expect(page.getByRole("button",{name:"Pastries",exact:true})).toHaveAttribute("aria-pressed","true");
+  await page.getByRole("tab",{name:/Drinks/}).click();
+  await expect(page).toHaveURL(/\/menu\//);
+  await expect(page.locator(".drink-card")).toHaveCount(36);
+  await page.getByRole("tab",{name:/Desserts/}).click();
+  await expect(page).toHaveURL(/\/desserts\//);
+  await expect(page.locator(".drink-card")).toHaveCount(18);
+  await page.reload();
+  await expect(page.locator(".drink-card")).toHaveCount(18);
+});
+
+test("dessert detail tabs have allergens, portions and persistent favorites", async ({ page, context }) => {
+  await page.goto("/desserts/");
+  const popup=context.waitForEvent("page");
+  await page.locator('.drink-open[href*="tiramisu"]').click();
+  const detail=await popup;
+  await expect(detail.locator("main h1")).toHaveText("Tiramisu");
+  await expect(detail.locator(".detail-price")).toContainText("$7.50");
+  await expect(detail.locator(".detail-price")).toContainText("140 g");
+  await expect(detail.locator(".drink-facts")).toContainText("caffeine");
+  await expect(detail.locator(".drink-facts")).toContainText("Mascarpone");
+  await detail.getByRole("button",{name:"Save to favorites",exact:true}).click();
+  await expect(page.getByRole("button",{name:"Remove from favorites: Tiramisu",exact:true})).toHaveAttribute("aria-pressed","true");
+  await page.reload();
+  await page.getByRole("button",{name:/My favorites/}).click();
+  await expect(page.locator(".drink-card")).toHaveCount(1);
+  await expect(page.locator(".drink-card")).toContainText("Tiramisu");
+  await detail.getByRole("link",{name:"Back to menu",exact:true}).click();
+  await expect(detail).toHaveURL(/\/desserts\//);
+  await detail.close();
+});
+
+test("menu collection tabs support focus movement and Enter activation", async ({ page }) => {
+  await page.goto("/menu/");
+  await page.getByRole("tab",{name:/Drinks/}).focus();
+  await page.keyboard.press("ArrowRight");
+  await expect(page.getByRole("tab",{name:/Desserts/})).toBeFocused();
+  await expect(page.getByRole("tab",{name:/Drinks/})).toHaveAttribute("aria-selected","true");
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("tab",{name:/Desserts/})).toHaveAttribute("aria-selected","true");
+  await expect(page.locator(".drink-card")).toHaveCount(18);
+  await page.getByRole("tab",{name:/Desserts/}).focus();
+  await page.keyboard.press("Home");
+  await expect(page.getByRole("tab",{name:/Drinks/})).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("tab",{name:/Drinks/})).toHaveAttribute("aria-selected","true");
+  await expect(page.locator(".drink-card")).toHaveCount(36);
+});
+
+test("Russian dessert names and ingredients are searchable", async ({ page }) => {
+  await page.goto("/desserts/?lang=ru");
+  await expect(page.locator("html")).toHaveAttribute("lang","ru");
+  await page.getByRole("searchbox").fill("фисташ");
+  await expect(page.locator(".drink-card")).toHaveCount(2);
+  await page.getByRole("searchbox").fill("маскарпоне");
+  await expect(page.locator(".drink-card")).toHaveCount(1);
+  await expect(page.locator(".drink-card")).toContainText("Тирамису");
 });

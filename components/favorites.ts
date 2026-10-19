@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { drinks } from "@/data/menu";
+import { menuItems } from "@/data/catalogue";
 const key = "velune-favorites";
 export function useFavorites() {
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -9,7 +9,7 @@ export function useFavorites() {
     const read = () => {
       try {
         const saved = JSON.parse(localStorage.getItem(key) || "[]");
-        setFavorites(Array.isArray(saved) ? saved.filter(id => drinks.some(d => d.id === id)) : []);
+        setFavorites(Array.isArray(saved) ? saved.filter(id => menuItems.some(d => d.id === id)) : []);
       } catch { setStorageError(true); }
     };
     read();
